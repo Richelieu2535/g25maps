@@ -689,23 +689,41 @@ let customStops = [
 ];
 let COLOR_STOPS = SPECTRAL_STOPS; // active gradient, swapped by the scheme selector
 
+/* 512-entry gradient LUT. The table stores unrounded RGB interpolation so
+   lookup can interpolate between adjacent entries without scanning stops. */
+const COLOR_LUT_SIZE = 512;
+let COLOR_LUT = new Float32Array(COLOR_LUT_SIZE * 3);
+
+function rebuildColorLUT() {
+  const stops = COLOR_STOPS;
+  for (let i = 0; i < COLOR_LUT_SIZE; i++) {
+    const t = i / (COLOR_LUT_SIZE - 1);
+    let j = 0;
+    while (j < stops.length - 2 && t > stops[j + 1][0]) j++;
+    const [t0, c0] = stops[j];
+    const [t1, c1] = stops[j + 1];
+    const f = t1 === t0 ? 0 : (t - t0) / (t1 - t0);
+    const o = i * 3;
+    COLOR_LUT[o] = c0[0] + (c1[0] - c0[0]) * f;
+    COLOR_LUT[o + 1] = c0[1] + (c1[1] - c0[1]) * f;
+    COLOR_LUT[o + 2] = c0[2] + (c1[2] - c0[2]) * f;
+  }
+}
+
 function colorAt(t) {
   t = Math.max(0, Math.min(1, t));
-  const stops = COLOR_STOPS;
-  for (let i = 0; i < stops.length - 1; i++) {
-    const [t0, c0] = stops[i];
-    const [t1, c1] = stops[i + 1];
-    if (t >= t0 && t <= t1) {
-      const f = t1 === t0 ? 0 : (t - t0) / (t1 - t0);
-      return [
-        Math.round(c0[0] + (c1[0] - c0[0]) * f),
-        Math.round(c0[1] + (c1[1] - c0[1]) * f),
-        Math.round(c0[2] + (c1[2] - c0[2]) * f),
-      ];
-    }
-  }
-  return stops[stops.length - 1][1];
+  const x = t * (COLOR_LUT_SIZE - 1);
+  const i = Math.min(COLOR_LUT_SIZE - 2, Math.floor(x));
+  const f = x - i;
+  const o = i * 3;
+  return [
+    Math.round(COLOR_LUT[o] + (COLOR_LUT[o + 3] - COLOR_LUT[o]) * f),
+    Math.round(COLOR_LUT[o + 1] + (COLOR_LUT[o + 4] - COLOR_LUT[o + 1]) * f),
+    Math.round(COLOR_LUT[o + 2] + (COLOR_LUT[o + 5] - COLOR_LUT[o + 2]) * f),
+  ];
 }
+
+rebuildColorLUT();
 
 /* Box-blurs a flat Float32 distance-value grid (radius in cells); 3 passes ~= Gaussian.
    Blurring the underlying value field (rather than the already-colorized pixels) keeps
@@ -788,6 +806,21 @@ exportTerrainOpacitySlider.addEventListener('input', () => {
   exportTerrainOpacityVal.textContent = exportTerrainOpacitySlider.value + '%';
 });
 
+/* Projected land-path cache shared by the heat and water layers. The path is
+   valid for a specific map view + canvas size, so parameter-only redraws reuse
+   it without walking the coastline vertices again. */
+let projectedLandPathCache = { key: null, path: null };
+function getLandViewKey(map, size, scale = 1) {
+  const center = map.getCenter();
+  return [center.lat.toFixed(9), center.lng.toFixed(9), map.getZoom().toFixed(6), size.x, size.y, scale].join('|');
+}
+function getCachedLandPath(key, build) {
+  if (projectedLandPathCache.key !== key || !projectedLandPathCache.path) {
+    projectedLandPathCache = { key, path: build() };
+  }
+  return projectedLandPathCache.path;
+}
+
 /* =========================================================================
    Custom canvas heat layer with land clipping
    ========================================================================= */
@@ -800,6 +833,16 @@ const HeatLayer = L.Layer.extend({
     map.on('moveend zoomend resize', this._reset, this);
     this._points = [];
     this._min = 0; this._max = 1; this._power = 2; this._step = 3; this._opacity = 0.86; this._blur = 0;
+    // Cache expensive stages so parameter-only redraws reuse prior work.
+    this._projectedPoints = null;
+    this._projectedPointsKey = null;
+    this._gridCache = null;
+    this._blurCache = new Map();
+    this._smallCanvas = document.createElement('canvas');
+    this._maskCanvas = document.createElement('canvas');
+    this._maskCtx = this._maskCanvas.getContext('2d');
+    this._smallImageData = null;
+    this._maskKey = null;
     this._canvas.style.opacity = this._opacity;
     this._reset();
   },
@@ -808,10 +851,18 @@ const HeatLayer = L.Layer.extend({
     map.off('moveend zoomend resize', this._reset, this);
   },
   setData(points, min, max, power, step, blur) {
+    const pointsChanged = this._points !== points;
     this._points = points;
     this._min = min; this._max = max;
     this._power = power; this._step = step;
     this._blur = blur || 0;
+    if (pointsChanged) {
+      this._projectedPoints = null;
+      this._projectedPointsKey = null;
+      this._gridCache = null;
+      this._blurCache.clear();
+      this._maskKey = null;
+    }
     this._reset();
   },
   setOpacity(v) {
@@ -820,6 +871,11 @@ const HeatLayer = L.Layer.extend({
   },
   clear() {
     this._points = [];
+    this._projectedPoints = null;
+    this._projectedPointsKey = null;
+    this._gridCache = null;
+    this._blurCache.clear();
+    this._maskKey = null;
     this._reset();
   },
   _reset() {
@@ -841,42 +897,75 @@ const HeatLayer = L.Layer.extend({
     const map = this._map;
     const topLeft = this._topLeft;
 
-    // project reference points to canvas pixel space
-    const pts = this._points.map(p => {
-      const lp = map.latLngToLayerPoint([p.lat, p.lng]).subtract(topLeft);
-      return { x: lp.x, y: lp.y, v: p.value };
-    });
+    // Project reference points only when the actual map view changes.
+    const pointKey = getLandViewKey(map, { x: W, y: H }) + '|' + topLeft.x + '|' + topLeft.y;
+    let pts = this._projectedPoints;
+    if (!pts || this._projectedPointsKey !== pointKey) {
+      pts = this._points.map(p => {
+        const lp = map.latLngToLayerPoint([p.lat, p.lng]).subtract(topLeft);
+        return { x: lp.x, y: lp.y, v: p.value };
+      });
+      this._projectedPoints = pts;
+      this._projectedPointsKey = pointKey;
+    }
 
     // ---- low-res IDW grid, rendered then upscaled for smoothness ----
     const step = this._step;
     const gw = Math.max(1, Math.ceil(W / step));
     const gh = Math.max(1, Math.ceil(H / step));
-    const small = document.createElement('canvas');
-    small.width = gw; small.height = gh;
+    const small = this._smallCanvas;
+    if (small.width !== gw || small.height !== gh) {
+      small.width = gw; small.height = gh;
+    }
     const sctx = small.getContext('2d');
     const min = this._min, max = this._max, power = this._power;
     const range = (max - min) || 1;
+    const gridKey = pointKey + '|' + step + '|' + power + '|' + min + '|' + max;
 
-    const valGrid = new Float32Array(gw * gh);
-    for (let gy = 0; gy < gh; gy++) {
-      const py = gy * step;
-      for (let gx = 0; gx < gw; gx++) {
-        const px = gx * step;
-        let wSum = 0, vSum = 0, exact = null;
-        for (let i = 0; i < pts.length; i++) {
-          const dx = px - pts[i].x, dy = py - pts[i].y;
-          const d2 = dx * dx + dy * dy;
-          if (d2 < 0.25) { exact = pts[i].v; break; }
-          const w = 1 / Math.pow(d2, power / 2);
-          wSum += w;
-          vSum += w * pts[i].v;
+    let valGrid;
+    if (this._gridCache && this._gridCache.key === gridKey) {
+      valGrid = this._gridCache.grid;
+    } else {
+      valGrid = new Float32Array(gw * gh);
+      for (let gy = 0; gy < gh; gy++) {
+        const py = gy * step;
+        for (let gx = 0; gx < gw; gx++) {
+          const px = gx * step;
+          let wSum = 0, vSum = 0, exact = null;
+          for (let i = 0; i < pts.length; i++) {
+            const dx = px - pts[i].x, dy = py - pts[i].y;
+            const d2 = dx * dx + dy * dy;
+            if (d2 < 0.25) { exact = pts[i].v; break; }
+            const w = 1 / Math.pow(d2, power / 2);
+            wSum += w;
+            vSum += w * pts[i].v;
+          }
+          valGrid[gy * gw + gx] = exact !== null ? exact : (vSum / wSum);
         }
-        valGrid[gy * gw + gx] = exact !== null ? exact : (vSum / wSum);
+      }
+      this._gridCache = { key: gridKey, grid: valGrid, w: gw, h: gh };
+      this._blurCache.clear();
+    }
+
+    // Smoothness changes only the blur. Keep recent radii so slider backtracking
+    // doesn't redo identical full-grid blur passes.
+    let blurredGrid = valGrid;
+    const blurKey = Math.round(this._blur * 2) / 2;
+    if (blurKey > 0) {
+      const cached = this._blurCache.get(blurKey);
+      if (cached) blurredGrid = cached;
+      else {
+        blurredGrid = blurValueGrid(valGrid, gw, gh, blurKey);
+        this._blurCache.set(blurKey, blurredGrid);
+        while (this._blurCache.size > 6) this._blurCache.delete(this._blurCache.keys().next().value);
       }
     }
-    const blurredGrid = this._blur > 0 ? blurValueGrid(valGrid, gw, gh, this._blur) : valGrid;
 
-    const img = sctx.createImageData(gw, gh);
+
+    if (!this._smallImageData || this._smallImageData.width !== gw || this._smallImageData.height !== gh) {
+      this._smallImageData = sctx.createImageData(gw, gh);
+    }
+    const img = this._smallImageData;
     for (let i = 0; i < gw * gh; i++) {
       const t = (blurredGrid[i] - min) / range;
       const [r, g, b] = colorAt(t);
@@ -889,36 +978,42 @@ const HeatLayer = L.Layer.extend({
     ctx.drawImage(small, 0, 0, gw, gh, 0, 0, W, H);
 
     // ---- land mask ----
-    const maskCanvas = document.createElement('canvas');
-    maskCanvas.width = W; maskCanvas.height = H;
-    const mctx = maskCanvas.getContext('2d');
-    mctx.fillStyle = '#fff';
-    const path = new Path2D();
-    for (let pi = 0; pi < LAND_POLYGONS.length; pi++) {
-      const rings = LAND_POLYGONS[pi];
-      for (let ri = 0; ri < rings.length; ri++) {
-        const ring = rings[ri];
-        for (let vi = 0; vi < ring.length; vi++) {
-          const [lng, lat] = ring[vi];
-          const lp = map.latLngToLayerPoint([lat, lng]).subtract(topLeft);
-          if (vi === 0) {
-            path.moveTo(lp.x, lp.y);
-          } else {
-            // a >180deg jump means this edge wraps the antimeridian (e.g. 179E -> 180W).
-            // Drawing it straight would cut a spurious line clear across the map, so
-            // break the subpath here instead of connecting the two points.
-            const prevLng = ring[vi - 1][0];
-            if (Math.abs(lng - prevLng) > 180) {
-              path.moveTo(lp.x, lp.y);
-            } else {
-              path.lineTo(lp.x, lp.y);
+    // The rasterized mask is also cached: smoothness/power/quality changes do not
+    // need to refill a full-size canvas with the coastline geometry.
+    const maskCanvas = this._maskCanvas;
+    const maskKey = getLandViewKey(map, { x: W, y: H });
+    if (maskCanvas.width !== W || maskCanvas.height !== H || this._maskKey !== maskKey) {
+      if (maskCanvas.width !== W || maskCanvas.height !== H) {
+        maskCanvas.width = W;
+        maskCanvas.height = H;
+      }
+      const mctx = this._maskCtx;
+      mctx.clearRect(0, 0, W, H);
+      mctx.fillStyle = '#fff';
+      const landPath = getCachedLandPath(maskKey, () => {
+        const path = new Path2D();
+        for (let pi = 0; pi < LAND_POLYGONS.length; pi++) {
+          const rings = LAND_POLYGONS[pi];
+          for (let ri = 0; ri < rings.length; ri++) {
+            const ring = rings[ri];
+            for (let vi = 0; vi < ring.length; vi++) {
+              const [lng, lat] = ring[vi];
+              const lp = map.latLngToLayerPoint([lat, lng]).subtract(topLeft);
+              if (vi === 0) path.moveTo(lp.x, lp.y);
+              else {
+                const prevLng = ring[vi - 1][0];
+                if (Math.abs(lng - prevLng) > 180) path.moveTo(lp.x, lp.y);
+                else path.lineTo(lp.x, lp.y);
+              }
             }
+            path.closePath();
           }
         }
-        path.closePath();
-      }
+        return path;
+      });
+      mctx.fill(landPath, 'evenodd');
+      this._maskKey = maskKey;
     }
-    mctx.fill(path, 'evenodd');
 
     ctx.globalCompositeOperation = 'destination-in';
     ctx.drawImage(maskCanvas, 0, 0);
@@ -967,7 +1062,7 @@ const WaterTintLayer = L.Layer.extend({
     ctx.clearRect(0, 0, W, H);
     const map = this._map, topLeft = this._topLeft;
     const proj = (lat, lng) => map.latLngToLayerPoint([lat, lng]).subtract(topLeft);
-    const landPath = buildScaledLandPath(proj);
+    const landPath = getCachedLandPath(getLandViewKey(map, { x: W, y: H }), () => buildScaledLandPath(proj));
     ctx.fillStyle = this._color;
     ctx.fillRect(0, 0, W, H);
     ctx.globalCompositeOperation = 'destination-out';
@@ -1330,6 +1425,7 @@ function applyColorScheme(val) {
   if (val === 'spectral') COLOR_STOPS = SPECTRAL_STOPS;
   else if (val === 'vahaduo') COLOR_STOPS = VAHADUO_STOPS;
   else COLOR_STOPS = normalizedCustomStops();
+  rebuildColorLUT();
   refreshColorsOnly();
 }
 function renderCustomStopsEditor() {
@@ -1614,8 +1710,9 @@ async function renderExportCanvas(scale, includePins, includeLegend, includeTerr
   canvas.width = W; canvas.height = H;
   const ctx = canvas.getContext('2d');
 
-  // land path is always needed (it clips the heat layer, and terrain, to land)
-  const landPath = buildScaledLandPath(proj, scale);
+  // land path is always needed (it clips the heat layer, and terrain, to land).
+  // Include export scale because the cached path coordinates are scaled.
+  const landPath = getCachedLandPath(getLandViewKey(map, size, scale), () => buildScaledLandPath(proj, scale));
 
   // water
   ctx.fillStyle = waterColor;
