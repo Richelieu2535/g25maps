@@ -13,7 +13,7 @@ I might eventually add more features, such as a calculator function, or I might 
 4. Click "Generate distance map".
   - I suggest clicking on "clear map" (or at least reducing the quality to "fast") if you want to look around, change smoothing or change gradient color (as these     change the map in real time), and then generate the map again (or switch quality to "balanced" or "detailed") once you are in the area you're interested in        and you've arrived at the combination of settings you wanted. This is in order to avoid lag.
 5. You can download the image as shown in screen (the area currently shown, with the gradient smoothness you have set, etc).
-  - I suggest to exclude pins, as they will clutter the image with the default settings, but this is optional. Pin visibility can be turned off without affecting      the calculation itself, so keeping pins on the exported image might look good if you're only keeping a few per country or you're mapping a smaller region.
+  - I suggest excluding pins from the final image, as they will clutter the image with the default settings, but this is optional. Pin visibility can be turned        off without affecting the calculation itself, so keeping pins on the exported image might look good if you're only keeping a few per country or you're mapping     a smaller region.
   - Regarding terrain opacity, if you really want it to be visible gradient opacity should be set to around 70-75% and terrain opacity all the way up to 100%.         This configuration seems to work best.
 
 ## Regarding presets
