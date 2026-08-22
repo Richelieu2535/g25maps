@@ -1801,5 +1801,46 @@ document.getElementById('importFileInput').addEventListener('change', e => {
 
 refreshPresetSelect();
 </script>
+<script>
+// Auto-load preset from JSON file
+async function autoLoadPreset() {
+  try {
+    const response = await fetch('g25_mapper_presets.json');
+    if (!response.ok) throw new Error('Failed to fetch preset');
+    const data = await response.json();
+    
+    // Import the preset
+    if (typeof importPresetsData === 'function') {
+      importPresetsData(data);
+      console.log('Preset auto-loaded successfully');
+    } else {
+      // Fallback: populate popList and presetSelect
+      const presetSelect = document.getElementById('presetSelect');
+      const popList = document.getElementById('popList');
+      
+      data.forEach((preset, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.textContent = preset.name || `Preset ${index+1}`;
+        presetSelect.appendChild(option);
+      });
+      
+      // Load first preset by default
+      if (data.length > 0) {
+        loadPresetData(data[0]);
+      }
+    }
+  } catch (error) {
+    console.warn('Could not auto-load preset:', error);
+    // Fallback to manual import option
+  }
+}
+
+// Call auto-load when page is ready
+document.addEventListener('DOMContentLoaded', function() {
+  // Wait a moment for the UI to initialize
+  setTimeout(autoLoadPreset, 500);
+});
+</script>
 </body>
 </html>
