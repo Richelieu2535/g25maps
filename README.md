@@ -7,7 +7,7 @@ I might eventually add more features, such as a calculator function, or I might 
 1. Paste target G25 coordinates **and** click on "Set target".
 2. Paste reference populations and drag them to their approximate centroid and/or load a preset.
   - Populations on the list can be searched for by name, their G25 coordinates copied, their name changed and their pin made invisible, or be deleted as a whole       if found to be superfluous.
-  - I recommend keeping "Show population pins & labels" off unless you're changing the preset or making a new one.
+  - I recommend keeping "Show population pins & labels" off unless you're modifying the current preset or making a new one.
 3. Select a minimum and maximum distance, gradient color, gradient opacity, interpolation power, quality and smoothing. 
   - I suggest using the default for all of them besides quality and smoothing. Play around with these to find the combination that works best for what you're          trying to showcase. As a rule of thumb, for lower quality you should also use lower smoothing.
 4. Click "Generate distance map".
