@@ -1886,6 +1886,9 @@ document.getElementById('loadPresetBtn').addEventListener('click', () => {
   if (!preset) return;
   clearPopulations();
   preset.populations.forEach(p => addPopulation(p.name, p.vec, [p.lat, p.lng], p.visible !== false));
+  const showPinsCheck = document.getElementById('showPinsCheck');
+  showPinsCheck.checked = false;
+  applyPinVisibility();
   fitToPins();
 });
 document.getElementById('deletePresetBtn').addEventListener('click', () => {
