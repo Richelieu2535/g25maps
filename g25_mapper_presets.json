@@ -21750,7 +21750,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Brasí­lia_DF",
+        "name": "Brazilian_Brasí­lia_DF",
         "vec": [
           -0.08121,
           0.060334,
@@ -21783,7 +21783,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Palmas_TO",
+        "name": "Brazilian_Palmas_TO",
         "vec": [
           -0.07667,
           0.056937,
@@ -21816,7 +21816,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Salvador_BA",
+        "name": "Brazilian_Salvador_BA",
         "vec": [
           -0.294119,
           0.086122,
@@ -21849,7 +21849,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Natal_RN",
+        "name": "Brazilian_Natal_RN",
         "vec": [
           -0.046226,
           0.049319,
@@ -21882,7 +21882,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Bacabal_MA",
+        "name": "Brazilian_Bacabal_MA",
         "vec": [
           -0.116608,
           0.010038,
@@ -21915,7 +21915,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Macapá_AP",
+        "name": "Brazilian_Macapá_AP",
         "vec": [
           -0.084322,
           -0.032368,
@@ -21948,7 +21948,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Itaituba_PA",
+        "name": "Brazilian_Itaituba_PA",
         "vec": [
           -0.032863,
           -0.02299,
@@ -21981,7 +21981,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Manaus_AM",
+        "name": "Brazilian_Manaus_AM",
         "vec": [
           0.003661,
           -0.042662,
@@ -22014,7 +22014,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Barreiras_BA",
+        "name": "Brazilian_Barreiras_BA",
         "vec": [
           -0.106339,
           0.074659,
@@ -22080,7 +22080,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Uberaba_MG",
+        "name": "Brazilian_Uberaba_MG",
         "vec": [
           -0.061472,
           0.101641,
@@ -22113,7 +22113,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Belo_Horizonte_MG",
+        "name": "Brazilian_Belo_Horizonte_MG",
         "vec": [
           -0.105328,
           0.110007,
@@ -22146,7 +22146,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Florianapolis_SC",
+        "name": "Brazilian_Florianapolis_SC",
         "vec": [
           0.049432,
           0.125228,
@@ -22179,7 +22179,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Porto_Alegre_RS",
+        "name": "Brazilian_Porto_Alegre_RS",
         "vec": [
           -0.004258,
           0.096888,
@@ -22212,7 +22212,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Pelotas_RS",
+        "name": "Brazilian_Pelotas_RS",
         "vec": [
           -0.004415,
           0.106175,
@@ -22245,7 +22245,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Caxias_do_Sul_RS",
+        "name": "Brazilian_Caxias_do_Sul_RS",
         "vec": [
           0.051809,
           0.116116,
@@ -22278,7 +22278,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Chapecó_SC",
+        "name": "Brazilian_Chapecó_SC",
         "vec": [
           0.071972,
           0.098569,
@@ -22311,7 +22311,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Joinville_SC",
+        "name": "Brazilian_Joinville_SC",
         "vec": [
           0.066804,
           0.102418,
@@ -22344,7 +22344,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Ponta_Grossa_PR",
+        "name": "Brazilian_Ponta_Grossa_PR",
         "vec": [
           0.062588,
           0.036201,
@@ -22377,7 +22377,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Londrina_PR",
+        "name": "Brazilian_Londrina_PR",
         "vec": [
           0.030093,
           0.05104,
@@ -22443,7 +22443,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Sao_Paulo_SP",
+        "name": "Brazilian_Sao_Paulo_SP",
         "vec": [
           -0.038351,
           0.088345,
@@ -22476,7 +22476,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Passo_Fundo_RS",
+        "name": "Brazilian_Passo_Fundo_RS",
         "vec": [
           0.072571,
           0.045268,
@@ -22509,7 +22509,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Curitiba_PR",
+        "name": "Brazilian_Curitiba_PR",
         "vec": [
           0.038203,
           0.058739,
@@ -22542,7 +22542,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_Criciúma_SC",
+        "name": "Brazilian_Criciúma_SC",
         "vec": [
           0.057107,
           0.122187,
@@ -22971,7 +22971,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Tucumán",
+        "name": "Argentine_Tucumán",
         "vec": [
           0.062229,
           -0.147794,
@@ -23004,7 +23004,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_La_Rioja",
+        "name": "Argentine_La_Rioja",
         "vec": [
           0.059104,
           -0.165348,
@@ -23070,7 +23070,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_San_Luis",
+        "name": "Argentine_San_Luis",
         "vec": [
           0.080095,
           0.00749,
@@ -23103,7 +23103,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Neuquén",
+        "name": "Argentine_Neuquén",
         "vec": [
           0.07304,
           -0.071702,
@@ -23136,7 +23136,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Río_Negro",
+        "name": "Argentine_Río_Negro",
         "vec": [
           0.075312,
           -0.04879,
@@ -23202,7 +23202,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Chubut",
+        "name": "Argentine_Chubut",
         "vec": [
           0.082204,
           -0.022102,
@@ -23235,7 +23235,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Mendoza",
+        "name": "Argentine_Mendoza",
         "vec": [
           0.08864,
           0.039803,
@@ -23268,7 +23268,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_San_Juan",
+        "name": "Argentine_San_Juan",
         "vec": [
           0.0834455,
           0.0085289,
@@ -23301,7 +23301,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_La_Pampa_Octavón",
+        "name": "Argentine_La_Pampa_Octavón",
         "vec": [
           0.1033547,
           0.0683139,
@@ -23334,7 +23334,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_La_Pampa_Euro-Mestizo",
+        "name": "Argentine_La_Pampa_Euro-Mestizo",
         "vec": [
           0.108515,
           0.110658,
@@ -23367,7 +23367,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Cordoba_Castizo",
+        "name": "Argentine_Cordoba_Castizo",
         "vec": [
           0.0881144,
           0.0543707,
@@ -23400,7 +23400,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Entre_Ríos",
+        "name": "Argentine_Entre_Ríos",
         "vec": [
           0.112343,
           0.116432,
@@ -23763,7 +23763,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Corrientes",
+        "name": "Argentine_Corrientes",
         "vec": [
           0.070671,
           -0.026349,
@@ -23796,7 +23796,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Misiones",
+        "name": "Argentine_Misiones",
         "vec": [
           0.086548,
           0.014033,
@@ -23829,7 +23829,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Chaco",
+        "name": "Argentine_Chaco",
         "vec": [
           0.073852,
           -0.056407,
@@ -23862,7 +23862,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Jujuy",
+        "name": "Argentine_Jujuy",
         "vec": [
           0.055661,
           -0.210936,
@@ -23895,7 +23895,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Salta",
+        "name": "Argentine_Salta",
         "vec": [
           0.058837,
           -0.174675,
@@ -23928,7 +23928,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Santiago_del_Estero",
+        "name": "Argentine_Santiago_del_Estero",
         "vec": [
           0.057359,
           -0.182602,
@@ -28718,7 +28718,7 @@
         "visible": true
       },
       {
-        "name": "Brazil_PrePottery_2500BP",
+        "name": "Brazilian_PrePottery_2500BP",
         "vec": [
           0.0387,
           -0.281302,
@@ -28751,7 +28751,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Antofagasta_2100BP_(n=2)",
+        "name": "Argentine_Antofagasta_2100BP_(n=2)",
         "vec": [
           0.054066,
           -0.312275,
@@ -28784,7 +28784,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Mar_Chiquita_2500BP_(n=4)",
+        "name": "Argentine_Mar_Chiquita_2500BP_(n=4)",
         "vec": [
           0.05492,
           -0.3140525,
@@ -28817,7 +28817,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Southern_Pampas_2600BP_(n=10)",
+        "name": "Argentine_Southern_Pampas_2600BP_(n=10)",
         "vec": [
           0.0515619,
           -0.3187746,
@@ -28850,7 +28850,7 @@
         "visible": true
       },
       {
-        "name": "Argentina_Yamana_1500BP_(n=1)",
+        "name": "Argentine_Yamana_1500BP_(n=1)",
         "vec": [
           0.053497,
           -0.313799,
