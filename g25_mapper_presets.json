@@ -33,7 +33,7 @@
         ],
         "lat": 37.36569957803111,
         "lng": -5.262451171875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Madrid_(Castilian)_(n=2)",
@@ -66,7 +66,7 @@
         ],
         "lat": 40.563899278456006,
         "lng": -3.6694335937500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Galicia_(Galician)_(n=19)",
@@ -99,7 +99,7 @@
         ],
         "lat": 42.9076656915329,
         "lng": -7.734375000000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Portuguese_(n=54)",
@@ -132,7 +132,7 @@
         ],
         "lat": 38.52252833199982,
         "lng": -8.063964843750002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Basque_Spain_(n=25)",
@@ -165,7 +165,7 @@
         ],
         "lat": 43.18917820149538,
         "lng": -2.5378417968750004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Castile_and_Leon_(Castilian)_(n=7)",
@@ -198,7 +198,7 @@
         ],
         "lat": 41.66469569241973,
         "lng": -3.7353515625000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Apulia_(Apulian)_(n=228)",
@@ -231,7 +231,7 @@
         ],
         "lat": 41.182727181089874,
         "lng": 16.177368164062504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Basilicata_(Lucanian)_(n=10)",
@@ -264,7 +264,7 @@
         ],
         "lat": 40.52212010573638,
         "lng": 16.072998046875004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Calabria_(Calabrese)_(n=4)",
@@ -297,7 +297,7 @@
         ],
         "lat": 39.300473291289585,
         "lng": 16.567382812500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Emilia_(Emilian)_(n=8)",
@@ -330,7 +330,7 @@
         ],
         "lat": 44.386553047742844,
         "lng": 11.612548828125002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Lazio_(Lazian)_(n=5)",
@@ -363,7 +363,7 @@
         ],
         "lat": 41.96720381536712,
         "lng": 12.612304687500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Liguria_(Ligurian)_(n=1)",
@@ -396,7 +396,7 @@
         ],
         "lat": 44.42791763404482,
         "lng": 8.981323242187502,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Lombardy_(Lombard)_(n=10)",
@@ -429,7 +429,7 @@
         ],
         "lat": 45.45441395966204,
         "lng": 9.201049804687502,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Valencia_(Valencian)_(n=17)",
@@ -462,7 +462,7 @@
         ],
         "lat": 39.461612278939455,
         "lng": -0.36254882812500006,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Corsica",
@@ -495,7 +495,7 @@
         ],
         "lat": 41.59906913796039,
         "lng": 9.173583984375002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Sardinia_(Sardinian)_(n=10)",
@@ -528,7 +528,7 @@
         ],
         "lat": 39.46162675422555,
         "lng": 9.063720703125002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Tuscany",
@@ -561,7 +561,7 @@
         ],
         "lat": 43.42062752674159,
         "lng": 11.228027343750002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_East_(n=16)",
@@ -594,7 +594,7 @@
         ],
         "lat": 52.77556565946335,
         "lng": 13.447265625000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Hamburg",
@@ -627,7 +627,7 @@
         ],
         "lat": 53.5273036963126,
         "lng": 10.008544921875002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Hesse_(n=9)",
@@ -660,7 +660,7 @@
         ],
         "lat": 50.638950827287054,
         "lng": 9.085693359375002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Belgian_(n=311)",
@@ -693,7 +693,7 @@
         ],
         "lat": 50.84420021682481,
         "lng": 4.400024414062501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Dutch_(n=167)",
@@ -726,7 +726,7 @@
         ],
         "lat": 52.37234572887859,
         "lng": 4.94384765625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "English_(n=44)",
@@ -759,7 +759,7 @@
         ],
         "lat": 52.669364133382146,
         "lng": -1.5380859375000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "English_Kent_(n=4)",
@@ -792,7 +792,7 @@
         ],
         "lat": 51.34401073916675,
         "lng": 0.5712890625000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Cornish_(n=15)",
@@ -825,7 +825,7 @@
         ],
         "lat": 50.791952248109276,
         "lng": -3.6035156250000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Welsh_(n=22)",
@@ -858,7 +858,7 @@
         ],
         "lat": 52.57619801824526,
         "lng": -3.7792968750000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Irish_(n=106)",
@@ -891,7 +891,7 @@
         ],
         "lat": 53.42225511910879,
         "lng": -7.778320312500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Northern_Irish_Mixed_(Ulster_Irish+Ulster_Scot)_(n=2)",
@@ -924,7 +924,7 @@
         ],
         "lat": 54.832280507283315,
         "lng": -6.04248046875,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Scottish_(n=41)",
@@ -957,7 +957,7 @@
         ],
         "lat": 55.651923543386516,
         "lng": -3.4716796875000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Danish_(n=87)",
@@ -990,7 +990,7 @@
         ],
         "lat": 55.39168439694921,
         "lng": 10.437011718750002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Norwegian_(n=49)",
@@ -1023,7 +1023,7 @@
         ],
         "lat": 61.43767387596856,
         "lng": 8.657226562500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Finnish_(n=53)",
@@ -1056,7 +1056,7 @@
         ],
         "lat": 63.053407350647205,
         "lng": 26.015625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Estonian_(n=11)",
@@ -1089,7 +1089,7 @@
         ],
         "lat": 58.88128964098073,
         "lng": 26.015625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Latvian_(n=24)",
@@ -1122,7 +1122,7 @@
         ],
         "lat": 56.99246064552245,
         "lng": 24.78515625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Lithuanian_(n=5)",
@@ -1155,7 +1155,7 @@
         ],
         "lat": 55.42953474859123,
         "lng": 23.466796875000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Algerian_Arab_(n=32)",
@@ -1188,7 +1188,7 @@
         ],
         "lat": 35.71072619401222,
         "lng": 0.7250976562500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Berber_Algeria_Mozabite_(n=25)",
@@ -1221,7 +1221,7 @@
         ],
         "lat": 30.42960563203159,
         "lng": 3.7353515625000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Berber_Tunisia_East_Zenati_Chenini_(n=18)",
@@ -1254,7 +1254,7 @@
         ],
         "lat": 33.43188988223327,
         "lng": 9.470214843750002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Tunisian_Arab_(n=8)",
@@ -1287,7 +1287,7 @@
         ],
         "lat": 36.74766519698331,
         "lng": 9.008789062500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Libyan_Arab_(n=21)",
@@ -1320,7 +1320,7 @@
         ],
         "lat": 31.765505528078048,
         "lng": 24.741210937500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bedouin_Libya_(n=6)",
@@ -1353,7 +1353,7 @@
         ],
         "lat": 27.254857368330374,
         "lng": 21.401367187500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Libyan_Arab_Benghazi_(n=2)",
@@ -1386,7 +1386,7 @@
         ],
         "lat": 32.026738084417055,
         "lng": 20.203857421875004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Egyptian_Arab_Muslim_(n=74)",
@@ -1419,7 +1419,7 @@
         ],
         "lat": 30.996086960950173,
         "lng": 27.531738281250004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Egyptian_Arab_Muslim_(Nubian/Sudanese-Mixed)_(n=1)",
@@ -1452,7 +1452,7 @@
         ],
         "lat": 23.60596842817971,
         "lng": 28.916015625000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Central_Macedonia",
@@ -1485,7 +1485,7 @@
         ],
         "lat": 40.89688215540812,
         "lng": 22.736206054687504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Epirus_(n=19)",
@@ -1518,7 +1518,7 @@
         ],
         "lat": 39.61823439766327,
         "lng": 20.725708007812504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Cypriot",
@@ -1551,7 +1551,7 @@
         ],
         "lat": 35.04954724043075,
         "lng": 33.22265625000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Istanbul_(Anatolian_Turk-Mixed_Balkan_Turk_Profile)_(n=4)",
@@ -1584,7 +1584,7 @@
         ],
         "lat": 41.31074877035966,
         "lng": 28.454589843750004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bulgarian",
@@ -1617,7 +1617,7 @@
         ],
         "lat": 42.439787177339795,
         "lng": 25.532226562500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Albanian",
@@ -1650,7 +1650,7 @@
         ],
         "lat": 41.05489548234899,
         "lng": 20.006103515625004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Romanian",
@@ -1683,7 +1683,7 @@
         ],
         "lat": 44.449498766313106,
         "lng": 25.718994140625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Hungarian_(n=23)",
@@ -1716,7 +1716,7 @@
         ],
         "lat": 47.11490413108951,
         "lng": 19.638061523437504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Hungarian_Central_Hungary_and_Budapest_(n=121)",
@@ -1749,7 +1749,7 @@
         ],
         "lat": 47.55418336315705,
         "lng": 18.544921875000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Austrian_(n=18)",
@@ -1782,7 +1782,7 @@
         ],
         "lat": 47.583947158508515,
         "lng": 14.337158203125002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Austrian_Carinthia_(n=5)",
@@ -1815,7 +1815,7 @@
         ],
         "lat": 46.830116537134785,
         "lng": 13.77685546875,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Veneto",
@@ -1848,7 +1848,7 @@
         ],
         "lat": 45.540985312374076,
         "lng": 11.645507812500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Murcia_(Murcian)_(n=8)",
@@ -1881,7 +1881,7 @@
         ],
         "lat": 37.71941097209731,
         "lng": -1.4941406250000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Baleares_Mallorca_(Catalan)_(n=9)",
@@ -1914,7 +1914,7 @@
         ],
         "lat": 39.63964344451739,
         "lng": 2.9443359375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Castilla-La_Mancha_(Castilian)_(n=8)",
@@ -1947,7 +1947,7 @@
         ],
         "lat": 39.62251866257222,
         "lng": -2.9443359375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Sicily_(Sicilian)_(n=2)",
@@ -1980,7 +1980,7 @@
         ],
         "lat": 37.71867931179363,
         "lng": 13.996582031250002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ukrainian_(n=25)",
@@ -2013,7 +2013,7 @@
         ],
         "lat": 49.97931494580112,
         "lng": 30.893554687500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Antalya_Yoruk_(n=2)",
@@ -2046,7 +2046,7 @@
         ],
         "lat": 36.91735260497799,
         "lng": 30.058593750000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Ankara_(n=27)",
@@ -2079,7 +2079,7 @@
         ],
         "lat": 40.019127121349804,
         "lng": 32.68432617187501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Lebanese_Arab_Christian_(n=27)",
@@ -2112,7 +2112,7 @@
         ],
         "lat": 34.14131313422118,
         "lng": 35.95825195312501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ashkenazi_Jew_(n=1209)",
@@ -2145,7 +2145,7 @@
         ],
         "lat": 32.12084914398713,
         "lng": 34.84863281250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Palestinian_Arab_Muslim_(n=84)",
@@ -2178,7 +2178,7 @@
         ],
         "lat": 32.17783207672644,
         "lng": 35.37872314453126,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Palestinian_Arab_Muslim_Gaza_(n=4)",
@@ -2211,7 +2211,7 @@
         ],
         "lat": 31.442869146887176,
         "lng": 34.38171386718751,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Egyptian_Arab_Muslim_Alexandria_(n=5)",
@@ -2244,7 +2244,7 @@
         ],
         "lat": 31.14712665591216,
         "lng": 29.904785156250004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Libyan_Arab_Tripoli_(n=4)",
@@ -2277,7 +2277,7 @@
         ],
         "lat": 32.750012489412704,
         "lng": 12.919921875000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Syrian_Arab_Damascus_(Levantine_Profile)_(n=13)",
@@ -2310,7 +2310,7 @@
         ],
         "lat": 33.51851877678325,
         "lng": 36.40869140625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Syrian_Arab_Homs_(Syrio-Mesopotamian_Arab_Profile)_(n=5)",
@@ -2343,7 +2343,7 @@
         ],
         "lat": 34.50186626817991,
         "lng": 38.11157226562501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Trabzon_(n=34)",
@@ -2376,7 +2376,7 @@
         ],
         "lat": 40.94692608862415,
         "lng": 39.22119140625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Armenian_(n=19)",
@@ -2409,7 +2409,7 @@
         ],
         "lat": 40.739011374413366,
         "lng": 44.67041015625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Azeri_Azerbaijan_(n=6)",
@@ -2442,7 +2442,7 @@
         ],
         "lat": 40.229342246275884,
         "lng": 48.69140625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Belgorod",
@@ -2475,7 +2475,7 @@
         ],
         "lat": 58.332429328639385,
         "lng": 32.91503906250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Moscow_(n=7)",
@@ -2508,7 +2508,7 @@
         ],
         "lat": 55.77648162923742,
         "lng": 37.63916015625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Belgorod_(n=4)",
@@ -2541,7 +2541,7 @@
         ],
         "lat": 50.847576899633886,
         "lng": 37.37548828125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Yoruba_Nigeria_(n=38)",
@@ -2574,7 +2574,7 @@
         ],
         "lat": 9.535206622123155,
         "lng": 7.558593750000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Algerian_Arab_Algiers_(n=24)",
@@ -2607,7 +2607,7 @@
         ],
         "lat": 36.5267674917719,
         "lng": 3.0541992187500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Somali_(n=14)",
@@ -2640,7 +2640,7 @@
         ],
         "lat": 8.062175099944561,
         "lng": 48.60351562500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ethiopian_Afar",
@@ -2673,7 +2673,7 @@
         ],
         "lat": 10.144121812100826,
         "lng": 38.67187500000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Toubou_Daza_Chad_(n=18)",
@@ -2706,7 +2706,7 @@
         ],
         "lat": 16.55200964786724,
         "lng": 18.896484375000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Algerian_Arab-Berber_(n=2)",
@@ -2739,7 +2739,7 @@
         ],
         "lat": 33.32098296642139,
         "lng": 4.680175781250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Yemenite_Al_Bayda",
@@ -2772,7 +2772,7 @@
         ],
         "lat": 15.689698529435073,
         "lng": 46.99951171875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Iraqi_Arab_Central",
@@ -2805,7 +2805,7 @@
         ],
         "lat": 33.081273701492655,
         "lng": 44.0771484375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Iraqi_Arab_South",
@@ -2838,7 +2838,7 @@
         ],
         "lat": 30.82644279843395,
         "lng": 44.23095703125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Iraqi_Arab_West",
@@ -2871,7 +2871,7 @@
         ],
         "lat": 32.82399052278215,
         "lng": 40.53955078125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Syrian_Arab_Aleppo_(Levantine_Profile)_(n=11)",
@@ -2904,7 +2904,7 @@
         ],
         "lat": 36.22648208637068,
         "lng": 37.15026855468751,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Samsun_(n=16)",
@@ -2937,7 +2937,7 @@
         ],
         "lat": 41.34356886504114,
         "lng": 36.14501953125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kurdish_Kurmanji_Turkey_Erzincan_(n=5)",
@@ -2970,7 +2970,7 @@
         ],
         "lat": 39.913823838387586,
         "lng": 41.25366210937501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kurdish_Kurmanji_Turkey_Malatya_(n=24)",
@@ -3003,7 +3003,7 @@
         ],
         "lat": 38.324182632228734,
         "lng": 38.10058593750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Chechen_(n=16)",
@@ -3036,7 +3036,7 @@
         ],
         "lat": 43.42100882994726,
         "lng": 45.73608398437501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Nogai_Dagestan_(Ciscaucasian_Profile)_(n=3)",
@@ -3069,7 +3069,7 @@
         ],
         "lat": 43.14901192553128,
         "lng": 46.95556640625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kazakh_(n=23)",
@@ -3102,7 +3102,7 @@
         ],
         "lat": 48.12251405139257,
         "lng": 67.03857421875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Han_Guangdong_(n=16)",
@@ -3135,7 +3135,7 @@
         ],
         "lat": 23.08453824932459,
         "lng": 111.09375000000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Yakut_(n=29)",
@@ -3168,7 +3168,7 @@
         ],
         "lat": 62.06410939695322,
         "lng": 129.46289062500003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Nganasan_(n=62)",
@@ -3201,7 +3201,7 @@
         ],
         "lat": 74.11370673013322,
         "lng": 99.228515625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Arkhangelsk_Krasnoborsky_(n=6)",
@@ -3234,7 +3234,7 @@
         ],
         "lat": 64.32154320381973,
         "lng": 43.59375000000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkmen_(n=55)",
@@ -3267,7 +3267,7 @@
         ],
         "lat": 39.351382177173015,
         "lng": 58.86474609375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Uzbek_(n=18)",
@@ -3300,7 +3300,7 @@
         ],
         "lat": 39.63960012992988,
         "lng": 66.35742187500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Iranian_Arab_Khuzestan_(n=8)",
@@ -3333,7 +3333,7 @@
         ],
         "lat": 31.62566977761645,
         "lng": 48.90014648437501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Balochi_Iran",
@@ -3366,7 +3366,7 @@
         ],
         "lat": 26.9032460070523,
         "lng": 64.59960937500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ukrainian_Crimea_(n=1)",
@@ -3399,7 +3399,7 @@
         ],
         "lat": 45.21386648966752,
         "lng": 34.10156250000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Polish_Mazovia_(n=2)",
@@ -3432,7 +3432,7 @@
         ],
         "lat": 52.742873203543354,
         "lng": 21.104736328125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Polish_Pomerania_Gdansk_(n=10)",
@@ -3465,7 +3465,7 @@
         ],
         "lat": 54.36463101436068,
         "lng": 18.643798828125004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Swiss_German_(n=9)",
@@ -3498,7 +3498,7 @@
         ],
         "lat": 47.41453983031356,
         "lng": 8.217773437500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Swiss_Italian_(Lombard)_(n=4)",
@@ -3531,7 +3531,7 @@
         ],
         "lat": 46.293850108768055,
         "lng": 9.008789062500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Piedmont_(Piedmontese)_(n=2)",
@@ -3564,7 +3564,7 @@
         ],
         "lat": 44.919210266667534,
         "lng": 7.624511718750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Aosta_Valley_(Valdotain)_(n=24)",
@@ -3597,7 +3597,7 @@
         ],
         "lat": 45.721626239362486,
         "lng": 7.410278320312501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Swiss_French_(Romand)_(n=8)",
@@ -3630,7 +3630,7 @@
         ],
         "lat": 46.987732335009646,
         "lng": 7.360839843750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Abruzzo_(Abruzzese)_(n=19)",
@@ -3663,7 +3663,7 @@
         ],
         "lat": 42.45589916952659,
         "lng": 13.9306640625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Umbria_(Umbrian)_(n=15)",
@@ -3696,7 +3696,7 @@
         ],
         "lat": 43.01280884092622,
         "lng": 12.502441406250002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Marche_(Marchigiano)_(n=18)",
@@ -3729,7 +3729,7 @@
         ],
         "lat": 43.421017908565744,
         "lng": 13.150634765625002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Trentino_(n=7)",
@@ -3762,7 +3762,7 @@
         ],
         "lat": 46.395982111626815,
         "lng": 11.1676025390625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Friuli_(Friulian)_(n=18)",
@@ -3795,7 +3795,7 @@
         ],
         "lat": 46.21018364556926,
         "lng": 12.919921875000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Austrian_Lower_Austria_(n=1)",
@@ -3828,7 +3828,7 @@
         ],
         "lat": 48.334037803064106,
         "lng": 15.842285156250002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Austrian_Upper_Austria_(n=5)",
@@ -3861,7 +3861,7 @@
         ],
         "lat": 48.275654836153414,
         "lng": 13.9306640625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Austrian_Styria_(n=3)",
@@ -3894,7 +3894,7 @@
         ],
         "lat": 47.241955186065816,
         "lng": 15.227050781250002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Baden-Wurttemberg_(n=5)",
@@ -3927,7 +3927,7 @@
         ],
         "lat": 48.502107549997085,
         "lng": 8.470458984375002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Rhineland-Palatinate_(n=8)",
@@ -3960,7 +3960,7 @@
         ],
         "lat": 49.993621489199725,
         "lng": 7.294921875000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Lower_Saxony_(n=11)",
@@ -3993,7 +3993,7 @@
         ],
         "lat": 53.07416743781508,
         "lng": 8.789062500000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Schleswig-Holstein_(n=6)",
@@ -4026,7 +4026,7 @@
         ],
         "lat": 54.4121915124162,
         "lng": 9.503173828125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Mecklenburg_(n=5)",
@@ -4059,7 +4059,7 @@
         ],
         "lat": 53.89768477970818,
         "lng": 12.513427734375002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Saxony-Anhalt_(n=5)",
@@ -4092,7 +4092,7 @@
         ],
         "lat": 51.98492825249176,
         "lng": 11.755371093750002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_West_Pomerania_Voivodeship_(n=3)",
@@ -4125,7 +4125,7 @@
         ],
         "lat": 53.96878442421997,
         "lng": 15.853271484375002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Polish_Kuyavia-Pomerania_Bydgoszcz_(n=70)",
@@ -4158,7 +4158,7 @@
         ],
         "lat": 53.17311171049193,
         "lng": 18.028564453125004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Polish_Silesia_(n=2)",
@@ -4191,7 +4191,7 @@
         ],
         "lat": 50.56929477400039,
         "lng": 19.017333984375004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Polish_Ukraine_Galicia_(n=2)",
@@ -4224,7 +4224,7 @@
         ],
         "lat": 50.77794977805584,
         "lng": 23.13720703125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ukrainian_Kiev_(n=1)",
@@ -4257,7 +4257,7 @@
         ],
         "lat": 50.49246135390632,
         "lng": 30.618896484375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ukrainian_Lviv_(n=12)",
@@ -4290,7 +4290,7 @@
         ],
         "lat": 49.837942145457234,
         "lng": 23.88427734375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ukrainian_Donetsk_(n=3)",
@@ -4323,7 +4323,7 @@
         ],
         "lat": 48.07854660211957,
         "lng": 37.74902343750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ukrainian_Sumy_(n=16)",
@@ -4356,7 +4356,7 @@
         ],
         "lat": 50.95844246974137,
         "lng": 34.29931640625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Smolensk_(n=15)",
@@ -4389,7 +4389,7 @@
         ],
         "lat": 55.166261824199324,
         "lng": 33.04687500000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Nogai_Stavropol_(n=7)",
@@ -4422,7 +4422,7 @@
         ],
         "lat": 44.9959312330103,
         "lng": 43.43994140625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Georgian_Tbilisi_(n=9)",
@@ -4455,7 +4455,7 @@
         ],
         "lat": 41.73851914240073,
         "lng": 44.83520507812501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Oil_Centre-Val_de_Loire_Indre_(n=1)",
@@ -4488,7 +4488,7 @@
         ],
         "lat": 47.44307257316418,
         "lng": 1.8017578125000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "English_Cumbria_(n=1)",
@@ -4521,7 +4521,7 @@
         ],
         "lat": 54.57833642386151,
         "lng": -3.0047607421875,
-        "visible": true
+        "visible": false
       },
       {
         "name": "English_Northumbria_(n=1)",
@@ -4554,7 +4554,7 @@
         ],
         "lat": 54.3615624410842,
         "lng": -1.2469482421875002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "English_North_East_England_(n=1)",
@@ -4587,7 +4587,7 @@
         ],
         "lat": 54.93633728901282,
         "lng": -1.6754150390625002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Scottish_Argyll_and_Bute_(n=1)",
@@ -4620,7 +4620,7 @@
         ],
         "lat": 56.46855975598276,
         "lng": -5.822753906250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Scottish_Orkney_(Orcadian)_(n=39)",
@@ -4653,7 +4653,7 @@
         ],
         "lat": 58.926726381185794,
         "lng": -3.1530761718750004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Czech_(n=175)",
@@ -4686,7 +4686,7 @@
         ],
         "lat": 50.092377172881264,
         "lng": 14.150390625000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Slovak_(n=6)",
@@ -4719,7 +4719,7 @@
         ],
         "lat": 48.83589619071234,
         "lng": 19.599609375000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Hungarian_Northern_Hungary_(n=49)",
@@ -4752,7 +4752,7 @@
         ],
         "lat": 48.2393839141214,
         "lng": 21.1376953125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Hungarian_Southern_Transdanubia_(n=29)",
@@ -4785,7 +4785,7 @@
         ],
         "lat": 46.13819846514404,
         "lng": 18.099975585937504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Hungarian_Western/Central_Transdanubia_(n=108)",
@@ -4818,7 +4818,7 @@
         ],
         "lat": 47.24188623799652,
         "lng": 17.666015625000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Hungarian_Alfold_North_(n=73)",
@@ -4851,7 +4851,7 @@
         ],
         "lat": 47.565312505520495,
         "lng": 21.7584228515625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Hungarian_Alfold_South_(n=57)",
@@ -4884,7 +4884,7 @@
         ],
         "lat": 46.39258468816326,
         "lng": 20.637817382812504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Hungarian_Transylvania_and_Partium_(n=20)",
@@ -4917,7 +4917,7 @@
         ],
         "lat": 46.785009623569046,
         "lng": 24.169921875,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Romanian_Alba_(n=5)",
@@ -4950,7 +4950,7 @@
         ],
         "lat": 46.053992164882395,
         "lng": 23.626098632812504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Romanian_Arges_(n=2)",
@@ -4983,7 +4983,7 @@
         ],
         "lat": 45.06218621877299,
         "lng": 24.224853515625004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Moldovan_(n=36)",
@@ -5016,7 +5016,7 @@
         ],
         "lat": 47.323695451026715,
         "lng": 28.498535156250004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bulgarian_Gabrovo_(n=1)",
@@ -5049,7 +5049,7 @@
         ],
         "lat": 42.90010235435692,
         "lng": 25.2630615234375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bulgarian_Varna_(n=2)",
@@ -5082,7 +5082,7 @@
         ],
         "lat": 43.21320493632696,
         "lng": 27.883300781250004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bulgarian_Burgas_(n=4)",
@@ -5115,7 +5115,7 @@
         ],
         "lat": 42.52898742740237,
         "lng": 27.427368164062504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bulgarian_Sofia_(n=6)",
@@ -5148,7 +5148,7 @@
         ],
         "lat": 42.698471063812995,
         "lng": 23.367919921875004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_East_Thrace_(n=1)",
@@ -5181,7 +5181,7 @@
         ],
         "lat": 41.07125759574122,
         "lng": 24.587402343750004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Thessaly_(n=12)",
@@ -5214,7 +5214,7 @@
         ],
         "lat": 39.554977023016725,
         "lng": 22.423095703125004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Dodecanese",
@@ -5247,7 +5247,7 @@
         ],
         "lat": 36.21827704947772,
         "lng": 27.932739257812504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Izmir_(n=9)",
@@ -5280,7 +5280,7 @@
         ],
         "lat": 38.444994458516376,
         "lng": 27.169189453125004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Bursa_(n=6)",
@@ -5313,7 +5313,7 @@
         ],
         "lat": 40.27898450958151,
         "lng": 28.916015625000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Balkans_(Balkan_Profile)_(n=7)",
@@ -5346,7 +5346,7 @@
         ],
         "lat": 41.803835890591614,
         "lng": 26.894531250000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Kayseri_(n=35)",
@@ -5379,7 +5379,7 @@
         ],
         "lat": 38.70249104067175,
         "lng": 35.45288085937501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Adana_(n=28)",
@@ -5412,7 +5412,7 @@
         ],
         "lat": 37.006935691094384,
         "lng": 35.48583984375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kurdish_Kurmanji_Turkey_Adiyaman_(n=4)",
@@ -5445,7 +5445,7 @@
         ],
         "lat": 37.67529346245569,
         "lng": 38.21594238281251,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kurdish_Kurmanji_Turkey_Mardin_(n=21)",
@@ -5478,7 +5478,7 @@
         ],
         "lat": 37.283110409778494,
         "lng": 40.71533203125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kurdish_Zaza_Erzincan_(n=9)",
@@ -5511,7 +5511,7 @@
         ],
         "lat": 39.73229046155504,
         "lng": 39.26513671875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Van_(n=2)",
@@ -5544,7 +5544,7 @@
         ],
         "lat": 38.46236544721898,
         "lng": 43.34106445312501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Azeri_Iran_West_Azerbaijan_Maku_(n=2)",
@@ -5577,7 +5577,7 @@
         ],
         "lat": 37.77052948074043,
         "lng": 44.967041015625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Azeri_Iran_East_Azerbaijan_Bostanabad_(n=1)",
@@ -5610,7 +5610,7 @@
         ],
         "lat": 38.04794095816446,
         "lng": 46.878662109375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Azeri_Iran_Zanjan_(n=5)",
@@ -5643,7 +5643,7 @@
         ],
         "lat": 36.5363536219438,
         "lng": 48.54858398437501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kurdish_Iran_Kermanshah_(n=3)",
@@ -5676,7 +5676,7 @@
         ],
         "lat": 34.38864258277145,
         "lng": 46.62597656250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Persian_Tehran_(n=2)",
@@ -5709,7 +5709,7 @@
         ],
         "lat": 35.817073259272526,
         "lng": 51.28417968750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Persian_Qom_(n=1)",
@@ -5742,7 +5742,7 @@
         ],
         "lat": 34.65085333796561,
         "lng": 50.66894531250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Persian_Isfahan_(n=6)",
@@ -5775,7 +5775,7 @@
         ],
         "lat": 32.78748994287909,
         "lng": 51.67968750000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Persian_Fars_Shiraz_(n=13)",
@@ -5808,7 +5808,7 @@
         ],
         "lat": 29.61245253132071,
         "lng": 52.51464843750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Persian_Kerman_(n=20)",
@@ -5841,7 +5841,7 @@
         ],
         "lat": 30.373495261665248,
         "lng": 56.84326171875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Pashtun_Afghanistan_Kabul_(n=2)",
@@ -5874,7 +5874,7 @@
         ],
         "lat": 34.59659393902546,
         "lng": 69.21386718750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Pashtun_Afghanistan_Kandahar_(n=2)",
@@ -5907,7 +5907,7 @@
         ],
         "lat": 31.709625229837446,
         "lng": 65.36865234375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Tajik_Herat_(n=3)",
@@ -5940,7 +5940,7 @@
         ],
         "lat": 34.179465050099495,
         "lng": 62.68798828125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Tajik_(n=16)",
@@ -5973,7 +5973,7 @@
         ],
         "lat": 38.822376735652306,
         "lng": 71.03759765625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kyrgyz_(n=2)",
@@ -6006,7 +6006,7 @@
         ],
         "lat": 41.639499225056895,
         "lng": 74.83886718750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kazakh_Kazakhstan_Karaganda_(n=52)",
@@ -6039,7 +6039,7 @@
         ],
         "lat": 49.8096234973146,
         "lng": 73.16894531250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kazakh_Kazakhstan_Aktobe_(n=4)",
@@ -6072,7 +6072,7 @@
         ],
         "lat": 50.28903578346797,
         "lng": 57.17285156250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kazakh_Kazakhstan_Atyrau_(n=3)",
@@ -6105,7 +6105,7 @@
         ],
         "lat": 47.115357086461884,
         "lng": 51.74560546875,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kazakh_Kazakhstan_Kyzylorda_(n=27)",
@@ -6138,7 +6138,7 @@
         ],
         "lat": 44.94920061217935,
         "lng": 65.52246093750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kazakh_Kazakhstan_Almaty_(n=44)",
@@ -6171,7 +6171,7 @@
         ],
         "lat": 43.277760428979605,
         "lng": 76.94824218750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Altai-Kizhi_(n=36)",
@@ -6204,7 +6204,7 @@
         ],
         "lat": 51.027191124189,
         "lng": 86.923828125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Mongol_Mongolia_(n=56)",
@@ -6237,7 +6237,7 @@
         ],
         "lat": 47.03943253994238,
         "lng": 103.35937500000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Mongol_Inner_Mongolia_Baotu_(Inner_Mongolia_Profile)_(n=19)",
@@ -6270,7 +6270,7 @@
         ],
         "lat": 43.500834035510316,
         "lng": 114.56542968750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Korean_(n=102)",
@@ -6303,7 +6303,7 @@
         ],
         "lat": 38.37650738124481,
         "lng": 128.14453125000003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Korean_Seoul_(n=26)",
@@ -6336,7 +6336,7 @@
         ],
         "lat": 37.614914600184626,
         "lng": 127.13378906250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Han_Beijing_(Northern_China_Profile)_(n=65)",
@@ -6369,7 +6369,7 @@
         ],
         "lat": 40.07646462931413,
         "lng": 116.3671875,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Han_Shanghai_(n=4)",
@@ -6402,7 +6402,7 @@
         ],
         "lat": 31.27971526366962,
         "lng": 121.28906250000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Han_Fujian_Fuzhou_(n=5)",
@@ -6435,7 +6435,7 @@
         ],
         "lat": 26.117400052279926,
         "lng": 119.42138671875,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Han_Jiangxi_Nanchang_(n=1)",
@@ -6468,7 +6468,7 @@
         ],
         "lat": 28.575159446696382,
         "lng": 115.94970703125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Han_Hunan_(n=71)",
@@ -6501,7 +6501,7 @@
         ],
         "lat": 27.839131358659344,
         "lng": 111.73095703125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Zhuang_Guangxi_Chongzuo_(n=10)",
@@ -6534,7 +6534,7 @@
         ],
         "lat": 23.856032382595718,
         "lng": 108.87451171875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Zhuang_Guizhou_Congjiang_(n=49)",
@@ -6567,7 +6567,7 @@
         ],
         "lat": 27.156775877418536,
         "lng": 107.09472656250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Han_Chongqing_(n=3)",
@@ -6600,7 +6600,7 @@
         ],
         "lat": 30.220810235164464,
         "lng": 107.90771484375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Han_Henan_Pingqiao_(n=10)",
@@ -6633,7 +6633,7 @@
         ],
         "lat": 33.75157379804977,
         "lng": 113.34594726562501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Han_Shandong_Jinan_(n=10)",
@@ -6666,7 +6666,7 @@
         ],
         "lat": 36.685469931671925,
         "lng": 117.11425781250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Han_Shanxi_Taiyuan_(n=8)",
@@ -6699,7 +6699,7 @@
         ],
         "lat": 37.92664576241394,
         "lng": 112.43408203125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Tibetan_Lhasa_(n=9)",
@@ -6732,7 +6732,7 @@
         ],
         "lat": 29.918433967225464,
         "lng": 90.79101562500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Han_Sichuan_Chengdu_(n=8)",
@@ -6765,7 +6765,7 @@
         ],
         "lat": 30.93838051668359,
         "lng": 103.88671875000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bengali_Bangladesh_(n=90)",
@@ -6798,7 +6798,7 @@
         ],
         "lat": 23.56435375687853,
         "lng": 90.35156250000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Indian_South_(n=27)",
@@ -6831,7 +6831,7 @@
         ],
         "lat": 13.455876734012602,
         "lng": 79.80468750000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kashmiri_India_Muslim",
@@ -6864,7 +6864,7 @@
         ],
         "lat": 34.012817670449394,
         "lng": 74.33349609375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Punjabi_Hindu_India_(n=26)",
@@ -6897,7 +6897,7 @@
         ],
         "lat": 30.845910339273406,
         "lng": 75.58593750000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Rajasthani_Brahmin_(n=8)",
@@ -6930,7 +6930,7 @@
         ],
         "lat": 26.883092279865956,
         "lng": 73.89404296875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Brahmin_Gujarat",
@@ -6963,7 +6963,7 @@
         ],
         "lat": 22.634511891373418,
         "lng": 71.69677734375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Brahmin_Maharashtra",
@@ -6996,7 +6996,7 @@
         ],
         "lat": 18.896566629650522,
         "lng": 75.56396484375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Brahmin_Uttar_Pradesh_Central",
@@ -7029,7 +7029,7 @@
         ],
         "lat": 27.058079445622766,
         "lng": 81.14501953125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Mawasi_Chhattisgarh",
@@ -7062,7 +7062,7 @@
         ],
         "lat": 21.6577592831373,
         "lng": 81.95800781250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bengali_India_(n=1)",
@@ -7095,7 +7095,7 @@
         ],
         "lat": 22.978261480285283,
         "lng": 87.42919921875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Naga_Myanmar_(n=28)",
@@ -7128,7 +7128,7 @@
         ],
         "lat": 24.024644228450423,
         "lng": 95.29541015625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Vietnamese_(Kinh_Profile)_(n=104)",
@@ -7161,7 +7161,7 @@
         ],
         "lat": 16.678927697751256,
         "lng": 107.40234375000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Lao_(n=34)",
@@ -7194,7 +7194,7 @@
         ],
         "lat": 19.952349797323667,
         "lng": 102.96386718750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Cambodian_(n=3)",
@@ -7227,7 +7227,7 @@
         ],
         "lat": 12.083316417641925,
         "lng": 104.43603515625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Thai_(n=11)",
@@ -7260,7 +7260,7 @@
         ],
         "lat": 13.774594496270478,
         "lng": 100.26123046875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Malay_Malaysia_(n=9)",
@@ -7293,7 +7293,7 @@
         ],
         "lat": 5.572685213691396,
         "lng": 101.99707031250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Malay_Singapore_(n=30)",
@@ -7326,7 +7326,7 @@
         ],
         "lat": 1.8036097674962006,
         "lng": 103.97460937500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Indonesian_Jakarta_(Java/Bali_Profile)_(n=56)",
@@ -7359,7 +7359,7 @@
         ],
         "lat": -6.136416337705318,
         "lng": 106.78710937500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Dusun_Brunei_(n=20)",
@@ -7392,7 +7392,7 @@
         ],
         "lat": 4.169170706250305,
         "lng": 114.78515625000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Papuan_Coastal_(n=10)",
@@ -7425,7 +7425,7 @@
         ],
         "lat": -9.404785186442222,
         "lng": 147.26074218750003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Papuan_Highland_(n=7)",
@@ -7458,7 +7458,7 @@
         ],
         "lat": -5.485352801377234,
         "lng": 141.15234375000003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Australian_(n=16)",
@@ -7491,7 +7491,7 @@
         ],
         "lat": -33.90737274663459,
         "lng": 150.64453125000003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Australian_New_South_Wales_(n=97)",
@@ -7524,7 +7524,7 @@
         ],
         "lat": -31.542591916412203,
         "lng": 149.06250000000003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Australian_Queensland_(n=47)",
@@ -7557,7 +7557,7 @@
         ],
         "lat": -20.34419331449243,
         "lng": 144.84375000000003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Australian_South_Australia_(n=24)",
@@ -7590,7 +7590,7 @@
         ],
         "lat": -27.372455499552412,
         "lng": 134.64843750000003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Australian_Tasmania_(n=29)",
@@ -7623,7 +7623,7 @@
         ],
         "lat": -42.098389352593856,
         "lng": 146.95312500000003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Australian_Victoria_(n=78)",
@@ -7656,7 +7656,7 @@
         ],
         "lat": -37.64797507375197,
         "lng": 144.18457031250003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Australian_Western_Australia_(n=14)",
@@ -7689,7 +7689,7 @@
         ],
         "lat": -28.18756058554098,
         "lng": 122.03613281250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Australian_Aboriginal_(n=3)",
@@ -7722,7 +7722,7 @@
         ],
         "lat": -16.678065599855145,
         "lng": 133.24218750000003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-New_Zealander_(n=80)",
@@ -7755,7 +7755,7 @@
         ],
         "lat": -43.58008299554248,
         "lng": 171.298828125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Argentine_Octavón_(n=888)",
@@ -7786,9 +7786,9 @@
           -0.00032672973,
           0.0008293964
         ],
-        "lat": -32.71058919985151,
-        "lng": -61.40048167879918,
-        "visible": true
+        "lat": -32.78763374951762,
+        "lng": -61.386560459834364,
+        "visible": false
       },
       {
         "name": "Uruguayan_Colonia",
@@ -7821,73 +7821,7 @@
         ],
         "lat": -34.21627233618902,
         "lng": -57.48046875000001,
-        "visible": true
-      },
-      {
-        "name": "Mapuche_Huilliche_Chile_(n=10)",
-        "vec": [
-          0.0554319,
-          -0.3043543,
-          0.1158892,
-          0.0903431,
-          -0.1090356,
-          -0.0187972,
-          -0.2853499,
-          -0.345678,
-          -0.0132533,
-          -0.0142509,
-          -0.0015751,
-          -0.0016335,
-          0.0021257,
-          0.0223774,
-          -0.0087267,
-          0.0035269,
-          0.0045113,
-          0.0018497,
-          0.0009051,
-          0.0004752,
-          -0.00141,
-          0.0016198,
-          -0.0043876,
-          -0.0031931,
-          -0.0036163
-        ],
-        "lat": -43.29273632624562,
-        "lng": -72.33398437500001,
-        "visible": true
-      },
-      {
-        "name": "Chilean_Mestizo_(n=281)",
-        "vec": [
-          0.082818744,
-          -0.031789594,
-          0.06721906,
-          0.034711783,
-          -0.018829171,
-          -0.0080110107,
-          -0.11763414,
-          -0.13742613,
-          0.0078087402,
-          0.010132399,
-          0.0019193025,
-          0.0025161246,
-          -0.0059532064,
-          0.0015141174,
-          0.0010168612,
-          0.00041030249,
-          0.00037169751,
-          0.00018633808,
-          0.0000078967972,
-          0.000065893238,
-          0.0021325872,
-          -0.0013239324,
-          -0.00020720285,
-          0.0002372242,
-          0.0013401495
-        ],
-        "lat": -27.5725079372483,
-        "lng": -70.03149243303004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Chilean_Indo-Mestizo_(n=2)",
@@ -7953,7 +7887,7 @@
         ],
         "lat": -17.392865541481946,
         "lng": -66.35742187500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bolivian_Mestizo_La_Paz_(n=4)",
@@ -7986,7 +7920,7 @@
         ],
         "lat": -16.44722766478825,
         "lng": -68.18115234375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bolivian_Mestizo_Potosi_(n=1)",
@@ -8019,7 +7953,7 @@
         ],
         "lat": -20.653080061331643,
         "lng": -66.62109375000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Peruvian_Indo-Mestizo_(n=104)",
@@ -8052,7 +7986,7 @@
         ],
         "lat": -10.400750558488141,
         "lng": -73.71826171875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ecuadorian_Mestizo_(n=37)",
@@ -8085,7 +8019,7 @@
         ],
         "lat": -1.86717646022685,
         "lng": -79.27734375000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Colombian_Mestizo_(n=287)",
@@ -8118,7 +8052,7 @@
         ],
         "lat": 4.499811587226679,
         "lng": -71.03759765625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Colombian_Mestizo_(Highly_SSA-Mixed)_(n=12)",
@@ -8151,7 +8085,7 @@
         ],
         "lat": 2.789362353907648,
         "lng": -76.35498046875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Colombian_Indo-Mestizo_(n=1)",
@@ -8184,7 +8118,7 @@
         ],
         "lat": 1.5818052746281779,
         "lng": -71.56494140625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Afro-Colombian_(n=2)",
@@ -8217,7 +8151,7 @@
         ],
         "lat": 7.318187464756654,
         "lng": -76.26708984375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Afro-Venezuelan_(n=1)",
@@ -8250,7 +8184,7 @@
         ],
         "lat": 10.724632139255984,
         "lng": -71.74072265625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Venezuelan_Indo-Moreno_(n=1)",
@@ -8283,7 +8217,7 @@
         ],
         "lat": 9.44855630321337,
         "lng": -69.96093750000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Venezuelan_Moreno_(n=87)",
@@ -8316,7 +8250,7 @@
         ],
         "lat": 10.20673926275437,
         "lng": -63.14941406250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Afro-Brazilian_(n=16)",
@@ -8349,7 +8283,7 @@
         ],
         "lat": -5.751763163752319,
         "lng": -43.02246093750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Peruvian_Mestizo_(n=37)",
@@ -8382,7 +8316,7 @@
         ],
         "lat": -13.624135382290516,
         "lng": -71.93847656250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Panamanian_Mestizo_(n=82)",
@@ -8415,7 +8349,7 @@
         ],
         "lat": 8.124664526500522,
         "lng": -81.09008789062501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Honduran_Mestizo_(n=17)",
@@ -8448,7 +8382,7 @@
         ],
         "lat": 15.622705796433403,
         "lng": -86.52832031250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Salvadoran_Mestizo_(n=31)",
@@ -8481,7 +8415,7 @@
         ],
         "lat": 13.689100678815956,
         "lng": -89.01123046875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Guatemalan_Ladino_(n=42)",
@@ -8514,7 +8448,7 @@
         ],
         "lat": 15.644509546665596,
         "lng": -90.13183593750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Cuban_Blanco_(n=429)",
@@ -8547,7 +8481,7 @@
         ],
         "lat": 23.07932929761872,
         "lng": -82.46337890625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Cuban_Mestizo_(n=15)",
@@ -8580,7 +8514,7 @@
         ],
         "lat": 22.00397796098987,
         "lng": -79.27734375000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Cuban_Mulato_(n=1)",
@@ -8613,7 +8547,7 @@
         ],
         "lat": 20.59127184270542,
         "lng": -76.25610351562501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Afro-Haitian_(n=31)",
@@ -8646,7 +8580,7 @@
         ],
         "lat": 19.48782598754613,
         "lng": -72.27905273437501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Dominican_(n=123)",
@@ -8679,7 +8613,7 @@
         ],
         "lat": 18.729709155597543,
         "lng": -69.85107421875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Afro-Jamaican_(n=46)",
@@ -8712,7 +8646,7 @@
         ],
         "lat": 18.292768611754628,
         "lng": -77.255859375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Puerto_Rican_(n=1069)",
@@ -8745,7 +8679,7 @@
         ],
         "lat": 18.146594132172982,
         "lng": -66.51123046875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Mexican_Mestizo_(n=772)",
@@ -8778,7 +8712,7 @@
         ],
         "lat": 25.641008022103506,
         "lng": -102.04101562500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Mexican_Indo-Mestizo_(n=46)",
@@ -8811,7 +8745,7 @@
         ],
         "lat": 19.103057697519137,
         "lng": -97.82226562500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "African_American_(n=115)",
@@ -8844,7 +8778,7 @@
         ],
         "lat": 33.541707211718055,
         "lng": -87.51708984375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French-American_Louisiana_(Lousiana_Creole/Cajun)_(n=34)",
@@ -8877,7 +8811,7 @@
         ],
         "lat": 29.917827277643294,
         "lng": -91.53808593750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Alabama_(n=73)",
@@ -8910,7 +8844,7 @@
         ],
         "lat": 30.921692943585903,
         "lng": -87.73681640625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Florida_(n=22)",
@@ -8943,7 +8877,7 @@
         ],
         "lat": 26.21595349397093,
         "lng": -80.2880859375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_New_York_(n=77)",
@@ -8976,7 +8910,7 @@
         ],
         "lat": 42.924219719181394,
         "lng": -75.77270507812501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_New_Jersey_(n=15)",
@@ -9009,7 +8943,7 @@
         ],
         "lat": 40.263132652036894,
         "lng": -74.28955078125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Pennsylvania_(n=133)",
@@ -9042,7 +8976,7 @@
         ],
         "lat": 40.763787675046316,
         "lng": -77.62939453125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Ohio_(n=86)",
@@ -9075,7 +9009,7 @@
         ],
         "lat": 41.161982196476615,
         "lng": -83.10058593750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German-American_Wisconsin_(n=16)",
@@ -9108,7 +9042,7 @@
         ],
         "lat": 45.088236925159556,
         "lng": -90,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Washington_(n=22)",
@@ -9141,7 +9075,7 @@
         ],
         "lat": 47.87093659284212,
         "lng": -122.29980468750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_California_(n=49)",
@@ -9174,7 +9108,7 @@
         ],
         "lat": 38.168504863468186,
         "lng": -122.45361328125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Colorado_(n=5)",
@@ -9207,7 +9141,7 @@
         ],
         "lat": 38.90873603523129,
         "lng": -105.49072265625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Hispano_New_Mexico_(Neomexicano)_(n=18)",
@@ -9240,7 +9174,7 @@
         ],
         "lat": 32.620785961376704,
         "lng": -107.53417968750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Montana_(n=4)",
@@ -9273,7 +9207,7 @@
         ],
         "lat": 47.36801868090417,
         "lng": -109.5556640625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Wyoming_(n=5)",
@@ -9306,7 +9240,7 @@
         ],
         "lat": 43.133640386485034,
         "lng": -107.77587890625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Idaho_(n=12)",
@@ -9339,7 +9273,7 @@
         ],
         "lat": 43.65963018583629,
         "lng": -113.95019531250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Oregon_(n=17)",
@@ -9372,7 +9306,7 @@
         ],
         "lat": 44.9020644940793,
         "lng": -123.44238281250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Hispano_Texas_(Tejano)_(n=6)",
@@ -9405,7 +9339,7 @@
         ],
         "lat": 28.46097805025814,
         "lng": -98.87695312500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Texas_(n=194)",
@@ -9438,7 +9372,7 @@
         ],
         "lat": 33.02739149034008,
         "lng": -97.82226562500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Arizona_(n=5)",
@@ -9471,7 +9405,7 @@
         ],
         "lat": 35.42464383824111,
         "lng": -110.7861328125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_North_Carolina_(n=101)",
@@ -9504,7 +9438,7 @@
         ],
         "lat": 35.62122627937502,
         "lng": -76.20117187500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German-American_Missouri_(n=1)",
@@ -9537,7 +9471,7 @@
         ],
         "lat": 38.599534299482634,
         "lng": -90.46142578125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Kentucky_(n=125)",
@@ -9570,7 +9504,7 @@
         ],
         "lat": 37.57848630526096,
         "lng": -85.166015625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Canadian_Alberta_(n=8)",
@@ -9603,7 +9537,7 @@
         ],
         "lat": 51.09693300924464,
         "lng": -114.03808593750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Canadian_British_Columbia_(n=12)",
@@ -9636,7 +9570,7 @@
         ],
         "lat": 49.26857938180207,
         "lng": -124.65087890625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Canadian_Newfoundland_and_Labrador_(n=471)",
@@ -9669,7 +9603,7 @@
         ],
         "lat": 48.180338454177225,
         "lng": -57.04101562500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Canadian_Ontario_(n=65)",
@@ -9702,7 +9636,7 @@
         ],
         "lat": 48.01992614574414,
         "lng": -83.14453125000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French-Canadian_Quebec_(Quebecois)_(n=157)",
@@ -9735,7 +9669,7 @@
         ],
         "lat": 46.92033215106749,
         "lng": -71.14746093750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French-Canadian_New_Brunswick_(Acadian)_(n=16)",
@@ -9768,7 +9702,7 @@
         ],
         "lat": 47.69459575173933,
         "lng": -68.04931640625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Canadian_New_Brunswick_(n=16)",
@@ -9801,7 +9735,7 @@
         ],
         "lat": 46.062057177965265,
         "lng": -66.00585937500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian-American_New_York_(n=6)",
@@ -9834,7 +9768,7 @@
         ],
         "lat": 40.77262891257248,
         "lng": -73.89404296875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian-American_New_Jersey_(n=3)",
@@ -9867,7 +9801,7 @@
         ],
         "lat": 40.66439242568844,
         "lng": -74.16870117187501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Inuit_Alaska_(n=6)",
@@ -9900,7 +9834,7 @@
         ],
         "lat": 64.20541998240391,
         "lng": -141.50390625000003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Canadian_Metis_(n=6)",
@@ -9933,7 +9867,7 @@
         ],
         "lat": 57.0883930811493,
         "lng": -110.91796875000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Alaska_(n=3)",
@@ -9966,7 +9900,7 @@
         ],
         "lat": 60.501042419146394,
         "lng": -149.41406250000003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greenlander_East_(n=4)",
@@ -9999,7 +9933,7 @@
         ],
         "lat": 69.56534809485782,
         "lng": -28.037109375000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greenlander_West_(n=2)",
@@ -10032,7 +9966,7 @@
         ],
         "lat": 71.9931499253984,
         "lng": -51.06445312500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Icelandic_(n=12)",
@@ -10065,7 +9999,7 @@
         ],
         "lat": 65.21982059042725,
         "lng": -19.423828125000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Canadian_Metis_(n=6)",
@@ -10098,7 +10032,7 @@
         ],
         "lat": 54.72456244683193,
         "lng": -93.42773437500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Paraguayan_Mestizo_(n=100)",
@@ -10131,7 +10065,7 @@
         ],
         "lat": -23.967717804541476,
         "lng": -57.39257812500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kassena_Ghana_(n=50)",
@@ -10164,7 +10098,7 @@
         ],
         "lat": 7.7105457446874865,
         "lng": -1.3513183593750002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Mende_Sierra_Leone_(n=86)",
@@ -10197,7 +10131,7 @@
         ],
         "lat": 8.537763125473377,
         "lng": -11.601562500000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Mandinka_Senegal_(n=19)",
@@ -10230,7 +10164,7 @@
         ],
         "lat": 14.39039885969919,
         "lng": -14.194335937500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Malinke_Mali_(n=49)",
@@ -10263,7 +10197,7 @@
         ],
         "lat": 18.017995862183234,
         "lng": -1.0107421875000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kongo_Republic_of_the_Congo_(n=2)",
@@ -10296,7 +10230,7 @@
         ],
         "lat": -1.011177170111902,
         "lng": 17.973632812500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Tutsi_Rwanda_(n=8)",
@@ -10329,7 +10263,7 @@
         ],
         "lat": -1.584754013780552,
         "lng": 31.201171875000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Twa_Uganda_(n=5)",
@@ -10362,7 +10296,7 @@
         ],
         "lat": 1.8411113956302565,
         "lng": 32.78320312500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "South_Sudanese_(n=10)",
@@ -10395,7 +10329,7 @@
         ],
         "lat": 7.622301066062308,
         "lng": 30.498046875000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Sudanese_Arab_Batahin_(n=14)",
@@ -10428,7 +10362,7 @@
         ],
         "lat": 16.614287392655037,
         "lng": 30.168457031250004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ovambo_Angola_(n=1)",
@@ -10461,7 +10395,7 @@
         ],
         "lat": -11.352683978062629,
         "lng": 16.787109375000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ovambo_Namibia_(n=9)",
@@ -10494,7 +10428,7 @@
         ],
         "lat": -22.997470881078343,
         "lng": 17.490234375000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-South_African_(n=5)",
@@ -10527,7 +10461,7 @@
         ],
         "lat": -31.428455137172403,
         "lng": 29.597167968750004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Afrikaner_(n=66)",
@@ -10560,7 +10494,7 @@
         ],
         "lat": -33.869455554798954,
         "lng": 18.522949218750004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "South_African_Bantu_(n=92)",
@@ -10593,7 +10527,7 @@
         ],
         "lat": -30.864408297895093,
         "lng": 21.005859375000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "South_African_Bantu_(n=92)",
@@ -10626,7 +10560,7 @@
         ],
         "lat": -30.788902529503872,
         "lng": 26.674804687500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Aragon_(Aragonese)_(n=5)",
@@ -10659,7 +10593,7 @@
         ],
         "lat": 41.137385491799044,
         "lng": -0.9008789062500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Extremadura_(Extremaduran)_(n=7)",
@@ -10692,7 +10626,7 @@
         ],
         "lat": 39.283289031503806,
         "lng": -6.240234375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_La_Rioja_(Riojan)_(n=11)",
@@ -10725,7 +10659,7 @@
         ],
         "lat": 42.3910259184395,
         "lng": -2.4279785156250004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Navarre_(Navarrese)_(n=2)",
@@ -10758,7 +10692,7 @@
         ],
         "lat": 42.58948972300744,
         "lng": -1.6040039062500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Cantabria_(Cantabrian)_(n=15)",
@@ -10791,7 +10725,7 @@
         ],
         "lat": 43.46281532565624,
         "lng": -3.8479614257812504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Asturias_(Asturian)_(n=4)",
@@ -10824,7 +10758,7 @@
         ],
         "lat": 43.32922708554252,
         "lng": -5.844726562500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Castile_and_Leon_Burgos_North_(Castilian)_(n=10)",
@@ -10857,7 +10791,7 @@
         ],
         "lat": 42.74301710697588,
         "lng": -3.5375976562500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Catalonia_Barcelones_(Catalan)_(n=5)",
@@ -10890,7 +10824,7 @@
         ],
         "lat": 41.39332710802377,
         "lng": 2.1313476562500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Valencia_Castellon_(Valencian)_(n=7)",
@@ -10923,7 +10857,7 @@
         ],
         "lat": 40.01922404219323,
         "lng": -0.010986328125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Valencia_Alicante_(Valencian)_(n=8)",
@@ -10956,7 +10890,7 @@
         ],
         "lat": 38.37193998587622,
         "lng": -0.5218505859375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Basque_France_(n=23)",
@@ -10989,7 +10923,7 @@
         ],
         "lat": 43.353156571530754,
         "lng": -1.5765380859375002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Basque_Spain_Navarre_Central-West_(n=11)",
@@ -11022,7 +10956,7 @@
         ],
         "lat": 42.88604374800459,
         "lng": -1.9720458984375002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Mexican_Mestizo_(n=772)",
@@ -11055,7 +10989,7 @@
         ],
         "lat": 29.305365129397103,
         "lng": -110.39062500000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Krasnodar_(n=1)",
@@ -11088,7 +11022,7 @@
         ],
         "lat": 45.80944963493673,
         "lng": 39.03991699218751,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Nogai_Karachay-Cherkessia_(n=11)",
@@ -11121,7 +11055,7 @@
         ],
         "lat": 43.605581928337216,
         "lng": 41.391039981211094,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kalmyk_(n=13)",
@@ -11154,7 +11088,7 @@
         ],
         "lat": 47.02496316484617,
         "lng": 45.15380859375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Volgograd_(n=1)",
@@ -11187,7 +11121,7 @@
         ],
         "lat": 49.741345137106954,
         "lng": 43.005720615680175,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Tatar_(n=17)",
@@ -11220,7 +11154,7 @@
         ],
         "lat": 55.33775990543587,
         "lng": 52.11870850300314,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Nizhny_Novgorod_(n=1)",
@@ -11253,7 +11187,7 @@
         ],
         "lat": 55.801449582584866,
         "lng": 42.71484375000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Tatar_Kazan_(n=15)",
@@ -11286,7 +11220,7 @@
         ],
         "lat": 55.813023478237525,
         "lng": 48.95846128506319,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Samara_(n=1)",
@@ -11319,7 +11253,7 @@
         ],
         "lat": 52.66985681920643,
         "lng": 47.724609375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Tatar_Ufa_(n=1)",
@@ -11352,7 +11286,7 @@
         ],
         "lat": 54.72490893415308,
         "lng": 55.81054687500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Vologda_(n=3)",
@@ -11385,7 +11319,7 @@
         ],
         "lat": 60.108676692207915,
         "lng": 43.17626953125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Tatar_Astrakhan_(Volga_Tatar-Mixed)_(n=2)",
@@ -11418,7 +11352,7 @@
         ],
         "lat": 46.39295000275853,
         "lng": 47.96630859375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Argentine_Euro-Mestizo",
@@ -11451,7 +11385,7 @@
         ],
         "lat": -35.00492584263832,
         "lng": -59.30773691531614,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Boliviano",
@@ -11484,7 +11418,7 @@
         ],
         "lat": -16.30007076344242,
         "lng": -63.32519531250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Peruvian",
@@ -11517,7 +11451,7 @@
         ],
         "lat": -11.932329271942546,
         "lng": -76.92626953125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ecuadorian",
@@ -11550,7 +11484,7 @@
         ],
         "lat": -0.2641271686722748,
         "lng": -78.59619140625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Colombian",
@@ -11583,7 +11517,7 @@
         ],
         "lat": 4.696935085414285,
         "lng": -74.04785156250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Venezolano",
@@ -11616,7 +11550,7 @@
         ],
         "lat": 10.529797261452579,
         "lng": -66.97265625000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Panameño",
@@ -11649,7 +11583,7 @@
         ],
         "lat": 9.03677144323218,
         "lng": -79.56298828125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Amerindian_Ecuador_(n=2)",
@@ -11682,7 +11616,7 @@
         ],
         "lat": -1.0991028726666439,
         "lng": -75.71777343750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Brazilian_Caboclo_(n=6)",
@@ -11715,7 +11649,7 @@
         ],
         "lat": -2.911802875439061,
         "lng": -50.64523529238718,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Amerindian_Brazil",
@@ -11748,7 +11682,7 @@
         ],
         "lat": -8.8424415774056,
         "lng": -54.22851562500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Occitan_Nouvelle-Aquitaine_Landes_Chalosse_(n=9)",
@@ -11781,7 +11715,7 @@
         ],
         "lat": 44.00104039372122,
         "lng": -1.197509765625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Oil_Normandy_Manche_(n=10)",
@@ -11814,7 +11748,7 @@
         ],
         "lat": 49.2461801081166,
         "lng": -1.417236328125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Oil_Normandy_Calvados_(n=5)",
@@ -11847,7 +11781,7 @@
         ],
         "lat": 49.2784914128002,
         "lng": 0.08239746093750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Oil_Hauts-de-France_Nord_(n=39)",
@@ -11880,7 +11814,7 @@
         ],
         "lat": 50.240286807317794,
         "lng": 3.2299804687500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Oil_Grand_Est_Moselle_(n=9)",
@@ -11913,7 +11847,7 @@
         ],
         "lat": 49.00896882058178,
         "lng": 6.163330078125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Oil_Grand_Est_Vosges_(n=1)",
@@ -11946,7 +11880,7 @@
         ],
         "lat": 48.23933188366613,
         "lng": 6.284179687500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Alsatian_Bas-Rhin_(n=44)",
@@ -11979,7 +11913,7 @@
         ],
         "lat": 48.034188412605225,
         "lng": 7.404785156250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Flemish_Belgium_(n=16)",
@@ -12012,7 +11946,7 @@
         ],
         "lat": 51.248012546832555,
         "lng": 4.372558593750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Dutch_Limburg_(n=7)",
@@ -12045,7 +11979,7 @@
         ],
         "lat": 51.21047552510094,
         "lng": 5.938110351562501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Dutch_South_(n=4)",
@@ -12078,7 +12012,7 @@
         ],
         "lat": 51.58744565888225,
         "lng": 5.042724609375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Dutch_Central_(n=27)",
@@ -12111,7 +12045,7 @@
         ],
         "lat": 52.221188212433034,
         "lng": 5.9710693359375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Dutch_North_(n=7)",
@@ -12144,7 +12078,7 @@
         ],
         "lat": 53.13340047784021,
         "lng": 6.218261718750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Berber_Morocco_Central_Atlas_Tamazight_Fez-Meknes_(n=1)",
@@ -12177,7 +12111,7 @@
         ],
         "lat": 33.96144633274771,
         "lng": -4.921875000000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Berber_Morocco_Riffian_(n=29)",
@@ -12210,7 +12144,7 @@
         ],
         "lat": 35.070449938365485,
         "lng": -3.0541992187500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Berber_Morocco_Shilha_(n=21)",
@@ -12243,7 +12177,7 @@
         ],
         "lat": 31.802956323732086,
         "lng": -8.228759765625002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Moroccan_Arab_(n=24)",
@@ -12276,7 +12210,7 @@
         ],
         "lat": 35.21428117920383,
         "lng": -5.5426025390625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Moroccan_Arab_Casablanca_(n=9)",
@@ -12309,7 +12243,7 @@
         ],
         "lat": 33.33043425786248,
         "lng": -7.712402343750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Moroccan_Arab_Errachidia_(n=2)",
@@ -12342,7 +12276,7 @@
         ],
         "lat": 31.98036721257873,
         "lng": -4.460449218750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Moroccan_Arab_Oujda_(n=4)",
@@ -12375,7 +12309,7 @@
         ],
         "lat": 34.67795688086794,
         "lng": -1.9445800781250002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Berber_Morocco_Central_Atlas_Tamazight_(n=7)",
@@ -12408,7 +12342,7 @@
         ],
         "lat": 32.6949501299129,
         "lng": -5.449218750000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bedouin_Algeria_(n=6)",
@@ -12441,7 +12375,7 @@
         ],
         "lat": 28.903983886808522,
         "lng": 9.008789062500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Berber_Algeria_Kabyle_(n=25)",
@@ -12474,7 +12408,7 @@
         ],
         "lat": 35.96020273459614,
         "lng": 4.570312500000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Berber_Algeria_Shawiya_(n=8)",
@@ -12507,7 +12441,7 @@
         ],
         "lat": 35.272511347168226,
         "lng": 7.734375000000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Berber_Tunisia_East_Zenati_Matmata_(n=13)",
@@ -12540,7 +12474,7 @@
         ],
         "lat": 34.60597142429946,
         "lng": 9.448242187500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Tunisian_ArabSfax(n=6)",
@@ -12573,7 +12507,7 @@
         ],
         "lat": 34.84070726723175,
         "lng": 10.744628906250002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Tunisian_ArabSousse(n=2)",
@@ -12606,7 +12540,7 @@
         ],
         "lat": 35.88863489345862,
         "lng": 10.579833984375002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Tunisian_ArabTunis(n=11)",
@@ -12639,7 +12573,7 @@
         ],
         "lat": 36.87045217669429,
         "lng": 10.173339843750002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Sicily_Catania_(Sicilian)_(n=3)",
@@ -12672,7 +12606,7 @@
         ],
         "lat": 37.535645442291994,
         "lng": 15.029296875000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Sicily_Palermo_(Sicilian)_(n=2)",
@@ -12705,7 +12639,7 @@
         ],
         "lat": 38.14274038565128,
         "lng": 13.337402343750002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Sicily_Syracuse_(Sicilian)_(n=8)",
@@ -12738,7 +12672,7 @@
         ],
         "lat": 37.072633191051224,
         "lng": 15.281982421875002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Sicily_West_(Sicilian)_(n=8)",
@@ -12771,7 +12705,7 @@
         ],
         "lat": 37.72704300762741,
         "lng": 12.678222656250002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Calabria_Reggio_Calabria_(Calabrese)_(n=23)",
@@ -12804,7 +12738,7 @@
         ],
         "lat": 38.09594625220399,
         "lng": 15.710449218750002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Apulia_(Salentine)_(n=1)",
@@ -12837,7 +12771,7 @@
         ],
         "lat": 40.60572000307083,
         "lng": 17.578125000000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Molise_(Molisan)_(n=3)",
@@ -12870,7 +12804,7 @@
         ],
         "lat": 41.67686194671351,
         "lng": 14.578857421875002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Campania_Benevento_(Campanian)_(n=2)",
@@ -12903,7 +12837,7 @@
         ],
         "lat": 41.158137085674596,
         "lng": 14.7711181640625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Campania_Naples_(Campanian)_(n=13)",
@@ -12936,7 +12870,7 @@
         ],
         "lat": 40.87613077887565,
         "lng": 14.287719726562502,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Campania_Salerno_(Campanian)_(n=3)",
@@ -12969,7 +12903,7 @@
         ],
         "lat": 40.680704378185254,
         "lng": 14.804077148437502,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Marche_Ascoli_Piceno_(Abruzzese)_(n=2)",
@@ -13002,7 +12936,7 @@
         ],
         "lat": 42.85584396772084,
         "lng": 13.598327636718752,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Tuscany_Lunigiana_(Emilian)_(n=1)",
@@ -13035,7 +12969,7 @@
         ],
         "lat": 44.19793495602973,
         "lng": 10.154113769531252,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Piedmont_Cuneo_(Occitan_or_Piedmontese)_(n=4)",
@@ -13068,7 +13002,7 @@
         ],
         "lat": 44.390639308614865,
         "lng": 7.569580078125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Lombardy_Bergamo_(Lombard)_(n=8)",
@@ -13101,7 +13035,7 @@
         ],
         "lat": 45.74058435246647,
         "lng": 9.662475585937502,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Lombardy_Brescia_(Lombard)_(n=2)",
@@ -13134,7 +13068,7 @@
         ],
         "lat": 45.55625358119096,
         "lng": 10.222778320312502,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Trentino_(Trentino_or_Venetian)_(n=1)",
@@ -13167,7 +13101,7 @@
         ],
         "lat": 45.912923473218676,
         "lng": 11.211547851562502,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Libyan_Arab_Misrata_(n=3)",
@@ -13200,7 +13134,7 @@
         ],
         "lat": 32.415662951833575,
         "lng": 14.919433593750002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Egyptian_Arab_Muslim_Cairo_(n=5)",
@@ -13233,7 +13167,7 @@
         ],
         "lat": 30.144921812950287,
         "lng": 31.453857421875004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Egyptian_Arab_Muslim_Dakahlia_(n=12)",
@@ -13266,7 +13200,7 @@
         ],
         "lat": 31.005412938939646,
         "lng": 31.838378906250004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Egyptian_Copt_(n=27)",
@@ -13299,7 +13233,7 @@
         ],
         "lat": 26.608057029971285,
         "lng": 31.376953125000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Saudi_Arab_Hejaz_(n=6)",
@@ -13332,7 +13266,7 @@
         ],
         "lat": 24.4666955852507,
         "lng": 39.22119140625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Saudi_Arab_Najd_(n=16)",
@@ -13365,7 +13299,7 @@
         ],
         "lat": 24.22669499404364,
         "lng": 44.97802734375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Saudi_Arab_Jizan_(n=4)",
@@ -13398,7 +13332,7 @@
         ],
         "lat": 17.05848145055709,
         "lng": 42.86865234375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Saudi_Arab_(n=246)",
@@ -13431,7 +13365,7 @@
         ],
         "lat": 22.146383616868004,
         "lng": 51.39404296875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Qatari_Arab_(n=3)",
@@ -13464,7 +13398,7 @@
         ],
         "lat": 25.203663188853593,
         "lng": 51.26220703125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kuwaiti_Arab_(n=2)",
@@ -13497,7 +13431,7 @@
         ],
         "lat": 29.324458615699818,
         "lng": 47.54882812500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Baleares_Ibiza_(Catalan)_(n=13)",
@@ -13530,7 +13464,7 @@
         ],
         "lat": 38.976578117498796,
         "lng": 1.395263671875,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Baleares_Menorca_(Catalan)_(n=3)",
@@ -13563,7 +13497,7 @@
         ],
         "lat": 39.979192448904676,
         "lng": 4.075927734375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Canarias_Tenerife_(Canarian)_(n=64)",
@@ -13596,7 +13530,7 @@
         ],
         "lat": 28.294751452459707,
         "lng": -16.589355468750004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Canarias_Gran_Canaria_(Canarian)_(n=117)",
@@ -13629,7 +13563,7 @@
         ],
         "lat": 27.97028729553819,
         "lng": -15.545654296875002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Canarias_La_Gomera_(Canarian)_(n=76)",
@@ -13662,7 +13596,7 @@
         ],
         "lat": 28.139813157257237,
         "lng": -17.193603515625004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Canarias_La_Palma_(Canarian)_(n=34)",
@@ -13695,7 +13629,7 @@
         ],
         "lat": 28.697706560970367,
         "lng": -17.844543457031254,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Canarias_El_Hierro_(Canarian)_(n=34)",
@@ -13728,7 +13662,7 @@
         ],
         "lat": 27.76148334146345,
         "lng": -17.979125976562504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Canarias_Lanzarote_(Canarian)_(n=56)",
@@ -13761,7 +13695,7 @@
         ],
         "lat": 29.034391921152487,
         "lng": -13.656005859375002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Canarias_Fuerteventura_(Canarian)_(n=32)",
@@ -13794,7 +13728,7 @@
         ],
         "lat": 28.408329765876978,
         "lng": -14.007568359375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Hartani_Arab_Western_Sahara_(n=1)",
@@ -13827,7 +13761,7 @@
         ],
         "lat": 24.70738080353514,
         "lng": -14.633789062500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Saharawi_(n=27)",
@@ -13860,7 +13794,7 @@
         ],
         "lat": 27.410652549263915,
         "lng": -12.414550781250002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Berber_Morocco_Shilha_Ouarzazate_(n=6)",
@@ -13893,7 +13827,7 @@
         ],
         "lat": 30.902433843856844,
         "lng": -7.382812500000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Berber_Morocco_Shilha_Tiznit_(n=11)",
@@ -13926,7 +13860,7 @@
         ],
         "lat": 29.698239816466472,
         "lng": -9.744873046875002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Berber_Morocco_Shilha_Ait_Atta_(n=6)",
@@ -13959,7 +13893,7 @@
         ],
         "lat": 30.949472872910185,
         "lng": -4.866943359375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Cordoba_n=4",
@@ -13992,7 +13926,7 @@
         ],
         "lat": 37.90987631432516,
         "lng": -4.779052734375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Jaen_n=6",
@@ -14025,7 +13959,7 @@
         ],
         "lat": 37.77104820128666,
         "lng": -3.7902832031250004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Malaga_n=4",
@@ -14058,7 +13992,7 @@
         ],
         "lat": 36.760879984046866,
         "lng": -4.438476562500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Huelva_Sevilla_n=5",
@@ -14091,7 +14025,7 @@
         ],
         "lat": 37.40941359734675,
         "lng": -6.5478515625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Granada_n=7",
@@ -14124,7 +14058,7 @@
         ],
         "lat": 37.178331015634555,
         "lng": -3.5705566406250004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Aragon_North_(Aragonese)_(n=10)",
@@ -14157,7 +14091,7 @@
         ],
         "lat": 42.431538195696305,
         "lng": -0.37353515625000006,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Castile_and_Leon_Leon_(Castilian)_(n=3)",
@@ -14190,7 +14124,7 @@
         ],
         "lat": 42.63393573322519,
         "lng": -5.537109375000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Catalonia_Alt_Pirineu_(Catalan)_(n=6)",
@@ -14223,7 +14157,7 @@
         ],
         "lat": 42.549063539244656,
         "lng": 1.0986328125000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Catalonia_Camp_de_Tarragona_(Catalan)_(n=8)",
@@ -14256,7 +14190,7 @@
         ],
         "lat": 41.12506249436438,
         "lng": 1.2579345703125002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Catalonia_Girona_(Catalan)_(n=11)",
@@ -14289,7 +14223,7 @@
         ],
         "lat": 41.98395013761398,
         "lng": 2.8125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Catalonia_Lleida_(Catalan)_(n=9)",
@@ -14322,7 +14256,7 @@
         ],
         "lat": 41.619589869369264,
         "lng": 0.6372070312500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Catalonia_Central_(Catalan)_(n=9)",
@@ -14355,7 +14289,7 @@
         ],
         "lat": 41.889979019888955,
         "lng": 1.7358398437500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Basque_Spain_Biscay_(n=11)",
@@ -14388,7 +14322,7 @@
         ],
         "lat": 43.30312682593829,
         "lng": -2.9525756835937504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Basque_Spain_Alava_(n=12)",
@@ -14421,7 +14355,7 @@
         ],
         "lat": 42.906126572056834,
         "lng": -2.77679443359375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Basque_Spain_Gipuzkoa_Central_(n=11)",
@@ -14454,7 +14388,7 @@
         ],
         "lat": 43.193100540537564,
         "lng": -2.1423339843750004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Portuguese_Madeira_(n=1)",
@@ -14487,7 +14421,7 @@
         ],
         "lat": 32.75950946873871,
         "lng": -16.973876953125004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Portuguese_Azores_(n=32)",
@@ -14520,7 +14454,7 @@
         ],
         "lat": 37.805327909084724,
         "lng": -25.455322265625004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Occitan_Auvergne-Rhone-Alpes_Puy-de-Dome_(n=28)",
@@ -14553,7 +14487,7 @@
         ],
         "lat": 45.79435923932255,
         "lng": 3.0816650390625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Occitan_Nouvelle-Aquitaine_Pyrenees-Atlantiques_Bearn_(n=10)",
@@ -14586,7 +14520,7 @@
         ],
         "lat": 43.2292144670399,
         "lng": -0.5767822265625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Occitan_Nouvelle-Aquitaine_Landes_Chalosse_Dax_(n=4)",
@@ -14619,7 +14553,7 @@
         ],
         "lat": 43.71161280940739,
         "lng": -1.0491943359375002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Breton_Cotes-d'Armor_(n=8)",
@@ -14652,7 +14586,7 @@
         ],
         "lat": 48.4473422952205,
         "lng": -2.83447265625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Breton_Finistere_(n=17)",
@@ -14685,7 +14619,7 @@
         ],
         "lat": 48.257574603670044,
         "lng": -4.114379882812501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Breton_Ille-et-Vilaine_(n=5)",
@@ -14718,7 +14652,7 @@
         ],
         "lat": 48.34157659103313,
         "lng": -1.5820312500000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Breton_Morbihan_(n=7)",
@@ -14751,7 +14685,7 @@
         ],
         "lat": 47.798491132180715,
         "lng": -2.96630859375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Oil_Normandy_Seine-Maritime_(n=16)",
@@ -14784,7 +14718,7 @@
         ],
         "lat": 49.76682884541071,
         "lng": 0.8953857421875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian_Sardinia_North_(Sardinian)_(n=20)",
@@ -14817,7 +14751,7 @@
         ],
         "lat": 40.86362767438445,
         "lng": 9.206542968750002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Corsica",
@@ -14850,7 +14784,7 @@
         ],
         "lat": 42.21230765327607,
         "lng": 9.162597656250002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Polish_Wielkopolska_(n=11)",
@@ -14883,7 +14817,7 @@
         ],
         "lat": 52.20081434579906,
         "lng": 17.314453125000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Polish_Warmia-Masuria_(n=5)",
@@ -14916,7 +14850,7 @@
         ],
         "lat": 54.00768796015624,
         "lng": 21.104736328125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Polish_Pomerania_Sztum_(n=1)",
@@ -14949,7 +14883,7 @@
         ],
         "lat": 54.0045537534508,
         "lng": 18.822326660156254,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Polish_Podkarpackie_(n=1)",
@@ -14982,7 +14916,7 @@
         ],
         "lat": 49.9514672188216,
         "lng": 22.148437500000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Polish_Mazovia_Warsaw_(n=186)",
@@ -15015,7 +14949,7 @@
         ],
         "lat": 52.20076455025853,
         "lng": 20.950927734375004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Polish_Malopolska_Krakow_(n=141)",
@@ -15048,7 +14982,7 @@
         ],
         "lat": 50.05029345666603,
         "lng": 19.962158203125004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Brandenburg_Northwest_(n=4)",
@@ -15081,7 +15015,7 @@
         ],
         "lat": 53.06086889164022,
         "lng": 12.359619140625002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Brandenburg_Oder-Spree_(n=1)",
@@ -15114,7 +15048,7 @@
         ],
         "lat": 52.42591561705506,
         "lng": 14.172363281250002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Thuringia_(n=11)",
@@ -15147,7 +15081,7 @@
         ],
         "lat": 50.93091921466735,
         "lng": 11.107177734375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Bavaria_Lower_Franconia_(n=3)",
@@ -15180,7 +15114,7 @@
         ],
         "lat": 50.000678761531965,
         "lng": 9.854736328125002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Bavaria_Middle_Franconia_Erlangen_(n=64)",
@@ -15213,7 +15147,7 @@
         ],
         "lat": 49.58759994820441,
         "lng": 10.961608886718752,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Baden-Wurttemberg_Ellwangen_(n=22)",
@@ -15246,7 +15180,7 @@
         ],
         "lat": 48.95672694302575,
         "lng": 10.159606933593752,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Saarland_(n=3)",
@@ -15279,7 +15213,7 @@
         ],
         "lat": 49.38957936983125,
         "lng": 6.959838867187501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Swedish_(n=114)",
@@ -15312,7 +15246,7 @@
         ],
         "lat": 59.27689727882915,
         "lng": 17.995605468750004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Swedish_Dalarna_Falun_(n=48)",
@@ -15345,7 +15279,7 @@
         ],
         "lat": 60.613851845721356,
         "lng": 15.661010742187502,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Swedish_Vastra_Gotaland_(n=2)",
@@ -15378,7 +15312,7 @@
         ],
         "lat": 57.91491416129674,
         "lng": 11.821289062500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Irish_Ulster_(n=2)",
@@ -15411,7 +15345,7 @@
         ],
         "lat": 54.367627449246434,
         "lng": -7.27294921875,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bedouin_Libya_(n=6)",
@@ -15444,7 +15378,7 @@
         ],
         "lat": 28.825666288725106,
         "lng": 14.831542968750002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Georgian_West_(n=10)",
@@ -15477,7 +15411,7 @@
         ],
         "lat": 42.216347161844716,
         "lng": 42.07763671875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Georgian_Northeast_(n=2)",
@@ -15510,7 +15444,7 @@
         ],
         "lat": 42.42743290345178,
         "lng": 45.09338378906251,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ossetian_North_Ossetia_(n=12)",
@@ -15543,7 +15477,7 @@
         ],
         "lat": 43.028547658517105,
         "lng": 44.27490234375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ingush_(n=10)",
@@ -15576,7 +15510,7 @@
         ],
         "lat": 43.16906531858204,
         "lng": 45.00549316406251,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Circassian_Adyghe_(n=33)",
@@ -15609,7 +15543,7 @@
         ],
         "lat": 44.66242911193454,
         "lng": 39.879903627442665,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Mordovia_(n=1)",
@@ -15642,7 +15576,7 @@
         ],
         "lat": 54.41872632844357,
         "lng": 44.6923828125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Ryazan_(n=13)",
@@ -15675,7 +15609,7 @@
         ],
         "lat": 54.49542959602756,
         "lng": 40.97900390625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Kaluga_(n=4)",
@@ -15708,7 +15642,7 @@
         ],
         "lat": 54.52100894826949,
         "lng": 35.39794921875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Saint_Petersburg_(n=1)",
@@ -15741,7 +15675,7 @@
         ],
         "lat": 60.021108297275234,
         "lng": 30.366210937500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Karelian_(n=19)",
@@ -15774,7 +15708,7 @@
         ],
         "lat": 61.84584180762351,
         "lng": 34.27734375000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Karelian_Northern_(n=11)",
@@ -15807,7 +15741,7 @@
         ],
         "lat": 68.65576794856297,
         "lng": 32.69531250000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Khanty_(n=34)",
@@ -15840,7 +15774,7 @@
         ],
         "lat": 61.16478974835764,
         "lng": 68.97216796875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Nenets_Forest_(n=30)",
@@ -15873,7 +15807,7 @@
         ],
         "lat": 64.3307135254891,
         "lng": 73.54248046875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Nenets_Tundra_(n=18)",
@@ -15906,7 +15840,7 @@
         ],
         "lat": 68.06499786301029,
         "lng": 69.93896484375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Evenk_Khabarovsk_(n=2)",
@@ -15939,7 +15873,7 @@
         ],
         "lat": 50.33152808873853,
         "lng": 137.08740234375003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Japanese_(n=476)",
@@ -15972,7 +15906,7 @@
         ],
         "lat": 35.96127516658092,
         "lng": 139.39453125000003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Han_Yunnan_Guangnan_(n=3)",
@@ -16005,7 +15939,7 @@
         ],
         "lat": 25.086068693828047,
         "lng": 102.01904296875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Han_Qinghai_(n=1)",
@@ -16038,7 +15972,7 @@
         ],
         "lat": 36.54444734404296,
         "lng": 96.50390625000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kazakh_Xinjiang_(n=12)",
@@ -16071,7 +16005,7 @@
         ],
         "lat": 47.97446101877247,
         "lng": 87.75878906250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Uyghur_(n=22)",
@@ -16104,7 +16038,7 @@
         ],
         "lat": 38.73806241973712,
         "lng": 82.00195312500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Tibetan_Chamdo_(n=12)",
@@ -16137,7 +16071,7 @@
         ],
         "lat": 31.128541687968767,
         "lng": 96.7236328125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Tibetan_Nepal_(n=1000)",
@@ -16170,7 +16104,7 @@
         ],
         "lat": 28.110759785610828,
         "lng": 84.39697265625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Rakhine_Myanmar_(n=23)",
@@ -16203,7 +16137,7 @@
         ],
         "lat": 19.538895661289125,
         "lng": 94.13085937500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Filipino_(n=82)",
@@ -16236,7 +16170,7 @@
         ],
         "lat": 12.382617017843177,
         "lng": 123.53027343750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-New_Zealander_(n=80)",
@@ -16269,7 +16203,7 @@
         ],
         "lat": -39.84000184960503,
         "lng": 175.51757812500003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Maori_(n=10)",
@@ -16302,7 +16236,7 @@
         ],
         "lat": -38.30689612103354,
         "lng": 176.70410156250003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Sri_Lankan_(n=21)",
@@ -16335,7 +16269,7 @@
         ],
         "lat": 7.53779281085412,
         "lng": 80.72753906250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kannadiga_North_Karnataka_(n=8)",
@@ -16368,7 +16302,7 @@
         ],
         "lat": 14.62602413823194,
         "lng": 75.60791015625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ho_Odisha_(n=22)",
@@ -16401,7 +16335,7 @@
         ],
         "lat": 20.488463005571685,
         "lng": 84.92431640625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bhil_Barela_Madhya_Pradesh_(n=3)",
@@ -16434,7 +16368,7 @@
         ],
         "lat": 23.825482701527125,
         "lng": 77.62939453125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bihari_Brahmin_Bhumihar_(n=13)",
@@ -16467,7 +16401,7 @@
         ],
         "lat": 25.64140805402264,
         "lng": 85.84716796875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Hui_Ningxia_(n=2)",
@@ -16500,7 +16434,7 @@
         ],
         "lat": 37.0721121029261,
         "lng": 106.04003906250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Han_Shaanxi_Yulin_(n=2)",
@@ -16533,7 +16467,7 @@
         ],
         "lat": 38.3322348252691,
         "lng": 109.66552734375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Hui_Shaanxi_(n=1)",
@@ -16566,7 +16500,7 @@
         ],
         "lat": 35.48762297695115,
         "lng": 109.22607421875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Han_Heilongjiang_Qiqihar_(n=1)",
@@ -16599,7 +16533,7 @@
         ],
         "lat": 47.3539223189392,
         "lng": 123.83789062500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Hui_Heilongjiang_(n=2)",
@@ -16632,7 +16566,7 @@
         ],
         "lat": 45.79889282501881,
         "lng": 128.62792968750003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Gabonese_Bantu_(n=1)",
@@ -16665,7 +16599,7 @@
         ],
         "lat": -0.5698672311393547,
         "lng": 11.909179687500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Cameroonian_Bantu_(n=50)",
@@ -16698,7 +16632,7 @@
         ],
         "lat": 3.382154393337199,
         "lng": 12.766113281250002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Cameroonian_Bafut_(n=11)",
@@ -16731,7 +16665,7 @@
         ],
         "lat": 5.998166460009497,
         "lng": 9.975585937500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Fulani_Cameroon_(n=2)",
@@ -16764,7 +16698,7 @@
         ],
         "lat": 6.991409446479253,
         "lng": 12.041015625000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bedouin_Saudi_Arabia_(n=1)",
@@ -16797,7 +16731,7 @@
         ],
         "lat": 27.993468787736997,
         "lng": 42.01171875000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Afro-Saudi_(n=61)",
@@ -16830,7 +16764,7 @@
         ],
         "lat": 21.44312814610558,
         "lng": 39.81445312500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Emirati_Arab_(Arabian_Profile)_(n=64)",
@@ -16863,7 +16797,7 @@
         ],
         "lat": 23.86553960027444,
         "lng": 54.25048828125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Persian_Sistan_(n=1)",
@@ -16896,7 +16830,7 @@
         ],
         "lat": 28.902156492083826,
         "lng": 60.21606445312501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Persian_Khorasan_(n=12)",
@@ -16929,7 +16863,7 @@
         ],
         "lat": 32.999353040712364,
         "lng": 58.33740234375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkmen_Golestan_(n=8)",
@@ -16962,7 +16896,7 @@
         ],
         "lat": 37.23863994393345,
         "lng": 55.01953125000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Mazandarani_(n=13)",
@@ -16995,7 +16929,7 @@
         ],
         "lat": 36.439104533982835,
         "lng": 52.17407226562501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Azeri_Iran_Ardabil_(n=18)",
@@ -17028,7 +16962,7 @@
         ],
         "lat": 38.48795302811391,
         "lng": 47.97729492187501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kazakh_Kazakhstan_West_(n=10)",
@@ -17061,7 +16995,7 @@
         ],
         "lat": 49.639167078236284,
         "lng": 50.25146484375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kazakh_Kazakhstan_Jetisu_(n=1)",
@@ -17094,7 +17028,7 @@
         ],
         "lat": 45.69077171785837,
         "lng": 79.18945312500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kazakh_Kazakhstan_Jambyl_(n=12)",
@@ -17127,7 +17061,7 @@
         ],
         "lat": 44.52778710489615,
         "lng": 72.49877929687501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kazakh_Kazakhstan_Turkistan_(n=10)",
@@ -17160,7 +17094,7 @@
         ],
         "lat": 42.53702325175781,
         "lng": 68.09326171875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Karakalpak_(n=22)",
@@ -17193,7 +17127,7 @@
         ],
         "lat": 43.81047896879325,
         "lng": 57.77709960937501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Uzbek_Khorezm_(n=6)",
@@ -17226,7 +17160,7 @@
         ],
         "lat": 41.57468390647381,
         "lng": 60.72143554687501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Qashqai_(n=1)",
@@ -17259,7 +17193,7 @@
         ],
         "lat": 38.79674269434898,
         "lng": 65.90698242187501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Kazakh_Uzbekistan_(n=1)",
@@ -17292,7 +17226,7 @@
         ],
         "lat": 42.5852325893439,
         "lng": 64.27001953125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Canadian_Manitoba_(n=9)",
@@ -17325,7 +17259,7 @@
         ],
         "lat": 49.46833526530845,
         "lng": -97.64648437500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Canadian_Saskatchewan_(n=6)",
@@ -17358,7 +17292,7 @@
         ],
         "lat": 51.12407154637934,
         "lng": -106.74316406250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French-Canadian_Ontario_(Ontarois)_(n=1)",
@@ -17391,7 +17325,7 @@
         ],
         "lat": 45.42976364455735,
         "lng": -76.06933593750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French-Canadian_Prince_Edward_Island_(Acadian)_(n=1)",
@@ -17424,7 +17358,7 @@
         ],
         "lat": 46.33944904201063,
         "lng": -63.21533203125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Canadian_Nova_Scotian_(n=36)",
@@ -17457,7 +17391,7 @@
         ],
         "lat": 44.957086040495795,
         "lng": -63.77563476562501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Irish-American_New_York_(n=24)",
@@ -17490,7 +17424,7 @@
         ],
         "lat": 42.69046982659292,
         "lng": -73.85009765625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Connecticut_(n=17)",
@@ -17523,7 +17457,7 @@
         ],
         "lat": 41.615706315093306,
         "lng": -72.43286132812501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Italian-American_Connecticut_(n=2)",
@@ -17556,7 +17490,7 @@
         ],
         "lat": 41.22414397170744,
         "lng": -73.22662353515626,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Rhode_Island_(n=7)",
@@ -17589,7 +17523,7 @@
         ],
         "lat": 41.834764614402765,
         "lng": -71.54846191406251,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Irish-American_Rhode_Island_(n=2)",
@@ -17622,7 +17556,7 @@
         ],
         "lat": 41.58469244482409,
         "lng": -71.51000976562501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Massachusetts_(n=31)",
@@ -17655,7 +17589,7 @@
         ],
         "lat": 42.3787936120649,
         "lng": -71.09252929687501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Vermont_(n=6)",
@@ -17688,7 +17622,7 @@
         ],
         "lat": 44.040180525859995,
         "lng": -72.81738281250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_New_Hampshire_(n=11)",
@@ -17721,7 +17655,7 @@
         ],
         "lat": 43.54069578792099,
         "lng": -71.51000976562501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Maine_(n=29)",
@@ -17754,7 +17688,7 @@
         ],
         "lat": 45.61385598956749,
         "lng": -69.36767578125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Michigan_(n=42)",
@@ -17787,7 +17721,7 @@
         ],
         "lat": 43.40460251663711,
         "lng": -84.74853515625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Indiana_(n=54)",
@@ -17820,7 +17754,7 @@
         ],
         "lat": 40.89698136124936,
         "lng": -85.78125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German-American_Illinois_(n=4)",
@@ -17853,7 +17787,7 @@
         ],
         "lat": 38.97692975403363,
         "lng": -89.31884765625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Polish-American_Illinois_(n=9)",
@@ -17886,7 +17820,7 @@
         ],
         "lat": 41.885595334097324,
         "lng": -88.94531250000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Illinois_(n=70)",
@@ -17919,7 +17853,7 @@
         ],
         "lat": 40.714074254443496,
         "lng": -89.47265625,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Iowa_(n=32)",
@@ -17952,7 +17886,7 @@
         ],
         "lat": 42.03276079844164,
         "lng": -93.36181640625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Nebraska_(n=19)",
@@ -17985,7 +17919,7 @@
         ],
         "lat": 41.67285580068937,
         "lng": -99.755859375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_South_Dakota_(n=4)",
@@ -18018,7 +17952,7 @@
         ],
         "lat": 44.777399100286615,
         "lng": -100.21728515625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German-American_North_Dakota_(n=10)",
@@ -18051,7 +17985,7 @@
         ],
         "lat": 47.56125372076322,
         "lng": -100.67871093750001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Minnesota_(n=19)",
@@ -18084,7 +18018,7 @@
         ],
         "lat": 46.179986189634896,
         "lng": -94.50439453125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Missouri_(n=55)",
@@ -18117,7 +18051,7 @@
         ],
         "lat": 38.92544297785745,
         "lng": -92.83447265625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_Kansas_(n=17)",
@@ -18150,7 +18084,7 @@
         ],
         "lat": 38.73666331820991,
         "lng": -98.32763671875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-American_New_Mexico_(n=1)",
@@ -18183,7 +18117,7 @@
         ],
         "lat": 35.90670250599464,
         "lng": -105.57861328125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Athabaskan_Canada_(n=4)",
@@ -18216,7 +18150,7 @@
         ],
         "lat": 61.68881703804764,
         "lng": -125.94726562500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Canadian_(Metis-Mixed)_Newfoundland_and_Labrador_(n=15)",
@@ -18249,7 +18183,7 @@
         ],
         "lat": 49.669019263463824,
         "lng": -55.98632812500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Canadian_Metis_(n=6)",
@@ -18282,7 +18216,7 @@
         ],
         "lat": 51.041134546246134,
         "lng": -79.18945312500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Canadian_Metis_(n=6)",
@@ -18315,7 +18249,7 @@
         ],
         "lat": 53.43549581970312,
         "lng": -67.85156250000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Canadian_Ontario_(n=65)",
@@ -18348,7 +18282,7 @@
         ],
         "lat": 43.03662968094813,
         "lng": -81.54052734375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Hawaiian_(n=8)",
@@ -18381,7 +18315,7 @@
         ],
         "lat": 21.18663764563255,
         "lng": -156.98364257812503,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Anglo-Australian_(n=16)",
@@ -18414,7 +18348,7 @@
         ],
         "lat": -12.74868054544666,
         "lng": 131.06689453125003,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Oil_Ile-de-France_Paris_(n=11)",
@@ -18447,7 +18381,7 @@
         ],
         "lat": 48.85008753089458,
         "lng": 2.3730468750000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Pays_de_la_Loire_(n=11)",
@@ -18480,7 +18414,7 @@
         ],
         "lat": 47.28663949502741,
         "lng": -1.0546875000000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Pays_de_la_Loire_(n=11)",
@@ -18513,7 +18447,7 @@
         ],
         "lat": 47.82026119878082,
         "lng": -0.37353515625000006,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Nouvelle_Aquitaine_North_(n=7)",
@@ -18546,7 +18480,7 @@
         ],
         "lat": 45.92037648362194,
         "lng": 0.5383300781250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Occitan_Occitanie_Haute-Garonne_(n=37)",
@@ -18579,7 +18513,7 @@
         ],
         "lat": 44.35506930127548,
         "lng": 1.2249755859375002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Occitan_Occitanie_Hautes-Pyrenees_Bigorre_(n=8)",
@@ -18612,7 +18546,7 @@
         ],
         "lat": 43.01264775529948,
         "lng": 0.10986328125000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Occitan_Occitanie_(n=7)",
@@ -18645,7 +18579,7 @@
         ],
         "lat": 42.90451531307416,
         "lng": 1.1590576171875002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Occitan_Auvergne-Rhone-Alpes_(n=7)",
@@ -18678,7 +18612,7 @@
         ],
         "lat": 44.87915949951951,
         "lng": 4.658203125000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Arpitan_Auvergne-Rhone-Alpes_(n=8)",
@@ -18711,7 +18645,7 @@
         ],
         "lat": 45.84784176508781,
         "lng": 4.866943359375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Occitan_Provence_(n=19)",
@@ -18744,7 +18678,7 @@
         ],
         "lat": 43.44512332120249,
         "lng": 5.608520507812501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Occitan_Provence_(n=19)",
@@ -18777,7 +18711,7 @@
         ],
         "lat": 43.945383641955395,
         "lng": 7.020263671875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Oil_Bourgogne-France-Comte_(n=10)",
@@ -18810,7 +18744,7 @@
         ],
         "lat": 47.18231389073215,
         "lng": 4.779052734375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Oil_Hauts-de-France_Pas-de-Calais_(n=10)",
@@ -18843,7 +18777,7 @@
         ],
         "lat": 49.93675795635689,
         "lng": 2.1972656250000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Portuguese_(n=54)",
@@ -18876,7 +18810,7 @@
         ],
         "lat": 40.663721619609454,
         "lng": -7.778320312500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Cadiz_n=6",
@@ -18909,7 +18843,7 @@
         ],
         "lat": 36.57148028986992,
         "lng": -6.185302734375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Spanish_Almeria_n=7",
@@ -18942,7 +18876,7 @@
         ],
         "lat": 36.901539825841965,
         "lng": -2.4664306640625004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Occitan_Occitanie_(n=7)",
@@ -18975,7 +18909,7 @@
         ],
         "lat": 43.75891052099243,
         "lng": 3.2574462890625004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "French_Occitan_Occitanie_(n=7)",
@@ -19008,7 +18942,7 @@
         ],
         "lat": 43.631971627896085,
         "lng": 1.5216064453125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Bavaria_(n=13)",
@@ -19041,7 +18975,7 @@
         ],
         "lat": 48.3197132610049,
         "lng": 11.865234375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Czech_(n=175)",
@@ -19074,7 +19008,7 @@
         ],
         "lat": 49.460886360606956,
         "lng": 14.425048828125002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Czech_(n=175)",
@@ -19107,7 +19041,7 @@
         ],
         "lat": 49.617723035830444,
         "lng": 17.039794921875004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_Saxony_(n=16)",
@@ -19140,7 +19074,7 @@
         ],
         "lat": 51.13776228428854,
         "lng": 13.392333984375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_North_Rhine-Westphalia_(n=14)",
@@ -19173,7 +19107,7 @@
         ],
         "lat": 51.096811338724734,
         "lng": 7.174072265625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "German_North_Rhine-Westphalia_(n=14)",
@@ -19206,7 +19140,7 @@
         ],
         "lat": 51.85604620871123,
         "lng": 8.580322265625002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Pskov_(n=33)",
@@ -19239,7 +19173,7 @@
         ],
         "lat": 57.55075534205567,
         "lng": 28.93798828125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Tver_(n=11)",
@@ -19272,7 +19206,7 @@
         ],
         "lat": 57.19546591850367,
         "lng": 35.02441406250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ukrainian_Dnipro_(n=9)",
@@ -19305,7 +19239,7 @@
         ],
         "lat": 48.516674725922,
         "lng": 34.98046875000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ukrainian_Zaporizhzhia_(n=1)",
@@ -19338,7 +19272,7 @@
         ],
         "lat": 47.843009974538155,
         "lng": 35.13427734375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ukrainian_Zhytomyr_(n=11)",
@@ -19371,7 +19305,7 @@
         ],
         "lat": 50.26093020171942,
         "lng": 28.388671875000004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ukrainian_Chernihiv_(n=9)",
@@ -19404,7 +19338,7 @@
         ],
         "lat": 51.35765764780027,
         "lng": 31.893310546875004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ukrainian_Kharkiv_(n=1)",
@@ -19437,7 +19371,7 @@
         ],
         "lat": 49.866346942519016,
         "lng": 35.68359375000001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ukrainian_Poltava_(n=2)",
@@ -19470,7 +19404,7 @@
         ],
         "lat": 49.77423819855528,
         "lng": 33.72802734375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ukrainian_Vinnytsia_(n=1)",
@@ -19503,7 +19437,7 @@
         ],
         "lat": 48.901002235625924,
         "lng": 28.432617187500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Ukrainian_Cherkasy_(n=4)",
@@ -19536,7 +19470,7 @@
         ],
         "lat": 49.21758485845698,
         "lng": 31.805419921875004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Romanian_Galati_(n=4)",
@@ -19569,7 +19503,7 @@
         ],
         "lat": 45.42937219769387,
         "lng": 28.114013671875004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Western_Macedonia_(n=7)",
@@ -19602,7 +19536,7 @@
         ],
         "lat": 40.40512355897588,
         "lng": 21.42333984375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Canakkale_Biga_Peninsula_(n=3)",
@@ -19635,7 +19569,7 @@
         ],
         "lat": 40.145252271149516,
         "lng": 26.438598632812504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_East_Thrace_Tekirdag_(n=1)",
@@ -19668,7 +19602,7 @@
         ],
         "lat": 41.00466694545028,
         "lng": 27.460327148437504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Denizli_(n=9)",
@@ -19701,7 +19635,7 @@
         ],
         "lat": 37.757694488503006,
         "lng": 29.157714843750004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Mugla_(n=12)",
@@ -19734,7 +19668,7 @@
         ],
         "lat": 37.204128845131635,
         "lng": 28.383178710937504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Aydin_(n=31)",
@@ -19767,7 +19701,7 @@
         ],
         "lat": 37.87041854644798,
         "lng": 27.894287109375004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Dodecanese_Kos_(n=9)",
@@ -19800,7 +19734,7 @@
         ],
         "lat": 36.8357245198485,
         "lng": 27.169189453125004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Western_Greece_Aetolia-Acarnania_(n=5)",
@@ -19833,7 +19767,7 @@
         ],
         "lat": 38.64678988132291,
         "lng": 21.318969726562504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Crete_(n=16)",
@@ -19866,7 +19800,7 @@
         ],
         "lat": 35.12924958180033,
         "lng": 24.9609375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Crete_Heraklion_(n=93)",
@@ -19899,7 +19833,7 @@
         ],
         "lat": 35.335532827611324,
         "lng": 25.191650390625004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Cyclades_Naxos_(n=1)",
@@ -19932,7 +19866,7 @@
         ],
         "lat": 37.0660717343875,
         "lng": 25.471801757812504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_North_Aegean_Chios_(n=31)",
@@ -19965,7 +19899,7 @@
         ],
         "lat": 38.406239102540795,
         "lng": 26.078796386718754,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Peloponnese_Achaea_(n=26)",
@@ -19998,7 +19932,7 @@
         ],
         "lat": 38.216726795024215,
         "lng": 21.807861328125004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Peloponnese_Argolis_(n=17)",
@@ -20031,7 +19965,7 @@
         ],
         "lat": 37.64465365835426,
         "lng": 22.700500488281254,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Peloponnese_Arcadia_(n=34)",
@@ -20064,7 +19998,7 @@
         ],
         "lat": 37.29160632448936,
         "lng": 22.535705566406254,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Peloponnese_Corinthia_(n=15)",
@@ -20097,7 +20031,7 @@
         ],
         "lat": 37.924658556446545,
         "lng": 22.931213378906254,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Peloponnese_Laconia_(n=19)",
@@ -20130,7 +20064,7 @@
         ],
         "lat": 37.01791084555773,
         "lng": 22.56866455078125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Peloponnese_Messenia_(n=28)",
@@ -20163,7 +20097,7 @@
         ],
         "lat": 37.1691107955942,
         "lng": 21.862792968750004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Peloponnese_Elis_(n=25)",
@@ -20196,7 +20130,7 @@
         ],
         "lat": 37.67940120895101,
         "lng": 21.5606689453125,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Attica_(n=4)",
@@ -20229,7 +20163,7 @@
         ],
         "lat": 37.963701687394234,
         "lng": 23.711242675781254,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Greek_Central_Greece_(n=21)",
@@ -20262,7 +20196,7 @@
         ],
         "lat": 38.65970330748087,
         "lng": 22.890014648437504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Macedonian_North_Macedonia_(n=47)",
@@ -20295,7 +20229,7 @@
         ],
         "lat": 41.599183640866485,
         "lng": 21.697998046875004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Albanian_Gheg_Kosovo_(n=54)",
@@ -20328,7 +20262,7 @@
         ],
         "lat": 42.56916311347229,
         "lng": 20.972900390625004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Montenegrin_(n=8)",
@@ -20361,7 +20295,7 @@
         ],
         "lat": 42.79529059030277,
         "lng": 19.259033203125004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Croat_Dalmatia_(n=8)",
@@ -20394,7 +20328,7 @@
         ],
         "lat": 44.10348430526113,
         "lng": 15.732421875000002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Croat_(n=25)",
@@ -20427,7 +20361,7 @@
         ],
         "lat": 45.55245085258194,
         "lng": 15.952148437500002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Slovene_(n=8)",
@@ -20460,7 +20394,7 @@
         ],
         "lat": 46.13402496166579,
         "lng": 14.787597656250002,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Slovincian_(n=2)",
@@ -20493,7 +20427,7 @@
         ],
         "lat": 54.705453496287966,
         "lng": 17.259521484375004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bosniak_(n=17)",
@@ -20526,7 +20460,7 @@
         ],
         "lat": 44.2058238009332,
         "lng": 18.083496093750004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Croat_Bosnia_(n=5)",
@@ -20559,7 +20493,7 @@
         ],
         "lat": 43.715466968653516,
         "lng": 17.424316406250004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Bosniak_(n=17)",
@@ -20592,7 +20526,7 @@
         ],
         "lat": 44.80133348081721,
         "lng": 16.226806640625004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Serb_Bosnia_(n=7)",
@@ -20625,7 +20559,7 @@
         ],
         "lat": 44.81661183499536,
         "lng": 17.369384765625004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Serb_(n=19)",
@@ -20658,7 +20592,7 @@
         ],
         "lat": 43.961174893789575,
         "lng": 20.874023437500004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Serb_(n=19)",
@@ -20691,7 +20625,7 @@
         ],
         "lat": 45.08098073804309,
         "lng": 20.247802734375004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Croat_Herzegovina_(n=5)",
@@ -20724,7 +20658,7 @@
         ],
         "lat": 43.205517475741004,
         "lng": 17.852783203125004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Serb_Bosnia_(n=7)",
@@ -20757,7 +20691,7 @@
         ],
         "lat": 43.58858430201915,
         "lng": 18.874511718750004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Konya_(n=14)",
@@ -20790,7 +20724,7 @@
         ],
         "lat": 37.90971359482183,
         "lng": 32.40966796875001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Afyonkarahisar_(n=18)",
@@ -20823,7 +20757,7 @@
         ],
         "lat": 38.71116670345505,
         "lng": 30.618896484375,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Eskisehir_(n=9)",
@@ -20856,7 +20790,7 @@
         ],
         "lat": 39.681667287516824,
         "lng": 30.959472656250004,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Bolu_(n=14)",
@@ -20889,7 +20823,7 @@
         ],
         "lat": 40.734670357050724,
         "lng": 31.701049804687504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Zonguldak_(n=17)",
@@ -20922,7 +20856,7 @@
         ],
         "lat": 41.38904899757622,
         "lng": 31.854858398437504,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Amasya_(n=12)",
@@ -20955,7 +20889,7 @@
         ],
         "lat": 40.62243646414888,
         "lng": 35.70556640625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Sivas_(n=63)",
@@ -20988,7 +20922,7 @@
         ],
         "lat": 39.84212766679212,
         "lng": 37.56225585937501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Kahramanmaras_(n=25)",
@@ -21021,7 +20955,7 @@
         ],
         "lat": 37.98316251858213,
         "lng": 36.93054199218751,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Gaziantep_(n=19)",
@@ -21054,7 +20988,7 @@
         ],
         "lat": 37.13393700331114,
         "lng": 37.48535156250001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Turkish_Karaman_(n=20)",
@@ -21087,7 +21021,7 @@
         ],
         "lat": 37.1995817434558,
         "lng": 33.42041015625001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Syrian_Arab_Hama_(Levantine_Profile)_(n=6)",
@@ -21120,7 +21054,7 @@
         ],
         "lat": 35.218753659522086,
         "lng": 37.36450195312501,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Syrian_Arab_Idlib_(n=39)",
@@ -21153,7 +21087,7 @@
         ],
         "lat": 35.85780442714801,
         "lng": 36.65039062500001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Syrian_Arab_Latakia_(Syrio-Mesopotamian_Arab_Profile)_(n=2)",
@@ -21186,7 +21120,7 @@
         ],
         "lat": 35.505452241812975,
         "lng": 36.01867675781251,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Syrian_Arab_Raqqa_(n=5)",
@@ -21219,7 +21153,7 @@
         ],
         "lat": 35.98237044179404,
         "lng": 39.01794433593751,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Syrian_Arab_Al-Hasakah_(n=9)",
@@ -21252,7 +21186,7 @@
         ],
         "lat": 36.51821234403709,
         "lng": 40.71533203125001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Lebanese_Arab_Muslim_Shia_(n=11)",
@@ -21285,7 +21219,7 @@
         ],
         "lat": 33.380964204797344,
         "lng": 35.48583984375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Lebanese_Arab_Muslim_Shia_(n=11)",
@@ -21318,7 +21252,7 @@
         ],
         "lat": 34.129783933347454,
         "lng": 36.32629394531251,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Lebanese_Arab_Muslim_Sunni_Tripoli_(n=9)",
@@ -21351,7 +21285,7 @@
         ],
         "lat": 34.44532063768293,
         "lng": 35.88684082031251,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Lebanese_Arab_Christian_Greek_Orthodox_Beirut_(n=43)",
@@ -21384,7 +21318,7 @@
         ],
         "lat": 33.87949615344581,
         "lng": 35.54626464843751,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Druze_Lebanon_(n=26)",
@@ -21417,7 +21351,7 @@
         ],
         "lat": 33.61922889760138,
         "lng": 35.57647705078126,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Syrian_Arab_Deir_ez-Zor_(n=9)",
@@ -21450,7 +21384,7 @@
         ],
         "lat": 35.30825604878214,
         "lng": 40.22644042968751,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Mari_(n=9)",
@@ -21483,7 +21417,7 @@
         ],
         "lat": 56.60314426119415,
         "lng": 48.001689191558434,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Lipetsk_(n=1)",
@@ -21516,7 +21450,7 @@
         ],
         "lat": 52.7682912025188,
         "lng": 39.158795600075045,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Voronezh_(n=5)",
@@ -21549,7 +21483,7 @@
         ],
         "lat": 51.360706475547076,
         "lng": 41.33327763076766,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Chuvash_(n=14)",
@@ -21582,7 +21516,7 @@
         ],
         "lat": 55.501087893663176,
         "lng": 47.18988256676651,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Oryol_(n=11)",
@@ -21615,7 +21549,7 @@
         ],
         "lat": 52.84707138251968,
         "lng": 36.398551521292646,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Russian_Bryansk_(n=1)",
@@ -21648,7 +21582,7 @@
         ],
         "lat": 53.03143207496073,
         "lng": 33.64407512961348,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Belarusian_(n=27)",
@@ -21681,40 +21615,7 @@
         ],
         "lat": 53.600867461031314,
         "lng": 27.826189604358056,
-        "visible": true
-      },
-      {
-        "name": "Chilean_Castizo",
-        "vec": [
-          0.0973844,
-          0.0123418,
-          0.0633676,
-          0.0297258,
-          -0.0034719,
-          -0.0052855,
-          -0.0873732,
-          -0.1016038,
-          0.0099909,
-          0.0133236,
-          -0.0013487,
-          0.0032837,
-          -0.006897,
-          -0.000279,
-          0.003377,
-          0.0010662,
-          -0.0003305,
-          -0.0000664,
-          -0.0010369,
-          -0.0001855,
-          0.0011939,
-          -0.0003236,
-          -0.0015967,
-          -0.0007524,
-          -0.0002222
-        ],
-        "lat": -33.47245231664486,
-        "lng": -70.49043512247854,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Argentine_Castizo",
@@ -21747,10 +21648,10 @@
         ],
         "lat": -29.408603850534647,
         "lng": -60.371560044712815,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Brasí­lia_DF",
+        "name": "Brazil_Brasí­lia_DF",
         "vec": [
           -0.08121,
           0.060334,
@@ -21780,10 +21681,10 @@
         ],
         "lat": -15.760963786138493,
         "lng": -47.7511906420964,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Palmas_TO",
+        "name": "Brazil_Palmas_TO",
         "vec": [
           -0.07667,
           0.056937,
@@ -21813,10 +21714,10 @@
         ],
         "lat": -10.142370968834639,
         "lng": -48.25538203376888,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Salvador_BA",
+        "name": "Brazil_Salvador_BA",
         "vec": [
           -0.294119,
           0.086122,
@@ -21846,10 +21747,10 @@
         ],
         "lat": -12.840159631099866,
         "lng": -38.91960584866185,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Natal_RN",
+        "name": "Brazil_Natal_RN",
         "vec": [
           -0.046226,
           0.049319,
@@ -21879,10 +21780,10 @@
         ],
         "lat": -5.835122878420418,
         "lng": -35.24414062500001,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Bacabal_MA",
+        "name": "Brazil_Bacabal_MA",
         "vec": [
           -0.116608,
           0.010038,
@@ -21912,10 +21813,10 @@
         ],
         "lat": -4.046377432088,
         "lng": -44.73908603549324,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Macapá_AP",
+        "name": "Brazil_Macapá_AP",
         "vec": [
           -0.084322,
           -0.032368,
@@ -21945,10 +21846,10 @@
         ],
         "lat": 0.41719889828908524,
         "lng": -51.35195400688731,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Itaituba_PA",
+        "name": "Brazil_Itaituba_PA",
         "vec": [
           -0.032863,
           -0.02299,
@@ -21978,10 +21879,10 @@
         ],
         "lat": -4.2735326889008265,
         "lng": -55.89514574295956,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Manaus_AM",
+        "name": "Brazil_Manaus_AM",
         "vec": [
           0.003661,
           -0.042662,
@@ -22011,10 +21912,10 @@
         ],
         "lat": -2.963879784948823,
         "lng": -60.00925825951389,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Barreiras_BA",
+        "name": "Brazil_Barreiras_BA",
         "vec": [
           -0.106339,
           0.074659,
@@ -22044,7 +21945,7 @@
         ],
         "lat": -12.086580169112331,
         "lng": -45.06720543865402,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Rio_de_Janeiro_RJ",
@@ -22077,10 +21978,10 @@
         ],
         "lat": -22.82932728342498,
         "lng": -43.401368468760865,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Uberaba_MG",
+        "name": "Brazil_Uberaba_MG",
         "vec": [
           -0.061472,
           0.101641,
@@ -22110,10 +22011,10 @@
         ],
         "lat": -19.63092445122283,
         "lng": -47.96980015892242,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Belo_Horizonte_MG",
+        "name": "Brazil_Belo_Horizonte_MG",
         "vec": [
           -0.105328,
           0.110007,
@@ -22143,10 +22044,10 @@
         ],
         "lat": -19.789070553047406,
         "lng": -43.93344803840799,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Florianapolis_SC",
+        "name": "Brazil_Florianapolis_SC",
         "vec": [
           0.049432,
           0.125228,
@@ -22176,10 +22077,10 @@
         ],
         "lat": -27.510928738203827,
         "lng": -48.82795859795827,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Porto_Alegre_RS",
+        "name": "Brazil_Porto_Alegre_RS",
         "vec": [
           -0.004258,
           0.096888,
@@ -22209,10 +22110,10 @@
         ],
         "lat": -29.96676163705435,
         "lng": -51.52863368551235,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Pelotas_RS",
+        "name": "Brazil_Pelotas_RS",
         "vec": [
           -0.004415,
           0.106175,
@@ -22242,10 +22143,10 @@
         ],
         "lat": -31.65699672271167,
         "lng": -52.41203207863751,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Caxias_do_Sul_RS",
+        "name": "Brazil_Caxias_do_Sul_RS",
         "vec": [
           0.051809,
           0.116116,
@@ -22275,10 +22176,10 @@
         ],
         "lat": -29.132584341889178,
         "lng": -51.1247944200837,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Chapecó_SC",
+        "name": "Brazil_Chapecó_SC",
         "vec": [
           0.071972,
           0.098569,
@@ -22308,10 +22209,10 @@
         ],
         "lat": -27.017673843160832,
         "lng": -52.56347180317324,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Joinville_SC",
+        "name": "Brazil_Joinville_SC",
         "vec": [
           0.066804,
           0.102418,
@@ -22341,10 +22242,10 @@
         ],
         "lat": -26.228126672746885,
         "lng": -48.92891841431544,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Ponta_Grossa_PR",
+        "name": "Brazil_Ponta_Grossa_PR",
         "vec": [
           0.062588,
           0.036201,
@@ -22374,10 +22275,10 @@
         ],
         "lat": -24.943289052418102,
         "lng": -50.12481442267811,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Londrina_PR",
+        "name": "Brazil_Londrina_PR",
         "vec": [
           0.030093,
           0.05104,
@@ -22407,7 +22308,7 @@
         ],
         "lat": -23.24899312524194,
         "lng": -51.22575423644087,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Santos_SP",
@@ -22440,10 +22341,10 @@
         ],
         "lat": -23.850604961937506,
         "lng": -46.404923005386415,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Sao_Paulo_SP",
+        "name": "Brazil_Sao_Paulo_SP",
         "vec": [
           -0.038351,
           0.088345,
@@ -22473,10 +22374,10 @@
         ],
         "lat": -23.480642540127644,
         "lng": -46.63208259219002,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Passo_Fundo_RS",
+        "name": "Brazil_Passo_Fundo_RS",
         "vec": [
           0.072571,
           0.045268,
@@ -22506,10 +22407,10 @@
         ],
         "lat": -28.291443906197674,
         "lng": -52.61395171135184,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Curitiba_PR",
+        "name": "Brazil_Curitiba_PR",
         "vec": [
           0.038203,
           0.058739,
@@ -22539,10 +22440,10 @@
         ],
         "lat": -25.407564815559034,
         "lng": -49.24326225538135,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Brazilian_Criciúma_SC",
+        "name": "Brazil_Criciúma_SC",
         "vec": [
           0.057107,
           0.122187,
@@ -22572,7 +22473,7 @@
         ],
         "lat": -28.570104432809913,
         "lng": -49.330504056806866,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Novo_Hamburgo_RS",
@@ -22605,10 +22506,10 @@
         ],
         "lat": -29.69088509473328,
         "lng": -51.124338411144144,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Uruguayan_Artigas",
+        "name": "Uruguay_Artigas",
         "vec": [
           0.061098,
           0.043833,
@@ -22638,10 +22539,10 @@
         ],
         "lat": -30.69362728301726,
         "lng": -56.87118275841067,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Uruguayan_Durazno",
+        "name": "Uruguay_Durazno",
         "vec": [
           0.092152,
           0.091977,
@@ -22671,10 +22572,10 @@
         ],
         "lat": -32.95980102022979,
         "lng": -55.96989195239527,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Uruguayan_Tacuarembó",
+        "name": "Uruguay_Tacuarembó",
         "vec": [
           0.068398,
           0.058277,
@@ -22704,10 +22605,10 @@
         ],
         "lat": -32.147667910673064,
         "lng": -55.57725041314104,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Uruguayan_Lavalleja",
+        "name": "Uruguay_Lavalleja",
         "vec": [
           0.093849,
           0.096922,
@@ -22737,10 +22638,10 @@
         ],
         "lat": -33.927713858676555,
         "lng": -54.890127719446134,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Uruguayan_Treinta_y_Tres",
+        "name": "Uruguay_Treinta_y_Tres",
         "vec": [
           0.074202,
           0.078611,
@@ -22770,10 +22671,10 @@
         ],
         "lat": -32.997455879167255,
         "lng": -54.256547053831326,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Uruguayan_Cerro_Largo",
+        "name": "Uruguay_Cerro_Largo",
         "vec": [
           0.068398,
           0.058277,
@@ -22803,10 +22704,10 @@
         ],
         "lat": -32.374157664191834,
         "lng": -54.185157683057845,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Uruguayan_Florida",
+        "name": "Uruguay_Florida",
         "vec": [
           0.093849,
           0.096922,
@@ -22836,10 +22737,10 @@
         ],
         "lat": -33.83141350521736,
         "lng": -56.032357651822075,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Uruguayan_Maldonado",
+        "name": "Uruguay_Maldonado",
         "vec": [
           0.097737,
           0.106536,
@@ -22869,10 +22770,10 @@
         ],
         "lat": -34.67936356753564,
         "lng": -54.87228037675275,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Uruguayan_Montevideo",
+        "name": "Uruguay_Montevideo",
         "vec": [
           0.080167,
           0.110283,
@@ -22902,10 +22803,10 @@
         ],
         "lat": -34.80397185940911,
         "lng": -56.228678421449196,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Uruguayan_Salto",
+        "name": "Uruguay_Salto",
         "vec": [
           0.088089,
           0.077743,
@@ -22935,10 +22836,10 @@
         ],
         "lat": -31.389172799991666,
         "lng": -57.04965618534441,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Uruguayan_Río_Negro",
+        "name": "Uruguay_Río_Negro",
         "vec": [
           0.092689,
           0.092855,
@@ -22968,43 +22869,10 @@
         ],
         "lat": -32.72744817558084,
         "lng": -57.39767936786521,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_Tucumán",
-        "vec": [
-          0.062229,
-          -0.147794,
-          0.080563,
-          0.054753,
-          -0.062663,
-          -0.012789,
-          -0.192002,
-          -0.229372,
-          -0.003454,
-          -0.004319,
-          0.006898,
-          -0.000582,
-          -0.000778,
-          0.009188,
-          -0.005102,
-          0.00189,
-          0.002114,
-          0.001339,
-          0.002804,
-          0.000094,
-          0.001835,
-          -0.000972,
-          0.000035,
-          0.001581,
-          0.001662
-        ],
-        "lat": -26.997468740415346,
-        "lng": -65.35759420911016,
-        "visible": true
-      },
-      {
-        "name": "Argentine_La_Rioja",
+        "name": "Argentina_La_Rioja",
         "vec": [
           0.059104,
           -0.165348,
@@ -23034,7 +22902,7 @@
         ],
         "lat": -29.076373514025352,
         "lng": -67.2386227156351,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Argentine_Mestizo_(n=1173)",
@@ -23067,106 +22935,7 @@
         ],
         "lat": -30.543094048551158,
         "lng": -67.97241210937501,
-        "visible": true
-      },
-      {
-        "name": "Argentine_San_Luis",
-        "vec": [
-          0.080095,
-          0.00749,
-          0.057237,
-          0.024171,
-          -0.008072,
-          -0.007144,
-          -0.092406,
-          -0.106792,
-          0.009122,
-          0.012506,
-          0.001709,
-          0.002592,
-          -0.005568,
-          -0.000068,
-          0.001734,
-          0.000496,
-          0.000114,
-          -0.000129,
-          -0.000566,
-          -0.000086,
-          0.001828,
-          -0.001504,
-          -0.000085,
-          0.00004,
-          0.001177
-        ],
-        "lat": -32.69578387626081,
-        "lng": -66.09922871779776,
-        "visible": true
-      },
-      {
-        "name": "Argentine_Neuquén",
-        "vec": [
-          0.07304,
-          -0.071702,
-          0.071835,
-          0.041916,
-          -0.032715,
-          -0.008669,
-          -0.142297,
-          -0.167562,
-          0.003546,
-          0.004875,
-          0.002167,
-          0.00101,
-          -0.003447,
-          0.004748,
-          -0.001333,
-          0.001025,
-          0.00161,
-          0.000251,
-          0.000546,
-          0.000051,
-          0.001452,
-          -0.000567,
-          -0.000055,
-          0.000624,
-          0.001378
-        ],
-        "lat": -38.53854701571748,
-        "lng": -69.7793559770619,
-        "visible": true
-      },
-      {
-        "name": "Argentine_Río_Negro",
-        "vec": [
-          0.075312,
-          -0.04879,
-          0.067038,
-          0.036303,
-          -0.025999,
-          -0.008362,
-          -0.127894,
-          -0.150043,
-          0.004875,
-          0.006901,
-          0.002028,
-          0.001397,
-          -0.003919,
-          0.003471,
-          -0.000538,
-          0.000908,
-          0.001211,
-          0.000132,
-          0.000227,
-          0.000013,
-          0.00154,
-          -0.000846,
-          -0.000051,
-          0.000437,
-          0.001324
-        ],
-        "lat": -40.27118183403117,
-        "lng": -67.47802734375001,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Argentine_Octavón_(n=888)",
@@ -23199,10 +22968,10 @@
         ],
         "lat": -37.26788476889603,
         "lng": -58.15380113167723,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_Chubut",
+        "name": "Argentina_Chubut",
         "vec": [
           0.082204,
           -0.022102,
@@ -23232,10 +23001,10 @@
         ],
         "lat": -43.622221995475584,
         "lng": -68.64132255805117,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_Mendoza",
+        "name": "Argentina_Mendoza",
         "vec": [
           0.08864,
           0.039803,
@@ -23265,10 +23034,10 @@
         ],
         "lat": -33.08987032620654,
         "lng": -68.49390144355898,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_San_Juan",
+        "name": "Argentina_San_Juan",
         "vec": [
           0.0834455,
           0.0085289,
@@ -23298,10 +23067,10 @@
         ],
         "lat": -31.460722612851356,
         "lng": -68.39139537759425,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_La_Pampa_Octavón",
+        "name": "Argentina_La_Pampa_Octavón",
         "vec": [
           0.1033547,
           0.0683139,
@@ -23331,10 +23100,10 @@
         ],
         "lat": -37.58548809281704,
         "lng": -66.81280196173729,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_La_Pampa_Euro-Mestizo",
+        "name": "Argentina_La_Pampa_Euro-Mestizo",
         "vec": [
           0.108515,
           0.110658,
@@ -23364,10 +23133,10 @@
         ],
         "lat": -36.21393074225229,
         "lng": -64.78144546703292,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_Cordoba_Castizo",
+        "name": "Argentina_Cordoba_Castizo",
         "vec": [
           0.0881144,
           0.0543707,
@@ -23397,10 +23166,10 @@
         ],
         "lat": -31.443313082012892,
         "lng": -63.778622409181075,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_Entre_Ríos",
+        "name": "Argentina_Entre_Ríos",
         "vec": [
           0.112343,
           0.116432,
@@ -23430,7 +23199,7 @@
         ],
         "lat": -32.01829885244282,
         "lng": -59.12484701438203,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Surinamese_Creole_(n=7)",
@@ -23463,7 +23232,7 @@
         ],
         "lat": 4.396362393782297,
         "lng": -55.703886119552216,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Indo-Guyanese_(n=8)",
@@ -23496,7 +23265,7 @@
         ],
         "lat": 4.39659151680515,
         "lng": -53.34225995582371,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Indo-Guyanese_(n=8)",
@@ -23529,7 +23298,7 @@
         ],
         "lat": 5.293293840638675,
         "lng": -59.09095522279441,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Welsh_(n=22)",
@@ -23562,10 +23331,10 @@
         ],
         "lat": -43.26099367786011,
         "lng": -65.15220369310856,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_Castizo",
+        "name": "Argentine_Chubut_Puerto_Madryn_Castizo",
         "vec": [
           0.0859302,
           0.0286699,
@@ -23595,76 +23364,10 @@
         ],
         "lat": -42.52520025775427,
         "lng": -65.27521097226624,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_Castizo",
-        "vec": [
-          0.0859302,
-          0.0286699,
-          0.0535677,
-          0.0200131,
-          -0.0017293,
-          -0.0061776,
-          -0.0787091,
-          -0.0902542,
-          0.009907,
-          0.0133746,
-          0.0011932,
-          0.0026243,
-          -0.0055431,
-          -0.0008023,
-          0.0023479,
-          0.0005192,
-          -0.0002686,
-          -0.0002265,
-          -0.0007916,
-          -0.0000172,
-          0.001867,
-          -0.0014114,
-          -0.0001344,
-          -0.0000088,
-          0.0010508
-        ],
-        "lat": -44.16459468866306,
-        "lng": -65.89024736805469,
-        "visible": true
-      },
-      {
-        "name": "Argentine_Santa_Cruz",
-        "vec": [
-          0.078014,
-          -0.007326,
-          0.059603,
-          0.027273,
-          -0.012969,
-          -0.007613,
-          -0.101733,
-          -0.118217,
-          0.008009,
-          0.011031,
-          0.002083,
-          0.002365,
-          -0.005246,
-          0.000721,
-          0.00123,
-          0.000565,
-          0.000317,
-          -0.000031,
-          -0.000343,
-          -0.000077,
-          0.001823,
-          -0.001477,
-          -0.000052,
-          0.000102,
-          0.001233
-        ],
-        "lat": -48.53666207207285,
-        "lng": -69.62505087416237,
-        "visible": true
-      },
-      {
-        "name": "Argentine_Tierra_del_Fuego",
+        "name": "Tierra_del_Fuego_AR",
         "vec": [
           0.079877,
           -0.00485,
@@ -23694,7 +23397,7 @@
         ],
         "lat": -54.24688143391836,
         "lng": -67.54309096666486,
-        "visible": true
+        "visible": false
       },
       {
         "name": "Falkland_Islands/Islas_Malvinas",
@@ -23727,7 +23430,7 @@
         ],
         "lat": -51.64905086092659,
         "lng": -58.535242450260036,
-        "visible": true
+        "visible": false
       },
       {
         "name": "South_Georgia_and_the_South_Sandwich_Islands",
@@ -23760,10 +23463,10 @@
         ],
         "lat": -54.38612215327237,
         "lng": -36.2698916175203,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_Corrientes",
+        "name": "Argentina_Corrientes",
         "vec": [
           0.070671,
           -0.026349,
@@ -23793,10 +23496,10 @@
         ],
         "lat": -28.896038373018435,
         "lng": -58.05960229219649,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_Misiones",
+        "name": "Argentina_Misiones",
         "vec": [
           0.086548,
           0.014033,
@@ -23826,10 +23529,10 @@
         ],
         "lat": -27.234072435712182,
         "lng": -54.856841749851704,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_Chaco",
+        "name": "Argentina_Chaco",
         "vec": [
           0.073852,
           -0.056407,
@@ -23859,10 +23562,10 @@
         ],
         "lat": -26.562483614553948,
         "lng": -60.74426921739727,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_Jujuy",
+        "name": "Argentina_Jujuy",
         "vec": [
           0.055661,
           -0.210936,
@@ -23892,10 +23595,10 @@
         ],
         "lat": -23.17432790984916,
         "lng": -65.89964113634664,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_Salta",
+        "name": "Argentina_Salta",
         "vec": [
           0.058837,
           -0.174675,
@@ -23925,10 +23628,10 @@
         ],
         "lat": -25.03587508904303,
         "lng": -64.44157366701586,
-        "visible": true
+        "visible": false
       },
       {
-        "name": "Argentine_Santiago_del_Estero",
+        "name": "Argentina_Santiago_del_Estero",
         "vec": [
           0.057359,
           -0.182602,
@@ -23958,40 +23661,601 @@
         ],
         "lat": -27.696988835812654,
         "lng": -63.54685921845403,
+        "visible": false
+      },
+      {
+        "name": "Chilean_Mestizo_C2",
+        "vec": [
+          0.0656641,
+          -0.0583595,
+          0.071804,
+          0.0409944,
+          -0.028615,
+          -0.0084739,
+          -0.134939,
+          -0.1572397,
+          0.0050378,
+          0.0075838,
+          0.0019369,
+          0.0018365,
+          -0.0052626,
+          0.0043675,
+          0.0000081,
+          0.0009303,
+          0.000999,
+          -0.000037,
+          0.0005433,
+          0.0003948,
+          0.0016687,
+          -0.0003151,
+          -0.0002999,
+          0.0000385,
+          0.000947
+        ],
+        "lat": -37.15949970742048,
+        "lng": -71.49902343750001,
         "visible": true
       },
       {
-        "name": "Chilean_Mestizo_(n=281)",
+        "name": "Chilean_Mestizo_N",
         "vec": [
-          0.082818744,
-          -0.031789594,
-          0.06721906,
-          0.034711783,
-          -0.018829171,
-          -0.0080110107,
-          -0.11763414,
-          -0.13742613,
-          0.0078087402,
-          0.010132399,
-          0.0019193025,
-          0.0025161246,
-          -0.0059532064,
-          0.0015141174,
-          0.0010168612,
-          0.00041030249,
-          0.00037169751,
-          0.00018633808,
-          0.0000078967972,
-          0.000065893238,
-          0.0021325872,
-          -0.0013239324,
-          -0.00020720285,
-          0.0002372242,
-          0.0013401495
+          0.064198,
+          -0.0726122,
+          0.074565,
+          0.0443084,
+          -0.03369,
+          -0.0089472,
+          -0.1446032,
+          -0.1687215,
+          0.0040678,
+          0.0062085,
+          0.0018789,
+          0.0015534,
+          -0.0049575,
+          0.0057942,
+          -0.0004182,
+          0.0011175,
+          0.0014129,
+          -0.0001582,
+          0.0007985,
+          0.0005249,
+          0.001483,
+          0.0001859,
+          -0.0003593,
+          -0.0000477,
+          0.0008321
         ],
-        "lat": -37.63465364860554,
-        "lng": -71.83559919400942,
+        "lat": -27.201844162902567,
+        "lng": -70.02913837022463,
         "visible": true
+      },
+      {
+        "name": "Chilean_Mestizo_C1",
+        "vec": [
+          0.0674234,
+          -0.0412561,
+          0.0684908,
+          0.0370176,
+          -0.0225249,
+          -0.0079059,
+          -0.1233419,
+          -0.1434615,
+          0.0062017,
+          0.0092341,
+          0.0020066,
+          0.0021763,
+          -0.0056287,
+          0.0026555,
+          0.0005197,
+          0.0007056,
+          0.0005024,
+          0.0001084,
+          0.000237,
+          0.0002387,
+          0.0018915,
+          -0.0009164,
+          -0.0002285,
+          0.0001419,
+          0.0010849
+        ],
+        "lat": -33.284964783783536,
+        "lng": -70.66406250000001,
+        "visible": true
+      },
+      {
+        "name": "Chilean_Mestizo_S",
+        "vec": [
+          0.064198,
+          -0.0726122,
+          0.074565,
+          0.0443084,
+          -0.03369,
+          -0.0089472,
+          -0.1446032,
+          -0.1687215,
+          0.0040678,
+          0.0062085,
+          0.0018789,
+          0.0015534,
+          -0.0049575,
+          0.0057942,
+          -0.0004182,
+          0.0011175,
+          0.0014129,
+          -0.0001582,
+          0.0007985,
+          0.0005249,
+          0.001483,
+          0.0001859,
+          -0.0003593,
+          -0.0000477,
+          0.0008321
+        ],
+        "lat": -41.539541044955826,
+        "lng": -72.29003906250001,
+        "visible": true
+      },
+      {
+        "name": "Chilean_Mestizo_C1",
+        "vec": [
+          0.0674234,
+          -0.0412561,
+          0.0684908,
+          0.0370176,
+          -0.0225249,
+          -0.0079059,
+          -0.1233419,
+          -0.1434615,
+          0.0062017,
+          0.0092341,
+          0.0020066,
+          0.0021763,
+          -0.0056287,
+          0.0026555,
+          0.0005197,
+          0.0007056,
+          0.0005024,
+          0.0001084,
+          0.000237,
+          0.0002387,
+          0.0018915,
+          -0.0009164,
+          -0.0002285,
+          0.0001419,
+          0.0010849
+        ],
+        "lat": -31.128926873955653,
+        "lng": -70.40039062500001,
+        "visible": true
+      },
+      {
+        "name": "Chilean_Mestizo_S",
+        "vec": [
+          0.064198,
+          -0.0726122,
+          0.074565,
+          0.0443084,
+          -0.03369,
+          -0.0089472,
+          -0.1446032,
+          -0.1687215,
+          0.0040678,
+          0.0062085,
+          0.0018789,
+          0.0015534,
+          -0.0049575,
+          0.0057942,
+          -0.0004182,
+          0.0011175,
+          0.0014129,
+          -0.0001582,
+          0.0007985,
+          0.0005249,
+          0.001483,
+          0.0001859,
+          -0.0003593,
+          -0.0000477,
+          0.0008321
+        ],
+        "lat": -48.39797437847264,
+        "lng": -74.70703125000001,
+        "visible": true
+      },
+      {
+        "name": "Chilean_Mestizo_S",
+        "vec": [
+          0.064198,
+          -0.0726122,
+          0.074565,
+          0.0443084,
+          -0.03369,
+          -0.0089472,
+          -0.1446032,
+          -0.1687215,
+          0.0040678,
+          0.0062085,
+          0.0018789,
+          0.0015534,
+          -0.0049575,
+          0.0057942,
+          -0.0004182,
+          0.0011175,
+          0.0014129,
+          -0.0001582,
+          0.0007985,
+          0.0005249,
+          0.001483,
+          0.0001859,
+          -0.0003593,
+          -0.0000477,
+          0.0008321
+        ],
+        "lat": -53.590976526411794,
+        "lng": -71.23535156250001,
+        "visible": true
+      },
+      {
+        "name": "Chilean_Mestizo_S",
+        "vec": [
+          0.064198,
+          -0.0726122,
+          0.074565,
+          0.0443084,
+          -0.03369,
+          -0.0089472,
+          -0.1446032,
+          -0.1687215,
+          0.0040678,
+          0.0062085,
+          0.0018789,
+          0.0015534,
+          -0.0049575,
+          0.0057942,
+          -0.0004182,
+          0.0011175,
+          0.0014129,
+          -0.0001582,
+          0.0007985,
+          0.0005249,
+          0.001483,
+          0.0001859,
+          -0.0003593,
+          -0.0000477,
+          0.0008321
+        ],
+        "lat": -44.596392686049015,
+        "lng": -74.0256566608282,
+        "visible": false
+      },
+      {
+        "name": "Argentine_Chubut_Trelew_Harnizo",
+        "vec": [
+          0.0690509,
+          0.0017552,
+          0.0584134,
+          0.02644,
+          -0.0111951,
+          -0.0066345,
+          -0.0960407,
+          -0.1101922,
+          0.0073142,
+          0.0110519,
+          0.0013067,
+          0.0020472,
+          -0.0050155,
+          0.001712,
+          0.0013766,
+          0.0009534,
+          0.0002572,
+          -0.0003601,
+          -0.0002783,
+          0.000268,
+          0.0015039,
+          -0.0005943,
+          -0.0002105,
+          -0.0001485,
+          0.0007326
+        ],
+        "lat": -44.657267105381585,
+        "lng": -65.99117487472495,
+        "visible": false
+      },
+      {
+        "name": "Argentina_Chubut_C.Rivadavia",
+        "vec": [
+          0.0645764,
+          -0.0870777,
+          0.075548,
+          0.0463416,
+          -0.0407593,
+          -0.0099398,
+          -0.1552685,
+          -0.1815338,
+          0.0024957,
+          0.0037379,
+          0.0018037,
+          0.0008768,
+          -0.0038102,
+          0.008354,
+          -0.0011226,
+          0.0015694,
+          0.0023837,
+          -0.0005931,
+          0.0010913,
+          0.0006725,
+          0.0008948,
+          0.0011731,
+          -0.0003901,
+          -0.0003227,
+          0.0005827
+        ],
+        "lat": -45.788411707221435,
+        "lng": -67.91868788560936,
+        "visible": false
+      },
+      {
+        "name": "Argentine_Santa_Cruz",
+        "vec": [
+          0.0684991,
+          -0.0375547,
+          0.0654942,
+          0.0345466,
+          -0.0235816,
+          -0.0083615,
+          -0.1217988,
+          -0.1417186,
+          0.0056316,
+          0.0082826,
+          0.0020157,
+          0.0017587,
+          -0.0046734,
+          0.0036616,
+          0.0002758,
+          0.0009951,
+          0.0010506,
+          -0.00024,
+          0.0002185,
+          0.0002333,
+          0.0014394,
+          -0.0004547,
+          -0.0001749,
+          -0.0000687,
+          0.0009333
+        ],
+        "lat": -48.149959975094895,
+        "lng": -70.84565208732275,
+        "visible": false
+      },
+      {
+        "name": "Argentine_Neuquen_Castizo",
+        "vec": [
+          0.0859302,
+          0.0286699,
+          0.0535677,
+          0.0200131,
+          -0.0017293,
+          -0.0061776,
+          -0.0787091,
+          -0.0902542,
+          0.009907,
+          0.0133746,
+          0.0011932,
+          0.0026243,
+          -0.0055431,
+          -0.0008023,
+          0.0023479,
+          0.0005192,
+          -0.0002686,
+          -0.0002265,
+          -0.0007916,
+          -0.0000172,
+          0.001867,
+          -0.0014114,
+          -0.0001344,
+          -0.0000088,
+          0.0010508
+        ],
+        "lat": -37.58983270080698,
+        "lng": -70.1438057535563,
+        "visible": false
+      },
+      {
+        "name": "Argentine_San_Luis",
+        "vec": [
+          0.0876372,
+          0.0468549,
+          0.0499429,
+          0.0157511,
+          0.0045128,
+          -0.0055829,
+          -0.0664875,
+          -0.0756854,
+          0.0110384,
+          0.0149929,
+          0.0012161,
+          0.0029281,
+          -0.0058427,
+          -0.002426,
+          0.0028667,
+          0.0003279,
+          -0.0007379,
+          -0.0001206,
+          -0.0011023,
+          -0.0001585,
+          0.0020485,
+          -0.0019434,
+          -0.0000679,
+          0.0000689,
+          0.0011565
+        ],
+        "lat": -32.69919627260486,
+        "lng": -65.66992270624421,
+        "visible": false
+      },
+      {
+        "name": "Argentine_Tucuman",
+        "vec": [
+          0.0738261,
+          -0.0456445,
+          0.0595427,
+          0.0308279,
+          -0.028331,
+          -0.0093597,
+          -0.1228568,
+          -0.1474185,
+          0.0019131,
+          0.0038505,
+          0.0074069,
+          0.0010008,
+          -0.0021507,
+          0.0000656,
+          -0.0025135,
+          0.0009663,
+          -0.0007027,
+          0.0022427,
+          0.00151,
+          -0.0007929,
+          0.003057,
+          -0.004209,
+          0.000581,
+          0.0025811,
+          0.0022901
+        ],
+        "lat": -26.752025680005538,
+        "lng": -65.27728116698997,
+        "visible": false
+      },
+      {
+        "name": "Argentine_Neuquen_Bariloche_Mestizo",
+        "vec": [
+          0.070602049,
+          -0.028408595,
+          0.064954728,
+          0.033636597,
+          -0.018301326,
+          -0.0075518747,
+          -0.11461161,
+          -0.1339309,
+          0.0074388201,
+          0.0093743828,
+          0.0028354757,
+          0.0021971628,
+          -0.0050505584,
+          0.0014326223,
+          0.00075390622,
+          0.00057891134,
+          0.00056642967,
+          0.00012353879,
+          -0.000042809037,
+          -0.00011707332,
+          0.0017673325,
+          -0.0013566198,
+          -0.0000085063939,
+          0.00030906991,
+          0.0012721228
+        ],
+        "lat": -40.93977507413475,
+        "lng": -70.91774388131599,
+        "visible": false
+      },
+      {
+        "name": "Argentine_Esquiel",
+        "vec": [
+          0.0672404,
+          -0.1213714,
+          0.076489,
+          0.0498422,
+          -0.0539459,
+          -0.0117121,
+          -0.1749792,
+          -0.20857,
+          -0.0019222,
+          -0.0021162,
+          0.0060108,
+          -0.0001621,
+          -0.0013917,
+          0.0079366,
+          -0.0040717,
+          0.0017925,
+          0.0017457,
+          0.0011725,
+          0.0025013,
+          0.0000773,
+          0.0018831,
+          -0.0009801,
+          0.0000746,
+          0.0015682,
+          0.0015205
+        ],
+        "lat": -42.52467780158851,
+        "lng": -71.31774902343751,
+        "visible": false
+      },
+      {
+        "name": "Argentine_Río_Negro",
+        "vec": [
+          0.0882728,
+          0.0090377,
+          0.0575127,
+          0.0255727,
+          -0.0083216,
+          -0.0061423,
+          -0.090752,
+          -0.1050012,
+          0.0073212,
+          0.0106838,
+          0.0006273,
+          0.002174,
+          -0.0049676,
+          0.0010921,
+          0.0014706,
+          0.0009104,
+          0.000238,
+          -0.0000283,
+          0.0000695,
+          -0.0000171,
+          0.0018116,
+          -0.0009184,
+          0.0001177,
+          0.0007926,
+          0.0009471
+        ],
+        "lat": -40.23374420649893,
+        "lng": -67.61234927626226,
+        "visible": false
+      },
+      {
+        "name": "Chilean_Mestizo_S",
+        "vec": [
+          0.064198,
+          -0.0726122,
+          0.074565,
+          0.0443084,
+          -0.03369,
+          -0.0089472,
+          -0.1446032,
+          -0.1687215,
+          0.0040678,
+          0.0062085,
+          0.0018789,
+          0.0015534,
+          -0.0049575,
+          0.0057942,
+          -0.0004182,
+          0.0011175,
+          0.0014129,
+          -0.0001582,
+          0.0007985,
+          0.0005249,
+          0.001483,
+          0.0001859,
+          -0.0003593,
+          -0.0000477,
+          0.0008321
+        ],
+        "lat": -38.65460194798227,
+        "lng": -73.07347027740751,
+        "visible": false
       }
     ]
   },
@@ -28718,7 +28982,7 @@
         "visible": true
       },
       {
-        "name": "Brazilian_PrePottery_2500BP",
+        "name": "Brazil_PrePottery_2500BP",
         "vec": [
           0.0387,
           -0.281302,
@@ -28751,7 +29015,7 @@
         "visible": true
       },
       {
-        "name": "Argentine_Antofagasta_2100BP_(n=2)",
+        "name": "Argentina_Antofagasta_2100BP_(n=2)",
         "vec": [
           0.054066,
           -0.312275,
@@ -28784,7 +29048,7 @@
         "visible": true
       },
       {
-        "name": "Argentine_Mar_Chiquita_2500BP_(n=4)",
+        "name": "Argentina_Mar_Chiquita_2500BP_(n=4)",
         "vec": [
           0.05492,
           -0.3140525,
@@ -28817,7 +29081,7 @@
         "visible": true
       },
       {
-        "name": "Argentine_Southern_Pampas_2600BP_(n=10)",
+        "name": "Argentina_Southern_Pampas_2600BP_(n=10)",
         "vec": [
           0.0515619,
           -0.3187746,
@@ -28850,7 +29114,7 @@
         "visible": true
       },
       {
-        "name": "Argentine_Yamana_1500BP_(n=1)",
+        "name": "Argentina_Yamana_1500BP_(n=1)",
         "vec": [
           0.053497,
           -0.313799,
