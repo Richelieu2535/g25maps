@@ -22608,7 +22608,7 @@
         "visible": true
       },
       {
-        "name": "Uruguay_Artigas",
+        "name": "Uruguayan_Artigas",
         "vec": [
           0.061098,
           0.043833,
@@ -22641,7 +22641,7 @@
         "visible": true
       },
       {
-        "name": "Uruguay_Durazno",
+        "name": "Uruguayan_Durazno",
         "vec": [
           0.092152,
           0.091977,
@@ -22674,7 +22674,7 @@
         "visible": true
       },
       {
-        "name": "Uruguay_Tacuarembó",
+        "name": "Uruguayan_Tacuarembó",
         "vec": [
           0.068398,
           0.058277,
@@ -22707,7 +22707,7 @@
         "visible": true
       },
       {
-        "name": "Uruguay_Lavalleja",
+        "name": "Uruguayan_Lavalleja",
         "vec": [
           0.093849,
           0.096922,
@@ -22740,7 +22740,7 @@
         "visible": true
       },
       {
-        "name": "Uruguay_Treinta_y_Tres",
+        "name": "Uruguayan_Treinta_y_Tres",
         "vec": [
           0.074202,
           0.078611,
@@ -22773,7 +22773,7 @@
         "visible": true
       },
       {
-        "name": "Uruguay_Cerro_Largo",
+        "name": "Uruguayan_Cerro_Largo",
         "vec": [
           0.068398,
           0.058277,
@@ -22806,7 +22806,7 @@
         "visible": true
       },
       {
-        "name": "Uruguay_Florida",
+        "name": "Uruguayan_Florida",
         "vec": [
           0.093849,
           0.096922,
@@ -22839,7 +22839,7 @@
         "visible": true
       },
       {
-        "name": "Uruguay_Maldonado",
+        "name": "Uruguayan_Maldonado",
         "vec": [
           0.097737,
           0.106536,
@@ -22872,7 +22872,7 @@
         "visible": true
       },
       {
-        "name": "Uruguay_Montevideo",
+        "name": "Uruguayan_Montevideo",
         "vec": [
           0.080167,
           0.110283,
@@ -22905,7 +22905,7 @@
         "visible": true
       },
       {
-        "name": "Uruguay_Salto",
+        "name": "Uruguayan_Salto",
         "vec": [
           0.088089,
           0.077743,
@@ -22938,7 +22938,7 @@
         "visible": true
       },
       {
-        "name": "Uruguay_Río_Negro",
+        "name": "Uruguayan_Río_Negro",
         "vec": [
           0.092689,
           0.092855,
@@ -23631,7 +23631,7 @@
         "visible": true
       },
       {
-        "name": "Santa_Cruz_AR",
+        "name": "Argentine_Santa_Cruz",
         "vec": [
           0.078014,
           -0.007326,
@@ -23664,7 +23664,7 @@
         "visible": true
       },
       {
-        "name": "Tierra_del_Fuego_AR",
+        "name": "Argentine_Tierra_del_Fuego",
         "vec": [
           0.079877,
           -0.00485,
