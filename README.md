@@ -1,7 +1,7 @@
 # G25 custom mapping app
 The following is a tool created to generate G25 distance maps using custom populations. The user can add any population from any time period wherever they desire to create their own custom presets. I have included a generic World preset which I've worked on a bit and consider to be well-made, but the user may create any preset they want.
-I wanted it to be easy to use and sidestep one of the issues with other mapping tools, and it's the lack of customizability where the only presets available are pre-made by the owner of the tool and so it's limited to however much effort and thought they put into it, and where certain functions are locked behind a paywall. Customizability doesn't only extent to the reference populations or the location but also the interpolation the gradient, its smoothness, the color of the gradient, etcetera.
-I might eventually add more features, such as a calculator function, or I might add new presets, such as an Iron Age preset which I'm working on but is only half-decent in Europe so far. I'm open to any feedback on things user would like to see added and whatnot.
+I wanted it to be easy to use and sidestep one of the issues with other mapping tools, and it's the lack of customizability where the only presets available are pre-made by the owner of the tool and so it's limited to however much effort and thought they put into it, and where certain features are locked behind a paywall. Customizability doesn't only extend to the reference populations or the location but also the interpolation of the gradient, its smoothness, the color of the gradient, etcetera.
+I might eventually add more features, such as a calculator function, or I might add new presets, such as an Iron Age preset, which I'm working on but is only half-decent in Europe so far. I'm open to any feedback on things user would like to see added and whatnot.
 
 ## How to use
 1. Paste target G25 coordinates **and** click on "Set target".
