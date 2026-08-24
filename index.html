@@ -1489,13 +1489,29 @@ function renderSourceSelector() {
   statusEl.classList.add('set');
 }
 
+function sourceLinesMatch(a, b) {
+  return a.name === b.name && a.vec.length === b.vec.length && a.vec.every((v, i) => v === b.vec[i]);
+}
+
 document.getElementById('setTargetBtn').addEventListener('click', () => {
   const text = document.getElementById('targetInput').value;
   const parsed = parseG25Block(text);
   if (!parsed.length) return;
-  sources = currentMode === 'distance' ? [normalizeSource(parsed[0], 0)] : parsed.map(normalizeSource);
-  selectedSourceIndices = [];
-  target = currentMode === 'distance' ? sources[0] : null;
+  if (currentMode === 'distance') {
+    // Distance mode still has a single target; a new paste replaces it.
+    sources = [normalizeSource(parsed[0], 0)];
+    selectedSourceIndices = [];
+    target = sources[0];
+  } else {
+    // Admixture/closer: add incrementally. Existing sources, their
+    // selection state, and their assigned colors are left untouched;
+    // duplicate entries (same name + vector) are skipped; newly added
+    // sources start unselected.
+    parsed.forEach(p => {
+      if (sources.some(existing => sourceLinesMatch(existing, p))) return;
+      sources.push(normalizeSource(p, sources.length));
+    });
+  }
   renderSourceSelector();
   document.getElementById('targetInput').value = '';
 });
@@ -1583,12 +1599,12 @@ function updateModeUI() {
 
   document.getElementById('targetSourceHeading').textContent = (admixture || closer) ? 'Source' : 'Target';
   document.getElementById('targetSourceInputLabel').innerHTML = (admixture || closer)
-    ? 'Paste two or more G25 lines — <span style="color:var(--text-2)">Name,c1,c2,…,c25</span>'
+    ? 'Paste one or more G25 lines — <span style="color:var(--text-2)">Name,c1,c2,…,c25</span>'
     : 'Paste one G25 line — <span style="color:var(--text-2)">Name,c1,c2,…,c25</span>';
   document.getElementById('targetInput').placeholder = (admixture || closer)
     ? 'Source_A,0.0123,-0.0456,0.0789,...\nSource_B,0.0201,-0.0312,0.0645,...'
     : 'Target,0.0123,-0.0456,0.0789,...';
-  document.getElementById('setTargetBtn').textContent = (admixture || closer) ? 'Set sources' : 'Set target';
+  document.getElementById('setTargetBtn').textContent = (admixture || closer) ? 'Add source(s)' : 'Set target';
   sourceSelectorWrap.style.display = (admixture || closer) && sources.length ? 'block' : 'none';
   document.getElementById('generateBtn').textContent = admixture ? 'Generate admixture map' : closer ? 'Generate closer-to map' : 'Generate distance map';
 
