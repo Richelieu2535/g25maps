@@ -465,6 +465,7 @@
       <select id="modeSelect">
         <option value="distance" selected>Distance</option>
         <option value="admixture">Admixture</option>
+        <option value="closer">Closer to</option>
       </select>
       <div id="modeHint" class="hint">Distance from the selected source population to each placed reference population.</div>
     </div>
@@ -758,6 +759,25 @@ function colorAt(t) {
 // Distance maps use the selected color scheme in its normal direction (low → high).
 // Admixture maps reverse it so 0% uses the scheme's high-end color and 100% its low-end color.
 function colorAtMapValue(t) {
+  if (currentMode === 'closer') {
+    const palette = closerSelectedSources.length ? closerSelectedSources : sources;
+    const n = Math.max(1, palette.length);
+    if (n === 1) return hexToRgbLocal(palette[0]?.color || getSourceColor(0));
+
+    // Blend continuously between adjacent source colors. This makes the
+    // boundaries between sources smooth rather than assigning each source
+    // to a single hard color band.
+    const pos = Math.max(0, Math.min(1, t)) * (n - 1);
+    const i = Math.min(n - 2, Math.floor(pos));
+    const f = pos - i;
+    const a = hexToRgbLocal(palette[i]?.color || getSourceColor(i));
+    const b = hexToRgbLocal(palette[i + 1]?.color || getSourceColor(i + 1));
+    return [
+      Math.round(a[0] + (b[0] - a[0]) * f),
+      Math.round(a[1] + (b[1] - a[1]) * f),
+      Math.round(a[2] + (b[2] - a[2]) * f),
+    ];
+  }
   return colorAt(currentMode === 'admixture' ? 1 - t : t);
 }
 
@@ -1125,9 +1145,10 @@ waterColorInput.addEventListener('input', () => {
 let popIdSeq = 1;
 const populations = []; // {id, name, vec, marker}
 let target = null; // selected target (distance) / selected source (admixture): {name, vec}
-let sources = [];       // [{name, vec}]
+let sources = [];       // [{name, vec, color}]
 let selectedSourceIndices = [];
 let currentMode = 'distance';
+let closerSelectedSources = [];
 
 function makePinIcon(name, isTarget) {
   return L.divIcon({
@@ -1357,12 +1378,22 @@ document.getElementById('addPopBtn').addEventListener('click', () => {
 
 /* ---------- target/source list ---------- */
 let targetMarker = null;
+const DEFAULT_SOURCE_COLORS = ['#e63946','#457b9d','#f4a261','#2a9d8f','#8d5cf6','#e9c46a','#d1495b','#0077b6','#6a994e','#bc6c25','#ff70a6','#5c677d'];
+function getSourceColor(index) { return DEFAULT_SOURCE_COLORS[index % DEFAULT_SOURCE_COLORS.length]; }
+function normalizeSource(src, index) {
+  return { name: src.name, vec: Array.isArray(src.vec) ? src.vec : [], color: /^#[0-9a-f]{6}$/i.test(src.color || '') ? src.color : getSourceColor(index) };
+}
+function hexToRgbLocal(hex) {
+  const h = hex.replace('#','');
+  return [parseInt(h.slice(0,2),16), parseInt(h.slice(2,4),16), parseInt(h.slice(4,6),16)];
+}
+
 
 function removeSource(index) {
   if (index < 0 || index >= sources.length) return;
   sources.splice(index, 1);
   selectedSourceIndices = selectedSourceIndices.filter(i => i !== index).map(i => i > index ? i - 1 : i);
-  if (!selectedSourceIndices.length && sources.length) selectedSourceIndices = [Math.min(index, sources.length - 1)];
+  // Keep remaining sources unselected unless the user explicitly selected them.
   renderSourceSelector();
   if (heatLayer._points.length && sources.length) document.getElementById('generateBtn').click();
   else if (!sources.length) heatLayer.clear();
@@ -1412,6 +1443,7 @@ function renderSourceSelector() {
   const list = document.getElementById('sourceList');
   const empty = document.getElementById('emptySources');
   const admixture = currentMode === 'admixture';
+  const closer = currentMode === 'closer';
 
   if (!sources.length) {
     wrap.style.display = 'none';
@@ -1419,15 +1451,16 @@ function renderSourceSelector() {
     empty.style.display = 'block';
     list.innerHTML = '';
     target = null;
-    document.getElementById('targetStatus').textContent = admixture ? 'No sources set' : 'No target set';
+    document.getElementById('targetStatus').textContent = (admixture || closer) ? 'No sources set' : 'No target set';
     document.getElementById('targetStatus').classList.remove('set');
     return;
   }
 
   empty.style.display = 'none';
+  sources = sources.map(normalizeSource);
   selectedSourceIndices = selectedSourceIndices.filter(i => i >= 0 && i < sources.length);
   // No source is selected by default; the user explicitly chooses which sources to map.
-  wrap.style.display = admixture ? 'block' : 'none';
+  wrap.style.display = (admixture || closer) ? 'block' : 'none';
 
   list.innerHTML = sources.map((src, i) => {
     const selected = selectedSourceIndices.includes(i);
@@ -1435,8 +1468,9 @@ function renderSourceSelector() {
        <span class="source-num">${i + 1}.</span>
        <span class="name" data-index="${i}" title="Click to rename">${escapeHtml(src.name)}</span>
        <span class="dims">${src.vec.length}d</span>
+       ${admixture || currentMode === 'closer' ? `<input class="source-color" type="color" value="${src.color}" data-act="source-color" data-index="${i}" title="Source color">` : ''}
        <span class="actions">
-         ${admixture ? `<button data-act="toggle-source" data-index="${i}" title="${selected ? 'Remove from map' : 'Select for map'}">◎</button>` : ''}
+         ${admixture || closer ? `<button data-act="toggle-source" data-index="${i}" title="${selected ? 'Remove from map' : 'Select for map'}">◎</button>` : ''}
          <button data-act="rename-source" data-index="${i}" title="Rename">✎</button>
          <button data-act="copy-source" data-index="${i}" title="Copy G25 line">⧉</button>
          <button class="danger-txt" data-act="remove-source" data-index="${i}" title="Remove">✕</button>
@@ -1445,11 +1479,13 @@ function renderSourceSelector() {
   }).join('');
   list.style.display = 'block';
 
-  target = admixture ? null : sources[0];
+  target = (admixture || closer) ? null : sources[0];
   const statusEl = document.getElementById('targetStatus');
   statusEl.textContent = admixture
     ? `${sources.length} source${sources.length === 1 ? '' : 's'} loaded${selectedSourceIndices.length ? ` · mapping ${selectedSourceIndices.map(i => sources[i]?.name).filter(Boolean).join(' + ')}` : ' · select sources to map'}`
-    : `Target: ${target.name} (${target.vec.length} dims)`;
+    : closer
+      ? `${sources.length} source${sources.length === 1 ? '' : 's'} loaded${selectedSourceIndices.length ? ` · comparing ${selectedSourceIndices.map(i => sources[i]?.name).filter(Boolean).join(' vs ')}` : ' · select sources to compare'}`
+      : `Target: ${target.name} (${target.vec.length} dims)`;
   statusEl.classList.add('set');
 }
 
@@ -1457,7 +1493,7 @@ document.getElementById('setTargetBtn').addEventListener('click', () => {
   const text = document.getElementById('targetInput').value;
   const parsed = parseG25Block(text);
   if (!parsed.length) return;
-  sources = currentMode === 'distance' ? [parsed[0]] : parsed;
+  sources = currentMode === 'distance' ? [normalizeSource(parsed[0], 0)] : parsed.map(normalizeSource);
   selectedSourceIndices = [];
   target = currentMode === 'distance' ? sources[0] : null;
   renderSourceSelector();
@@ -1469,6 +1505,11 @@ document.getElementById('sourceList').addEventListener('click', e => {
   const btn = e.target.closest('button[data-act]');
   if (btn) {
     const index = Number(btn.dataset.index);
+    if (btn.dataset.act === 'source-color') {
+      const rec = sources[index];
+      if (rec) { rec.color = btn.value; renderSourceSelector(); if (heatLayer._points.length) document.getElementById('generateBtn').click(); }
+      return;
+    }
     if (btn.dataset.act === 'remove-source') removeSource(index);
     else if (btn.dataset.act === 'rename-source') beginRenameSource(index, btn.closest('li'));
     else if (btn.dataset.act === 'copy-source') copySource(index);
@@ -1492,6 +1533,16 @@ document.getElementById('sourceList').addEventListener('click', e => {
   if (item && currentMode === 'distance') {
     renderSourceSelector();
   }
+});
+
+document.getElementById('sourceList').addEventListener('change', e => {
+  const input = e.target.closest('input[data-act="source-color"]');
+  if (!input) return;
+  const index = Number(input.dataset.index);
+  if (!Number.isInteger(index) || !sources[index]) return;
+  sources[index].color = input.value;
+  if (currentMode === 'closer' && heatLayer._points.length) document.getElementById('generateBtn').click();
+  else renderSourceSelector();
 });
 
 /* ---------- fit to pins / zoom slider ---------- */
@@ -1523,32 +1574,38 @@ const sourceSelectorWrap = document.getElementById('sourceSelectorWrap');
 function updateModeUI() {
   currentMode = modeSelect.value;
   const admixture = currentMode === 'admixture';
+  const closer = currentMode === 'closer';
   modeHint.textContent = admixture
-    ? 'Models each placed reference as a mixture of only the source populations you entered. The map shows the selected source\'s modeled proportion from 0% to 100%.'
-    : 'Measures Euclidean genetic distance from the selected source to each placed reference population.';
+    ? 'Models each placed reference as a mixture of only the source populations you entered. The map shows the selected sources’ combined modeled proportion.'
+    : closer
+      ? 'Compares each placed reference population to the selected sources and colors each centroid by whichever source is genetically closest.'
+      : 'Measures Euclidean genetic distance from the selected source to each placed reference population.';
 
-  document.getElementById('targetSourceHeading').textContent = admixture ? 'Source' : 'Target';
-  document.getElementById('targetSourceInputLabel').innerHTML = admixture
-    ? 'Paste one or more G25 lines — <span style="color:var(--text-2)">Name,c1,c2,…,c25</span>'
+  document.getElementById('targetSourceHeading').textContent = (admixture || closer) ? 'Source' : 'Target';
+  document.getElementById('targetSourceInputLabel').innerHTML = (admixture || closer)
+    ? 'Paste two or more G25 lines — <span style="color:var(--text-2)">Name,c1,c2,…,c25</span>'
     : 'Paste one G25 line — <span style="color:var(--text-2)">Name,c1,c2,…,c25</span>';
-  document.getElementById('targetInput').placeholder = admixture
+  document.getElementById('targetInput').placeholder = (admixture || closer)
     ? 'Source_A,0.0123,-0.0456,0.0789,...\nSource_B,0.0201,-0.0312,0.0645,...'
     : 'Target,0.0123,-0.0456,0.0789,...';
-  document.getElementById('setTargetBtn').textContent = admixture ? 'Set sources' : 'Set target';
-  sourceSelectorWrap.style.display = admixture && sources.length ? 'block' : 'none';
-  document.getElementById('generateBtn').textContent = admixture ? 'Generate admixture map' : 'Generate distance map';
+  document.getElementById('setTargetBtn').textContent = (admixture || closer) ? 'Set sources' : 'Set target';
+  sourceSelectorWrap.style.display = (admixture || closer) && sources.length ? 'block' : 'none';
+  document.getElementById('generateBtn').textContent = admixture ? 'Generate admixture map' : closer ? 'Generate closer-to map' : 'Generate distance map';
 
-  autoScaleCheck.disabled = admixture;
-  minDistInput.disabled = !admixture && autoScaleCheck.checked;
-  maxDistInput.disabled = !admixture && autoScaleCheck.checked;
-  autoScaleLabel.style.opacity = admixture ? '0.4' : '1';
-  minScaleLabel.textContent = admixture ? 'Minimum proportion' : 'Min distance';
-  maxScaleLabel.textContent = admixture ? 'Maximum proportion' : 'Max distance';
+  autoScaleCheck.disabled = admixture || closer;
+  minDistInput.disabled = (!admixture && !closer) && autoScaleCheck.checked;
+  maxDistInput.disabled = (!admixture && !closer) && autoScaleCheck.checked;
+  autoScaleLabel.style.opacity = (admixture || closer) ? '0.4' : '1';
+  minScaleLabel.textContent = admixture ? 'Minimum proportion' : closer ? 'Not used' : 'Min distance';
+  maxScaleLabel.textContent = admixture ? 'Maximum proportion' : closer ? 'Not used' : 'Max distance';
   if (admixture) {
     minDistInput.value = '0';
     maxDistInput.value = '1';
     minDistInput.step = '0.01';
     maxDistInput.step = '0.01';
+  } else if (closer) {
+    minDistInput.value = '0'; maxDistInput.value = '1';
+    minDistInput.step = '1'; maxDistInput.step = '1';
   } else {
     minDistInput.step = '0.001';
     maxDistInput.step = '0.001';
@@ -1847,20 +1904,33 @@ function computeAdmixtureValues(sourceSet) {
   return { points, mismatched, dims, usable: sourceSet.length };
 }
 
+function computeCloserValues(sourceSet) {
+  const dims = sourceSet.length ? Math.min(...sourceSet.map(s => s.vec.length), ...populations.map(p => p.vec.length)) : 0;
+  const points = populations.map(p => {
+    let bestIndex = 0, bestDistance = Infinity;
+    for (let i = 0; i < sourceSet.length; i++) {
+      const d = euclidDist(p.vec, sourceSet[i].vec);
+      if (d < bestDistance) { bestDistance = d; bestIndex = i; }
+    }
+    return { lat:p.latlng.lat, lng:p.latlng.lng, value: sourceSet.length > 1 ? bestIndex / (sourceSet.length - 1) : 0, closestIndex:bestIndex, modelDistance:bestDistance };
+  });
+  return { points, dims, usable: sourceSet.length, mismatched: populations.some(p => p.vec.length !== dims) || sourceSet.some(s => s.vec.length !== dims) };
+}
+
 document.getElementById('generateBtn').addEventListener('click', () => {
   genHint.textContent = '';
   if (currentMode === 'distance' && !target) { genHint.textContent = 'Set a target G25 vector first.'; return; }
-  if (currentMode === 'admixture' && !sources.length) { genHint.textContent = 'Set at least one source G25 vector first.'; return; }
+  if ((currentMode === 'admixture' || currentMode === 'closer') && sources.length < 2) { genHint.textContent = 'Set at least two source populations first.'; return; }
   if (populations.length < 2) { genHint.textContent = 'Add at least 2 placed reference populations.'; return; }
 
   // Distance uses the target dimensions; admixture uses the dimensions shared by
   // all source and reference vectors. Do not dereference target in admixture mode.
-  const allVectors = currentMode === 'admixture'
+  const allVectors = (currentMode === 'admixture' || currentMode === 'closer')
     ? [...sources, ...populations]
     : [target, ...populations];
   const dims = allVectors.length ? Math.min(...allVectors.map(v => v?.vec?.length || 0)) : 0;
   if (!dims) { genHint.textContent = 'No compatible G25 dimensions found.'; return; }
-  const mismatched = currentMode === 'admixture'
+  const mismatched = (currentMode === 'admixture' || currentMode === 'closer')
     ? populations.some(p => p.vec.length !== dims) || sources.some(s => s.vec.length !== dims)
     : populations.some(p => p.vec.length !== dims) || target.vec.length !== dims;
 
@@ -1874,6 +1944,14 @@ document.getElementById('generateBtn').addEventListener('click', () => {
     if (!Number.isFinite(min) || !Number.isFinite(max) || min < 0 || max > 1 || min >= max) {
       genHint.textContent = 'Minimum/maximum proportion must satisfy 0 ≤ min < max ≤ 100%.'; return;
     }
+  } else if (currentMode === 'closer') {
+    if (selectedSourceIndices.length < 2) { genHint.textContent = 'Select at least two source populations to compare.'; return; }
+    const chosenSources = selectedSourceIndices.map(i => sources[i]).filter(Boolean);
+    closerSelectedSources = chosenSources;
+    const result = computeCloserValues(chosenSources);
+    result.points.forEach(pt => { if (chosenSources.length > 1) pt.value = pt.closestIndex / (chosenSources.length - 1); });
+    points = result.points;
+    min = 0; max = 1;
   } else {
     points = populations.map(p => ({
       lat: p.latlng.lat,
@@ -1902,7 +1980,7 @@ document.getElementById('generateBtn').addEventListener('click', () => {
   document.getElementById('legendTargetLabel').textContent = currentMode === 'admixture'
     ? selectedSourceIndices.map(i => sources[i]?.name).filter(Boolean).join(' + ')
     : target.name;
-  document.getElementById('legendTitle').textContent = currentMode === 'admixture' ? 'Source proportion' : 'Genetic distance';
+  document.getElementById('legendTitle').textContent = currentMode === 'admixture' ? 'Source proportion' : currentMode === 'closer' ? 'Closer to' : 'Genetic distance';
   document.getElementById('legend').classList.remove('hidden');
 
   statusBar.classList.remove('warn');
@@ -1910,7 +1988,11 @@ document.getElementById('generateBtn').addEventListener('click', () => {
     const mappedNames = selectedSourceIndices.map(i => sources[i]?.name).filter(Boolean).join(' + ');
     statusBar.innerHTML = `<b>${populations.length}</b> populations · sources <b>${escapeHtml(mappedNames)}</b> · summed proportion ${Math.round(min*100)}–${Math.round(max*100)}%`;
   } else {
-    statusBar.innerHTML = `<b>${populations.length}</b> populations · target <b>${escapeHtml(target.name)}</b> · distance ${min.toFixed(3)}–${max.toFixed(3)}`;
+    statusBar.innerHTML = currentMode === 'admixture'
+    ? `<b>${populations.length}</b> populations · sources <b>${escapeHtml(selectedSourceIndices.map(i=>sources[i]?.name).filter(Boolean).join(' + '))}</b> · proportion ${min.toFixed(2)}–${max.toFixed(2)}`
+    : currentMode === 'closer'
+      ? `<b>${populations.length}</b> populations · comparing <b>${escapeHtml(selectedSourceIndices.map(i=>sources[i]?.name).filter(Boolean).join(' vs '))}</b>`
+      : `<b>${populations.length}</b> populations · target <b>${escapeHtml(target.name)}</b> · distance ${min.toFixed(3)}–${max.toFixed(3)}`;
   }
   if (mismatched) {
     statusBar.classList.add('warn');
@@ -1931,6 +2013,7 @@ document.getElementById('clearAllBtn').addEventListener('click', () => {
   target = null;
   sources = [];
   selectedSourceIndices = [];
+  closerSelectedSources = [];
   const statusEl = document.getElementById('targetStatus');
   statusEl.textContent = currentMode === 'admixture' ? 'No sources set' : 'No target set';
   statusEl.classList.remove('set');
@@ -1938,7 +2021,7 @@ document.getElementById('clearAllBtn').addEventListener('click', () => {
   renderSourceSelector();
   heatLayer.clear();
   document.getElementById('legend').classList.add('hidden');
-  statusBar.textContent = currentMode === 'admixture' ? 'Add reference populations, set sources, then generate.' : 'Add reference populations, set a target, then generate.';
+  statusBar.textContent = (currentMode === 'admixture' || currentMode === 'closer') ? 'Add reference populations, set sources, then generate.' : 'Add reference populations, set a target, then generate.';
   lastMin = null; lastMax = null;
 });
 
@@ -1948,12 +2031,19 @@ function drawLegend(min, max) {
   const ctx = canvas.getContext('2d');
   const W = canvas.width, H = canvas.height;
   const grad = ctx.createImageData(W, H);
-  for (let y = 0; y < H; y++) {
-    const t = 1 - y / (H - 1); // top = max, bottom = min; admixture reverses the palette
-    const [r, g, b] = colorAtMapValue(t);
-    for (let x = 0; x < W; x++) {
-      const idx = (y * W + x) * 4;
-      grad.data[idx] = r; grad.data[idx + 1] = g; grad.data[idx + 2] = b; grad.data[idx + 3] = 255;
+  if (currentMode === 'closer') {
+    const palette = closerSelectedSources.length ? closerSelectedSources : sources;
+    const n = Math.max(1, palette.length);
+    for (let y = 0; y < H; y++) {
+      const idxSource = Math.min(n - 1, Math.round((1 - y / (H - 1)) * (n - 1)));
+      const [r,g,b] = hexToRgbLocal(palette[idxSource]?.color || getSourceColor(idxSource));
+      for (let x = 0; x < W; x++) { const idx=(y*W+x)*4; grad.data[idx]=r; grad.data[idx+1]=g; grad.data[idx+2]=b; grad.data[idx+3]=255; }
+    }
+  } else {
+    for (let y = 0; y < H; y++) {
+      const t = 1 - y / (H - 1);
+      const [r, g, b] = colorAtMapValue(t);
+      for (let x = 0; x < W; x++) { const idx=(y*W+x)*4; grad.data[idx]=r; grad.data[idx+1]=g; grad.data[idx+2]=b; grad.data[idx+3]=255; }
     }
   }
   ctx.putImageData(grad, 0, 0);
@@ -1966,7 +2056,9 @@ function drawLegend(min, max) {
     const val = max - frac * (max - min);
     const span = document.createElement('span');
     span.style.top = (frac * H) + 'px';
-    span.textContent = currentMode === 'admixture' ? Math.round(val * 100) + '%' : val.toFixed(3);
+    if (currentMode === 'admixture') span.textContent = Math.round(val * 100) + '%';
+    else if (currentMode === 'closer') { const palette = closerSelectedSources.length ? closerSelectedSources : sources; const idx = Math.max(0, Math.min(palette.length - 1, Math.round(val * Math.max(0, palette.length - 1)))); span.textContent = palette[idx]?.name || ''; }
+    else span.textContent = val.toFixed(3);
     ticksEl.appendChild(span);
   }
 }
@@ -2235,10 +2327,10 @@ async function renderExportCanvas(scale, includePins, includeLegend, includeLege
     const barW = 18 * scale, barH = 190 * scale;
     const marginX = 22 * scale, marginY = 26 * scale;
     const boxPad = 14 * scale;
-    const legendNames = currentMode === 'admixture'
+    const legendNames = (currentMode === 'admixture' || currentMode === 'closer')
       ? selectedSourceIndices.map(i => sources[i]?.name).filter(Boolean)
       : (target ? [target.name] : []);
-    const showNames = (includeLegendNames || (currentMode === 'admixture' && selectedSourceIndices.length > 1)) && legendNames.length;
+    const showNames = (includeLegendNames || ((currentMode === 'admixture' || currentMode === 'closer') && selectedSourceIndices.length > 1)) && legendNames.length;
     const nameLineH = 14 * scale;
     const titleH = showNames ? nameLineH * Math.min(legendNames.length, 6) + 4 * scale : 0;
     const boxW = barW + boxPad * 2 + 72 * scale;
@@ -2266,7 +2358,10 @@ async function renderExportCanvas(scale, includePins, includeLegend, includeLege
     const barX = bx, barY = by;
     for (let y = 0; y < barH; y++) {
       const t = 1 - y / (barH - 1);
-      const [r, g, b] = colorAtMapValue(t);
+      let rgb;
+      if (currentMode === 'closer') { const palette = closerSelectedSources.length ? closerSelectedSources : sources; const idx = Math.max(0, Math.min(palette.length - 1, Math.round(t * Math.max(0, palette.length - 1)))); rgb = hexToRgbLocal(palette[idx]?.color || getSourceColor(idx)); }
+      else rgb = colorAtMapValue(t);
+      const [r, g, b] = rgb;
       ctx.fillStyle = `rgb(${r},${g},${b})`;
       ctx.fillRect(barX, barY + y, barW, 1.2);
     }
@@ -2280,7 +2375,11 @@ async function renderExportCanvas(scale, includePins, includeLegend, includeLege
       const frac = i / steps;
       const val = max - frac * (max - min);
       const ty = barY + frac * barH;
-      ctx.fillText(currentMode === 'admixture' ? Math.round(val * 100) + '%' : val.toFixed(3), barX + barW + 6 * scale, ty);
+      let label;
+      if (currentMode === 'admixture') label = Math.round(val * 100) + '%';
+      else if (currentMode === 'closer') { const palette = closerSelectedSources.length ? closerSelectedSources : sources; const idx = Math.max(0, Math.min(palette.length - 1, Math.round(val * Math.max(0, palette.length - 1)))); label = palette[idx]?.name || ''; }
+      else label = val.toFixed(3);
+      ctx.fillText(label, barX + barW + 6 * scale, ty);
     }
   }
 
@@ -2366,7 +2465,7 @@ document.getElementById('savePresetBtn').addEventListener('click', () => {
   const data = {
     name,
     mode: currentMode,
-    sources: sources.map(s => ({ name: s.name, vec: s.vec })),
+    sources: sources.map(s => ({ name: s.name, vec: s.vec, color: s.color })),
     selectedSourceIndices,
     populations: populations.map(p => ({ name: p.name, vec: p.vec, lat: p.latlng.lat, lng: p.latlng.lng, visible: p.visible !== false })),
   };
@@ -2385,7 +2484,7 @@ document.getElementById('loadPresetBtn').addEventListener('click', () => {
   clearPopulations();
   preset.populations.forEach(p => addPopulation(p.name, p.vec, [p.lat, p.lng], p.visible !== false));
   if (Array.isArray(preset.sources) && preset.sources.length) {
-    sources = preset.sources.map(s => ({ name: s.name, vec: s.vec }));
+    sources = preset.sources.map((s, i) => normalizeSource(s, i));
     selectedSourceIndices = Array.isArray(preset.selectedSourceIndices)
       ? preset.selectedSourceIndices.map(Number).filter(i => Number.isInteger(i) && i >= 0 && i < sources.length)
       : [];
@@ -2394,10 +2493,11 @@ document.getElementById('loadPresetBtn').addEventListener('click', () => {
     sources = [];
     selectedSourceIndices = [];
   }
-  if (preset.mode === 'admixture' || preset.mode === 'distance') {
+  if (preset.mode === 'admixture' || preset.mode === 'distance' || preset.mode === 'closer') {
     modeSelect.value = preset.mode;
     currentMode = preset.mode;
   }
+  updateModeUI();
   target = currentMode === 'distance' && sources.length ? sources[0] : null;
   renderSourceSelector();
   const showPinsCheck = document.getElementById('showPinsCheck');
@@ -2439,7 +2539,7 @@ document.getElementById('importFileInput').addEventListener('change', e => {
       imported.forEach(p => {
         let name = p.name;
         while (list.some(x => x.name === name)) name = name + ' (imported)';
-        list.push({ ...p, name, populations: Array.isArray(p.populations) ? p.populations : [], sources: Array.isArray(p.sources) ? p.sources : [], selectedSourceIndices: Array.isArray(p.selectedSourceIndices) ? p.selectedSourceIndices : [], mode: p.mode === 'admixture' ? 'admixture' : 'distance' });
+        list.push({ ...p, name, populations: Array.isArray(p.populations) ? p.populations : [], sources: Array.isArray(p.sources) ? p.sources : [], selectedSourceIndices: Array.isArray(p.selectedSourceIndices) ? p.selectedSourceIndices : [], mode: ['admixture','closer'].includes(p.mode) ? p.mode : 'distance' });
       });
       savePresetsToStorage(list);
       refreshPresetSelect();
