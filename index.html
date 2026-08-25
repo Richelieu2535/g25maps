@@ -353,20 +353,24 @@
     z-index:500;
     backdrop-filter:blur(4px);
     box-shadow:0 4px 18px rgba(0,0,0,.35);
-    max-width:190px;
+    max-width:220px;
   }
   #legend.hidden{display:none;}
   #legendTargetLabel{
     font-size:11px; font-weight:700; color:var(--text-0);
     overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
   }
-  #legend .legend-body{display:flex; gap:10px;}
+  #legend .legend-body{display:flex; gap:10px; max-width:100%;}
   #legend .bar-wrap{position:relative; width:16px; height:180px; flex:none;}
   #legend canvas{border-radius:3px; display:block;}
-  #legend .ticks{position:absolute; top:0; left:0; right:0; height:100%;}
-  #legend .ticks span{position:absolute; right:0; transform:translateY(-50%); font-size:10.5px; font-family:var(--mono); color:var(--text-1); white-space:nowrap;}
+  #legend .ticks{position:absolute; top:0; left:0; right:0; height:100%; overflow:visible;}
+  #legend .ticks span{position:absolute; right:0; transform:translateY(-50%); font-size:10.5px; font-family:var(--mono); color:var(--text-1); white-space:nowrap; max-width:140px; overflow:hidden; text-overflow:ellipsis;}
   #legend .meta{display:flex; flex-direction:column; justify-content:space-between;}
   #legend .meta .title{font-size:10px; text-transform:uppercase; letter-spacing:.07em; color:var(--text-2); writing-mode:vertical-rl; transform:rotate(180deg); margin:0 auto;}
+  #legend .legend-swatches{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:7px; max-width:196px;}
+  #legend .legend-swatches li{display:flex; align-items:center; gap:8px; font-size:11.5px; color:var(--text-1);}
+  #legend .legend-swatches .dot{width:11px; height:11px; border-radius:50%; flex:none; border:1px solid rgba(255,255,255,0.3);}
+  #legend .legend-swatches .name{overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 
   /* zoom slider */
   #zoomSliderWrap{
@@ -660,13 +664,14 @@
     </div>
     <div id="legend" class="hidden">
       <div id="legendTargetLabel"></div>
-      <div class="legend-body">
+      <div class="legend-body" id="legendBarBody">
         <div class="bar-wrap">
           <canvas id="legendCanvas" width="16" height="180"></canvas>
           <div class="ticks" id="legendTicks"></div>
         </div>
         <div class="meta"><div class="title" id="legendTitle">Genetic distance</div></div>
       </div>
+      <ul class="legend-swatches" id="legendSwatches" style="display:none;"></ul>
     </div>
   </main>
 </div>
@@ -758,26 +763,9 @@ function colorAt(t) {
 
 // Distance maps use the selected color scheme in its normal direction (low → high).
 // Admixture maps reverse it so 0% uses the scheme's high-end color and 100% its low-end color.
+// (Closer-to mode does not use this — see computeCloserColorGrid, which blends each
+// source's actual color by spatial proximity instead of mapping an index through a palette.)
 function colorAtMapValue(t) {
-  if (currentMode === 'closer') {
-    const palette = closerSelectedSources.length ? closerSelectedSources : sources;
-    const n = Math.max(1, palette.length);
-    if (n === 1) return hexToRgbLocal(palette[0]?.color || getSourceColor(0));
-
-    // Blend continuously between adjacent source colors. This makes the
-    // boundaries between sources smooth rather than assigning each source
-    // to a single hard color band.
-    const pos = Math.max(0, Math.min(1, t)) * (n - 1);
-    const i = Math.min(n - 2, Math.floor(pos));
-    const f = pos - i;
-    const a = hexToRgbLocal(palette[i]?.color || getSourceColor(i));
-    const b = hexToRgbLocal(palette[i + 1]?.color || getSourceColor(i + 1));
-    return [
-      Math.round(a[0] + (b[0] - a[0]) * f),
-      Math.round(a[1] + (b[1] - a[1]) * f),
-      Math.round(a[2] + (b[2] - a[2]) * f),
-    ];
-  }
   return colorAt(currentMode === 'admixture' ? 1 - t : t);
 }
 
@@ -825,6 +813,38 @@ function blurValueGrid(values, w, h, radius) {
     data = boxBlur1D(data, w, h, r, false);
   }
   return data;
+}
+
+/* "Closer to" is a categorical classification (each pixel's nearest source),
+   not a continuous quantity. Interpolating a category *index* and mapping the
+   blurred result through an ordered palette can land on a third category's
+   color at a boundary between two other, non-adjacent-in-list categories —
+   even when that third category is nowhere near. Instead, IDW-interpolate
+   each source's own RGB color directly, weighted by the same inverse-distance
+   weights used for the scalar grid, so only genuinely nearby colors ever mix. */
+function computeCloserColorGrid(pts, gw, gh, step, power) {
+  const gR = new Float32Array(gw * gh), gG = new Float32Array(gw * gh), gB = new Float32Array(gw * gh);
+  for (let gy = 0; gy < gh; gy++) {
+    const py = gy * step;
+    for (let gx = 0; gx < gw; gx++) {
+      const px = gx * step;
+      let wSum = 0, rSum = 0, gSum = 0, bSum = 0, exact = null;
+      for (let i = 0; i < pts.length; i++) {
+        const dx = px - pts[i].x, dy = py - pts[i].y;
+        const d2 = dx * dx + dy * dy;
+        if (d2 < 0.25) { exact = pts[i].color; break; }
+        const w = 1 / Math.pow(d2, power / 2);
+        wSum += w;
+        rSum += w * pts[i].color[0];
+        gSum += w * pts[i].color[1];
+        bSum += w * pts[i].color[2];
+      }
+      const gi = gy * gw + gx;
+      if (exact) { gR[gi] = exact[0]; gG[gi] = exact[1]; gB[gi] = exact[2]; }
+      else { gR[gi] = rSum / wSum; gG[gi] = gSum / wSum; gB[gi] = bSum / wSum; }
+    }
+  }
+  return { gR, gG, gB };
 }
 
 /* =========================================================================
@@ -896,6 +916,8 @@ const HeatLayer = L.Layer.extend({
     this._projectedPointsKey = null;
     this._gridCache = null;
     this._blurCache = new Map();
+    this._gridCacheColor = null;
+    this._blurCacheColor = new Map();
     this._smallCanvas = document.createElement('canvas');
     this._maskCanvas = document.createElement('canvas');
     this._maskCtx = this._maskCanvas.getContext('2d');
@@ -919,6 +941,8 @@ const HeatLayer = L.Layer.extend({
       this._projectedPointsKey = null;
       this._gridCache = null;
       this._blurCache.clear();
+      this._gridCacheColor = null;
+      this._blurCacheColor.clear();
       this._maskKey = null;
     }
     this._reset();
@@ -933,6 +957,8 @@ const HeatLayer = L.Layer.extend({
     this._projectedPointsKey = null;
     this._gridCache = null;
     this._blurCache.clear();
+    this._gridCacheColor = null;
+    this._blurCacheColor.clear();
     this._maskKey = null;
     this._reset();
   },
@@ -961,7 +987,7 @@ const HeatLayer = L.Layer.extend({
     if (!pts || this._projectedPointsKey !== pointKey) {
       pts = this._points.map(p => {
         const lp = map.latLngToLayerPoint([p.lat, p.lng]).subtract(topLeft);
-        return { x: lp.x, y: lp.y, v: p.value };
+        return { x: lp.x, y: lp.y, v: p.value, color: p.color };
       });
       this._projectedPoints = pts;
       this._projectedPointsKey = pointKey;
@@ -976,59 +1002,94 @@ const HeatLayer = L.Layer.extend({
       small.width = gw; small.height = gh;
     }
     const sctx = small.getContext('2d');
-    const min = this._min, max = this._max, power = this._power;
-    const range = (max - min) || 1;
-    const gridKey = pointKey + '|' + step + '|' + power + '|' + min + '|' + max;
-
-    let valGrid;
-    if (this._gridCache && this._gridCache.key === gridKey) {
-      valGrid = this._gridCache.grid;
-    } else {
-      valGrid = new Float32Array(gw * gh);
-      for (let gy = 0; gy < gh; gy++) {
-        const py = gy * step;
-        for (let gx = 0; gx < gw; gx++) {
-          const px = gx * step;
-          let wSum = 0, vSum = 0, exact = null;
-          for (let i = 0; i < pts.length; i++) {
-            const dx = px - pts[i].x, dy = py - pts[i].y;
-            const d2 = dx * dx + dy * dy;
-            if (d2 < 0.25) { exact = pts[i].v; break; }
-            const w = 1 / Math.pow(d2, power / 2);
-            wSum += w;
-            vSum += w * pts[i].v;
-          }
-          valGrid[gy * gw + gx] = exact !== null ? exact : (vSum / wSum);
-        }
-      }
-      this._gridCache = { key: gridKey, grid: valGrid, w: gw, h: gh };
-      this._blurCache.clear();
-    }
-
-    // Smoothness changes only the blur. Keep recent radii so slider backtracking
-    // doesn't redo identical full-grid blur passes.
-    let blurredGrid = valGrid;
-    const blurKey = Math.round(this._blur * 2) / 2;
-    if (blurKey > 0) {
-      const cached = this._blurCache.get(blurKey);
-      if (cached) blurredGrid = cached;
-      else {
-        blurredGrid = blurValueGrid(valGrid, gw, gh, blurKey);
-        this._blurCache.set(blurKey, blurredGrid);
-        while (this._blurCache.size > 6) this._blurCache.delete(this._blurCache.keys().next().value);
-      }
-    }
-
+    const power = this._power;
+    const isCloserColor = pts.length > 0 && pts[0].color != null;
 
     if (!this._smallImageData || this._smallImageData.width !== gw || this._smallImageData.height !== gh) {
       this._smallImageData = sctx.createImageData(gw, gh);
     }
     const img = this._smallImageData;
-    for (let i = 0; i < gw * gh; i++) {
-      const t = (blurredGrid[i] - min) / range;
-      const [r, g, b] = colorAtMapValue(t);
-      const idx = i * 4;
-      img.data[idx] = r; img.data[idx + 1] = g; img.data[idx + 2] = b; img.data[idx + 3] = 255;
+
+    if (isCloserColor) {
+      // Categorical "closer to" data: blend each source's actual color by
+      // spatial proximity instead of mapping a scalar index through a palette.
+      const gridKey = pointKey + '|' + step + '|' + power + '|closer';
+      let grids = this._gridCacheColor;
+      if (!grids || grids.key !== gridKey) {
+        const { gR, gG, gB } = computeCloserColorGrid(pts, gw, gh, step, power);
+        grids = { key: gridKey, gR, gG, gB };
+        this._gridCacheColor = grids;
+        this._blurCacheColor.clear();
+      }
+      let { gR, gG, gB } = grids;
+      const blurKey = Math.round(this._blur * 2) / 2;
+      if (blurKey > 0) {
+        const cached = this._blurCacheColor.get(blurKey);
+        if (cached) { gR = cached.gR; gG = cached.gG; gB = cached.gB; }
+        else {
+          const blurred = { gR: blurValueGrid(gR, gw, gh, blurKey), gG: blurValueGrid(gG, gw, gh, blurKey), gB: blurValueGrid(gB, gw, gh, blurKey) };
+          this._blurCacheColor.set(blurKey, blurred);
+          while (this._blurCacheColor.size > 6) this._blurCacheColor.delete(this._blurCacheColor.keys().next().value);
+          gR = blurred.gR; gG = blurred.gG; gB = blurred.gB;
+        }
+      }
+      for (let i = 0; i < gw * gh; i++) {
+        const idx = i * 4;
+        img.data[idx] = Math.max(0, Math.min(255, Math.round(gR[i])));
+        img.data[idx + 1] = Math.max(0, Math.min(255, Math.round(gG[i])));
+        img.data[idx + 2] = Math.max(0, Math.min(255, Math.round(gB[i])));
+        img.data[idx + 3] = 255;
+      }
+    } else {
+      const min = this._min, max = this._max;
+      const range = (max - min) || 1;
+      const gridKey = pointKey + '|' + step + '|' + power + '|' + min + '|' + max;
+
+      let valGrid;
+      if (this._gridCache && this._gridCache.key === gridKey) {
+        valGrid = this._gridCache.grid;
+      } else {
+        valGrid = new Float32Array(gw * gh);
+        for (let gy = 0; gy < gh; gy++) {
+          const py = gy * step;
+          for (let gx = 0; gx < gw; gx++) {
+            const px = gx * step;
+            let wSum = 0, vSum = 0, exact = null;
+            for (let i = 0; i < pts.length; i++) {
+              const dx = px - pts[i].x, dy = py - pts[i].y;
+              const d2 = dx * dx + dy * dy;
+              if (d2 < 0.25) { exact = pts[i].v; break; }
+              const w = 1 / Math.pow(d2, power / 2);
+              wSum += w;
+              vSum += w * pts[i].v;
+            }
+            valGrid[gy * gw + gx] = exact !== null ? exact : (vSum / wSum);
+          }
+        }
+        this._gridCache = { key: gridKey, grid: valGrid, w: gw, h: gh };
+        this._blurCache.clear();
+      }
+
+      // Smoothness changes only the blur. Keep recent radii so slider backtracking
+      // doesn't redo identical full-grid blur passes.
+      let blurredGrid = valGrid;
+      const blurKey = Math.round(this._blur * 2) / 2;
+      if (blurKey > 0) {
+        const cached = this._blurCache.get(blurKey);
+        if (cached) blurredGrid = cached;
+        else {
+          blurredGrid = blurValueGrid(valGrid, gw, gh, blurKey);
+          this._blurCache.set(blurKey, blurredGrid);
+          while (this._blurCache.size > 6) this._blurCache.delete(this._blurCache.keys().next().value);
+        }
+      }
+
+      for (let i = 0; i < gw * gh; i++) {
+        const t = (blurredGrid[i] - min) / range;
+        const [r, g, b] = colorAtMapValue(t);
+        const idx = i * 4;
+        img.data[idx] = r; img.data[idx + 1] = g; img.data[idx + 2] = b; img.data[idx + 3] = 255;
+      }
     }
     sctx.putImageData(img, 0, 0);
 
@@ -1965,7 +2026,15 @@ document.getElementById('generateBtn').addEventListener('click', () => {
     const chosenSources = selectedSourceIndices.map(i => sources[i]).filter(Boolean);
     closerSelectedSources = chosenSources;
     const result = computeCloserValues(chosenSources);
-    result.points.forEach(pt => { if (chosenSources.length > 1) pt.value = pt.closestIndex / (chosenSources.length - 1); });
+    result.points.forEach(pt => {
+      if (chosenSources.length > 1) pt.value = pt.closestIndex / (chosenSources.length - 1);
+      // Carry the closest source's own color. Rendering blends these actual
+      // colors by spatial proximity (see computeCloserColorGrid) instead of
+      // interpolating the ordinal index above through the full palette, which
+      // could introduce an unrelated population's color at a boundary between
+      // two other populations that aren't adjacent in the source list.
+      pt.color = hexToRgbLocal(chosenSources[pt.closestIndex]?.color || getSourceColor(pt.closestIndex));
+    });
     points = result.points;
     min = 0; max = 1;
   } else {
@@ -2043,24 +2112,32 @@ document.getElementById('clearAllBtn').addEventListener('click', () => {
 
 /* ---------- legend ---------- */
 function drawLegend(min, max) {
+  const barBody = document.getElementById('legendBarBody');
+  const swatchList = document.getElementById('legendSwatches');
+
+  if (currentMode === 'closer') {
+    // "Closer to" compares a fixed, small set of named populations — a list of
+    // color dots next to each name is unambiguous and can't overflow or repeat,
+    // unlike a continuous gradient bar with a handful of evenly-spaced ticks.
+    barBody.style.display = 'none';
+    const palette = closerSelectedSources.length ? closerSelectedSources : sources;
+    swatchList.innerHTML = palette.map((src, i) => `<li><span class="dot" style="background:${src.color || getSourceColor(i)}"></span><span class="name" title="${escapeHtml(src.name)}">${escapeHtml(src.name)}</span></li>`).join('');
+    swatchList.style.display = 'flex';
+    return;
+  }
+
+  swatchList.style.display = 'none';
+  swatchList.innerHTML = '';
+  barBody.style.display = 'flex';
+
   const canvas = document.getElementById('legendCanvas');
   const ctx = canvas.getContext('2d');
   const W = canvas.width, H = canvas.height;
   const grad = ctx.createImageData(W, H);
-  if (currentMode === 'closer') {
-    const palette = closerSelectedSources.length ? closerSelectedSources : sources;
-    const n = Math.max(1, palette.length);
-    for (let y = 0; y < H; y++) {
-      const idxSource = Math.min(n - 1, Math.round((1 - y / (H - 1)) * (n - 1)));
-      const [r,g,b] = hexToRgbLocal(palette[idxSource]?.color || getSourceColor(idxSource));
-      for (let x = 0; x < W; x++) { const idx=(y*W+x)*4; grad.data[idx]=r; grad.data[idx+1]=g; grad.data[idx+2]=b; grad.data[idx+3]=255; }
-    }
-  } else {
-    for (let y = 0; y < H; y++) {
-      const t = 1 - y / (H - 1);
-      const [r, g, b] = colorAtMapValue(t);
-      for (let x = 0; x < W; x++) { const idx=(y*W+x)*4; grad.data[idx]=r; grad.data[idx+1]=g; grad.data[idx+2]=b; grad.data[idx+3]=255; }
-    }
+  for (let y = 0; y < H; y++) {
+    const t = 1 - y / (H - 1);
+    const [r, g, b] = colorAtMapValue(t);
+    for (let x = 0; x < W; x++) { const idx=(y*W+x)*4; grad.data[idx]=r; grad.data[idx+1]=g; grad.data[idx+2]=b; grad.data[idx+3]=255; }
   }
   ctx.putImageData(grad, 0, 0);
 
@@ -2073,7 +2150,6 @@ function drawLegend(min, max) {
     const span = document.createElement('span');
     span.style.top = (frac * H) + 'px';
     if (currentMode === 'admixture') span.textContent = Math.round(val * 100) + '%';
-    else if (currentMode === 'closer') { const palette = closerSelectedSources.length ? closerSelectedSources : sources; const idx = Math.max(0, Math.min(palette.length - 1, Math.round(val * Math.max(0, palette.length - 1)))); span.textContent = palette[idx]?.name || ''; }
     else span.textContent = val.toFixed(3);
     ticksEl.appendChild(span);
   }
@@ -2254,40 +2330,59 @@ async function renderExportCanvas(scale, includePins, includeLegend, includeLege
     // exports looked patchier/more contoured than what's on screen.
     const step = Math.max(1, Math.round(heatLayer._step * scale));
     const gw = Math.max(1, Math.ceil(W / step)), gh = Math.max(1, Math.ceil(H / step));
-    const pts = heatLayer._points.map(p => { const q = proj(p.lat, p.lng); return { x: q.x, y: q.y, v: p.value }; });
+    const pts = heatLayer._points.map(p => { const q = proj(p.lat, p.lng); return { x: q.x, y: q.y, v: p.value, color: p.color }; });
+    const isCloserColor = pts.length > 0 && pts[0].color != null;
 
     const small = document.createElement('canvas');
     small.width = gw; small.height = gh;
     const sctx = small.getContext('2d');
-    const valGrid = new Float32Array(gw * gh);
-    for (let gy = 0; gy < gh; gy++) {
-      const py = gy * step;
-      for (let gx = 0; gx < gw; gx++) {
-        const px = gx * step;
-        let wSum = 0, vSum = 0, exact = null;
-        for (let i = 0; i < pts.length; i++) {
-          const dx = px - pts[i].x, dy = py - pts[i].y;
-          const d2 = dx * dx + dy * dy;
-          if (d2 < 0.25) { exact = pts[i].v; break; }
-          const w = 1 / Math.pow(d2, power / 2);
-          wSum += w; vSum += w * pts[i].v;
-        }
-        valGrid[gy * gw + gx] = exact !== null ? exact : (vSum / wSum);
-      }
-    }
+    const img = sctx.createImageData(gw, gh);
+
     // Blur radius is in grid cells, and the grid now matches live 1:1 in cell
     // count, so the live Smoothing value applies unscaled — still guarded so a
     // small-but-nonzero setting never rounds down to 0 and silently vanishes.
     const exportBlurRadius = heatLayer._blur > 0 ? Math.max(1, Math.round(heatLayer._blur)) : 0;
-    const blurredGrid = exportBlurRadius > 0 ? blurValueGrid(valGrid, gw, gh, exportBlurRadius) : valGrid;
 
-
-    const img = sctx.createImageData(gw, gh);
-    for (let i = 0; i < gw * gh; i++) {
-      const t = (blurredGrid[i] - min) / range;
-      const [r, g, b] = colorAtMapValue(t);
-      const idx = i * 4;
-      img.data[idx] = r; img.data[idx + 1] = g; img.data[idx + 2] = b; img.data[idx + 3] = 255;
+    if (isCloserColor) {
+      // Same categorical color-blend approach as the live map: mix each
+      // source's true color by spatial proximity, not by index.
+      let { gR, gG, gB } = computeCloserColorGrid(pts, gw, gh, step, power);
+      if (exportBlurRadius > 0) {
+        gR = blurValueGrid(gR, gw, gh, exportBlurRadius);
+        gG = blurValueGrid(gG, gw, gh, exportBlurRadius);
+        gB = blurValueGrid(gB, gw, gh, exportBlurRadius);
+      }
+      for (let i = 0; i < gw * gh; i++) {
+        const idx = i * 4;
+        img.data[idx] = Math.max(0, Math.min(255, Math.round(gR[i])));
+        img.data[idx + 1] = Math.max(0, Math.min(255, Math.round(gG[i])));
+        img.data[idx + 2] = Math.max(0, Math.min(255, Math.round(gB[i])));
+        img.data[idx + 3] = 255;
+      }
+    } else {
+      const valGrid = new Float32Array(gw * gh);
+      for (let gy = 0; gy < gh; gy++) {
+        const py = gy * step;
+        for (let gx = 0; gx < gw; gx++) {
+          const px = gx * step;
+          let wSum = 0, vSum = 0, exact = null;
+          for (let i = 0; i < pts.length; i++) {
+            const dx = px - pts[i].x, dy = py - pts[i].y;
+            const d2 = dx * dx + dy * dy;
+            if (d2 < 0.25) { exact = pts[i].v; break; }
+            const w = 1 / Math.pow(d2, power / 2);
+            wSum += w; vSum += w * pts[i].v;
+          }
+          valGrid[gy * gw + gx] = exact !== null ? exact : (vSum / wSum);
+        }
+      }
+      const blurredGrid = exportBlurRadius > 0 ? blurValueGrid(valGrid, gw, gh, exportBlurRadius) : valGrid;
+      for (let i = 0; i < gw * gh; i++) {
+        const t = (blurredGrid[i] - min) / range;
+        const [r, g, b] = colorAtMapValue(t);
+        const idx = i * 4;
+        img.data[idx] = r; img.data[idx + 1] = g; img.data[idx + 2] = b; img.data[idx + 3] = 255;
+      }
     }
     sctx.putImageData(img, 0, 0);
 
@@ -2340,13 +2435,52 @@ async function renderExportCanvas(scale, includePins, includeLegend, includeLege
 
   // legend
   if (includeLegend && heatLayer._points.length) {
+    if (currentMode === 'closer') {
+      const palette = closerSelectedSources.length ? closerSelectedSources : sources;
+      const marginX = 22 * scale, marginY = 26 * scale;
+      const boxPad = 14 * scale;
+      const rowH = 20 * scale, dotR = 5.5 * scale;
+      const maxTextW = 170 * scale;
+      ctx.font = `${11.5 * scale}px -apple-system, "Segoe UI", Roboto, sans-serif`;
+      let textW = 0;
+      palette.forEach(src => { textW = Math.max(textW, Math.min(maxTextW, ctx.measureText(src.name).width)); });
+      const boxW = boxPad * 2 + dotR * 2 + 8 * scale + textW;
+      const boxH = boxPad * 2 + rowH * palette.length;
+      const bx = marginX, by = H - marginY - boxH;
+
+      ctx.fillStyle = 'rgba(18,21,27,0.86)';
+      roundRect(ctx, bx, by, boxW, boxH, 8 * scale);
+      ctx.fill();
+
+      ctx.textBaseline = 'middle';
+      palette.forEach((src, idx) => {
+        const cy = by + boxPad + rowH * idx + rowH / 2;
+        const cx = bx + boxPad + dotR;
+        ctx.beginPath();
+        ctx.arc(cx, cy, dotR, 0, Math.PI * 2);
+        ctx.fillStyle = src.color || getSourceColor(idx);
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+        ctx.lineWidth = Math.max(0.6, scale * 0.6);
+        ctx.stroke();
+
+        let name = src.name;
+        ctx.font = `${11.5 * scale}px -apple-system, "Segoe UI", Roboto, sans-serif`;
+        while (ctx.measureText(name).width > maxTextW && name.length > 3) name = name.slice(0, -2);
+        if (name !== src.name) name += '\u2026';
+        ctx.fillStyle = '#e8ebf1';
+        ctx.fillText(name, cx + dotR + 8 * scale, cy);
+      });
+      return { canvas, terrainOk };
+    }
+
     const barW = 18 * scale, barH = 190 * scale;
     const marginX = 22 * scale, marginY = 26 * scale;
     const boxPad = 14 * scale;
-    const legendNames = (currentMode === 'admixture' || currentMode === 'closer')
+    const legendNames = currentMode === 'admixture'
       ? selectedSourceIndices.map(i => sources[i]?.name).filter(Boolean)
       : (target ? [target.name] : []);
-    const showNames = (includeLegendNames || ((currentMode === 'admixture' || currentMode === 'closer') && selectedSourceIndices.length > 1)) && legendNames.length;
+    const showNames = (includeLegendNames || (currentMode === 'admixture' && selectedSourceIndices.length > 1)) && legendNames.length;
     const nameLineH = 14 * scale;
     const titleH = showNames ? nameLineH * Math.min(legendNames.length, 6) + 4 * scale : 0;
     const boxW = barW + boxPad * 2 + 72 * scale;
@@ -2374,10 +2508,7 @@ async function renderExportCanvas(scale, includePins, includeLegend, includeLege
     const barX = bx, barY = by;
     for (let y = 0; y < barH; y++) {
       const t = 1 - y / (barH - 1);
-      let rgb;
-      if (currentMode === 'closer') { const palette = closerSelectedSources.length ? closerSelectedSources : sources; const idx = Math.max(0, Math.min(palette.length - 1, Math.round(t * Math.max(0, palette.length - 1)))); rgb = hexToRgbLocal(palette[idx]?.color || getSourceColor(idx)); }
-      else rgb = colorAtMapValue(t);
-      const [r, g, b] = rgb;
+      const [r, g, b] = colorAtMapValue(t);
       ctx.fillStyle = `rgb(${r},${g},${b})`;
       ctx.fillRect(barX, barY + y, barW, 1.2);
     }
@@ -2393,7 +2524,6 @@ async function renderExportCanvas(scale, includePins, includeLegend, includeLege
       const ty = barY + frac * barH;
       let label;
       if (currentMode === 'admixture') label = Math.round(val * 100) + '%';
-      else if (currentMode === 'closer') { const palette = closerSelectedSources.length ? closerSelectedSources : sources; const idx = Math.max(0, Math.min(palette.length - 1, Math.round(val * Math.max(0, palette.length - 1)))); label = palette[idx]?.name || ''; }
       else label = val.toFixed(3);
       ctx.fillText(label, barX + barW + 6 * scale, ty);
     }
